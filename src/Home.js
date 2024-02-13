@@ -1,23 +1,29 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import logo from "./img/logo.png";
+import logoSmall from "./img/logo_Marina-NoBg-White-Mini.png";
 
 function Home() {
+  const [collapse, setCollapse] = useState(false);
   // fixed Header
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 0);
+    console.log("window.scrollY", window.scrollY);
+    setCollapse((prev) =>
+      window.scrollY === 0 ? (prev = false) : (prev = true)
+    );
   });
   // Toogle Menu
-   const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   return (
     <div className="home" id="Home">
       <div className="home__bg">
         <div className="header d__flex align__items__center pxy__30">
           <div className="logo">
-            <img src={logo} alt="" />
+            <img src={collapse ? logoSmall : logo} alt="" />
           </div>
-          <div className="navigation pxy__30">
+          <div className="navigation">
             <ul className="navbar d__flex">
               <a href="#Home">
                 <li className="nav__items mx__15">Home</li>
@@ -28,12 +34,12 @@ function Home() {
               <a href="#Services">
                 <li className="nav__items mx__15">Services</li>
               </a>
-              <a href="#Portfolio">
+              {/* <a href="#Portfolio">
                 <li className="nav__items mx__15">Portfolio</li>
               </a>
               <a href="#Blog">
                 <li className="nav__items mx__15">Blog</li>
-              </a>
+              </a> */}
               <a href="#Contact">
                 <li className="nav__items mx__15">Contact</li>
               </a>
@@ -41,7 +47,8 @@ function Home() {
           </div>
           {/* Toogle Menu */}
           <div className="toggle__menu">
-            <svg onClick={() => setShow(!show)}
+            <svg
+              onClick={() => setShow(!show)}
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -55,30 +62,30 @@ function Home() {
               />
             </svg>
           </div>
-          {show ?(
-          <div className="sideNavbar">
+          {show ? (
+            <div className="sideNavbar">
               <ul className="sidebar d__flex">
-              <li className="sideNavbar">
-              <a href="#home">Home</a>
-            </li>
-            <li className="sideNavbar">
-              <a href="#about">About</a>
-            </li>
-            <li className="sideNavbar">
-              <a href="#services">Services</a>
-            </li>
-            <li className="sideNavbar">
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li className="sideNavbar">
-              <a href="#blog">Blog</a>
-            </li>
-            <li className="sideNavbar">
-              <a href="#contact">Contact</a>
-            </li>
+                <li className="sideNavbar">
+                  <a href="#home">Home</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#about">About</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#services">Services</a>
+                </li>
+                {/* <li className="sideNavbar">
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#blog">Blog</a>
+                </li> */}
+                <li className="sideNavbar">
+                  <a href="#contact">Contact</a>
+                </li>
               </ul>
-          </div>
-           ) : null}
+            </div>
+          ) : null}
         </div>
         {/* HOME CONTENT */}
         <div className="container">
