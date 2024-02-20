@@ -5,12 +5,20 @@ img.about__img {
   border-radius: 10px;
   width: 100%;
 }
+h1.motto__heading {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: "ProtestRegular";
+  text-align: start;
+  font-size: 45px;
+}
 h1.about__heading {
   margin-bottom: 10px;
-  font-weight: 700;
+  color: #f9004d;
+  font-weight: 600;
   text-align: start;
   font-family: Montserrat, sans-serif;
-  font-size: 60px;
+  font-size: 40px;
 }
 button.about.btn.pointer {
   text-transform: capitalize;

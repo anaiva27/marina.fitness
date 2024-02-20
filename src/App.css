@@ -55,7 +55,13 @@ p {
   justify-content: space-between;
 }
 .mx__15 {
-  margin: 0px 20px;
+  margin: 0px 15px;
+}
+.mx__45 {
+  margin: 0px 45px;
+}
+.mb__25 {
+  margin-bottom: 25px !important;
 }
 .px__30 {
   padding: 0px 30px;
@@ -64,8 +70,21 @@ p {
   padding: 30px;
 }
 .container {
-  width: 92%;
+  width: 100%;
   margin: 0px auto;
+  min-height: 75vh;
+}
+.container.home {
+  width: 100%;
+  margin: 0px auto;
+  min-height: 75vh;
+  background: linear-gradient(
+    to right,
+    #030303b4,
+    #00000019 60%,
+    #08080816 40%,
+    #ffffff00
+  );
 }
 .pz__10 {
   padding: 10px 0px;
@@ -97,7 +116,7 @@ p {
   margin-top: 20px;
 }
 .component__space {
-  padding: 100px 0px;
+  padding: 30px 0px;
 }
 .pointer {
   cursor: pointer;
@@ -112,7 +131,7 @@ svg {
   position: absolute;
 }
 strong {
-  color: #f9004d;
+  /* color: #f9004d; */
   font-weight: 600;
 }
 input {
@@ -143,6 +162,23 @@ button.about.btn.pointer:hover {
   background: #000;
   color: #fff !important;
 }
+
+.button__primary {
+  padding: 15px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(to right, #e66465, #ee3c18);
+  /* background-color: #f9004d; */
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  max-width: 350px;
+  margin-top: 40px;
+}
 /* RESPONSIVE */
 @media only screen and (max-width: 768px) {
   .col__2 {
@@ -166,4 +202,13 @@ button.about.btn.pointer:hover {
   .footer.d__flex.align__items__center.justify__content__space__between.pz-10 {
     flex-wrap: wrap;
   }
+}
+
+@font-face {
+  font-family: "ProtestRegular";
+  src: local("ProtestRegular"),
+    url("fonts/ProtestRiot-Regular.eot") format("eot"),
+    url("fonts/ProtestRiot-Regular.ttf") format("ttf"),
+    url("fonts/ProtestRiot-Regular.woff") format("woff");
+  font-weight: 500;
 }

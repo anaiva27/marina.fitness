@@ -1,29 +1,67 @@
 .home__bg {
-  /* background-image: url(img/bg.jpg); */
+  background-image: url(img/hero-bg.jpg);
   background-color: #fff;
-  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 li.nav__items {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   padding-bottom: 5px;
+  color: #fff;
+}
+ul.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 600px;
 }
 .home__content {
-  padding: 125px 0px;
+  padding: 65px 0px 125px;
+  /* width: 60%;
+  max-width: 500px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  gap: 30px; */
+}
+.home__meta {
+  padding: 10px;
+  width: fit-content;
+  max-width: 900px;
+  display: flex;
+  height: 100%;
+  margin-left: 2%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 h1.home__text {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 42px;
+  font-weight: 900;
   letter-spacing: 3px;
-  color: rgba(51, 51, 55, 0.75) !important;
+  color: #fff;
+  line-height: 150%;
+  color: #f9004d;
+  margin-bottom: -15px;
+  text-align: center;
+  /* font-family: Poppins, sans-serif; */
+  font-family: "ProtestRegular";
+  /* text-transform: uppercase; */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.519);
 }
 h2.home__text {
-  font-size: 54px;
-  line-height: 54px;
-  font-weight: 800;
-  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 120%;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-family: Poppins, sans-serif;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.485);
+  color: #fff;
+  margin-top: -10px;
 }
 h3.home__text {
   font-size: 50px;
@@ -39,6 +77,18 @@ h4.home__text {
 }
 .header {
   transition: 0.4s all ease;
+  background: linear-gradient(
+    to right,
+    #030303b4,
+    #00000019 60%,
+    #08080816 40%,
+    #ffffff00
+  );
+}
+.pale {
+  color: #fa175f !important;
+  font-size: 36px !important;
+  margin-top: 10px;
 }
 .header.active {
   position: fixed;
@@ -69,11 +119,15 @@ ul.sidebar.d__flex {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 25px 0 0;
+  padding: 0;
 }
 
 li.sideNavbar {
   padding: 25px 30px;
+}
+.highlight {
+  background-color: rgba(175, 198, 24, 0.307);
+  padding: 0 15px;
 }
 /* RESPONSIVE */
 @media only screen and (max-width: 768px) {
@@ -112,4 +166,5 @@ li.sideNavbar {
 .logo img {
   max-width: 220px;
   margin-top: -20px;
+  margin-left: 20px;
 }

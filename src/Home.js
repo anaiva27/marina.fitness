@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./Home.css";
-import logo from "./img/logo.png";
-import logoSmall from "./img/logo_Marina-NoBg-White-Mini.png";
+import logo from "./img/logo-new-White-c1.png";
+import logoSmall from "./img/logo-new-White-crop-Marina.png";
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+import { dropDelay, popDelay } from "./animate";
 
 function Home() {
   const [collapse, setCollapse] = useState(false);
@@ -50,9 +52,9 @@ function Home() {
             <svg
               onClick={() => setShow(!show)}
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
+              width="20"
+              height="20"
+              fill="white"
               class="bi bi-justify white pointer"
               viewBox="0 0 16 16"
             >
@@ -65,14 +67,20 @@ function Home() {
           {show ? (
             <div className="sideNavbar">
               <ul className="sidebar d__flex">
-                <li className="sideNavbar">
-                  <a href="#home">Home</a>
+                <li className="sideNavbar black">
+                  <a href="#home" className="black">
+                    Home
+                  </a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="#about">About</a>
+                  <a href="#about" className="black">
+                    About
+                  </a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="#services">Services</a>
+                  <a href="#services" className="black">
+                    Services
+                  </a>
                 </li>
                 {/* <li className="sideNavbar">
                   <a href="#portfolio">Portfolio</a>
@@ -81,20 +89,65 @@ function Home() {
                   <a href="#blog">Blog</a>
                 </li> */}
                 <li className="sideNavbar">
-                  <a href="#contact">Contact</a>
+                  <a href="#contact" className="black">
+                    Contact
+                  </a>
                 </li>
               </ul>
             </div>
           ) : null}
         </div>
         {/* HOME CONTENT */}
-        <div className="container">
+        <div className="container home">
           <div className="home__content">
             <div className="home__meta">
-              <h1 className="home__text pz__10">WELCOME TO MY WORLD</h1>
-              <h2 className="home__text pz__10">Hi, I’m Jone Doe</h2>
-              <h3 className="home__text sweet pz__10">JS Developer.</h3>
-              <h4 className="home__text pz__10">based in USA.</h4>
+              <motion.h1
+                variants={dropDelay}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="home__text pz__10 highlight"
+              >
+                TAKE CHARGE of your WELLNESS
+              </motion.h1>
+              <motion.h1
+                variants={dropDelay}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="home__text pz__10 mb__25 pale"
+              >
+                to look and feel your best!
+              </motion.h1>
+              <motion.h2
+                variants={dropDelay}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="home__text pz__10"
+              >
+                Work with me to improve your mobility,
+              </motion.h2>
+              <motion.h2
+                variants={dropDelay}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="home__text pz__10"
+              >
+                optimize nutrition and build strength
+              </motion.h2>
+              {/* <h3 className="home__text sweet pz__10">JS Developer.</h3>
+              <h4 className="home__text pz__10">based in USA.</h4> */}
+              <motion.button
+                variants={popDelay}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="button__primary"
+              >
+                VIEW COACHING OPTIONS
+              </motion.button>
             </div>
           </div>
         </div>

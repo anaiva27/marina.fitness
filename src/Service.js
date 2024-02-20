@@ -4,14 +4,14 @@ import "./Service.css";
 function Service() {
   return (
     <div className="service component__space" id="Services">
-
       <div className="heading">
-        <h1 className="heading">My Awesome Service</h1>
+        <h1 className="heading">All set to start the good fight?</h1>
         <p className="heading p__color">
-          There are many variations of passages of Lorem Ipsum available,
+          Individualized training plan, customized nutrition guide, new habits
+          cultivation, access to the app, accountability from your coach
         </p>
         <p className="heading p__color">
-          but the majority have suffered alteration.
+          Private mobility and functional yoga sessions
         </p>
       </div>
 
