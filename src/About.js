@@ -10,7 +10,7 @@ function About() {
   return (
     <div className="about component__space" id="About">
       <div className="container">
-        <div className="row">
+        <div className="row reverse">
           <div className="col__2">
             <img src={aboutImg} alt="" className="about__img" />
           </div>
@@ -27,13 +27,8 @@ function About() {
                   {" "}
                   Her outlook on fitness and wellbeing is focused on balance
                   between strength and mobility, optimal nutrition, and
-                  mindfulness
+                  mindfulness with every step of the way.
                 </strong>{" "}
-                with every step of the way. The main approach is a combination
-                of things that she diligently learned from really smart people,
-                such as phenomenal strength coaches, physiology and anatomy
-                professors, my incredible colleagues, leading fitness
-                professionals and nutritionists.
                 <br />
               </p>
               <p className="about__text p__color">

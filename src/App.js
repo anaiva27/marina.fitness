@@ -10,13 +10,13 @@ import Service from "./Service";
 function App() {
   return (
     <div className="App">
-       <Home />
-       <About />
-       <Service />
-       <Project />
-       <Blog />
-       <Contact />
-       <Footer />
+      <Home />
+      <Service />
+      <About />
+      <Project />
+      <Blog />
+      <Contact />
+      <Footer />
     </div>
   );
 }

@@ -4,7 +4,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
+/* img.bg__absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+} */
 li.nav__items {
   font-size: 18px;
   font-weight: 300;
@@ -39,7 +51,7 @@ ul.navbar {
   align-items: center;
 }
 h1.home__text {
-  font-size: 42px;
+  font-size: min(3.5vw, 42px);
   font-weight: 900;
   letter-spacing: 3px;
   color: #fff;
@@ -49,8 +61,6 @@ h1.home__text {
   text-align: center;
   /* font-family: Poppins, sans-serif; */
   font-family: "ProtestRegular";
-  /* text-transform: uppercase; */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.519);
 }
 h2.home__text {
   font-size: 18px;
@@ -59,7 +69,6 @@ h2.home__text {
   font-weight: 500;
   letter-spacing: 2.5px;
   font-family: Poppins, sans-serif;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.485);
   color: #fff;
   margin-top: -10px;
 }
@@ -86,9 +95,10 @@ h4.home__text {
   );
 }
 .pale {
-  color: #fa175f !important;
-  font-size: 36px !important;
+  color: #fff !important;
+  font-size: min(3vw, 26px) !important;
   margin-top: 10px;
+  font-weight: 400 !important;
 }
 .header.active {
   position: fixed;
@@ -102,7 +112,7 @@ h4.home__text {
   justify-content: flex-end;
   z-index: 1000;
   width: 50px;
-  margin-top: 15px;
+  margin-top: -5px;
 }
 ul.sidebar.d__flex {
   flex-wrap: wrap;
@@ -126,7 +136,7 @@ li.sideNavbar {
   padding: 25px 30px;
 }
 .highlight {
-  background-color: rgba(175, 198, 24, 0.307);
+  background-color: rgba(49, 147, 36, 0.482);
   padding: 0 15px;
 }
 /* RESPONSIVE */
@@ -137,12 +147,22 @@ li.sideNavbar {
   .navigation {
     display: none;
   }
-  h2.white.pz__10 {
-    font-size: 50px !important;
+  h2 {
+    font-size: 14px !important;
   }
   svg.bi.bi-justify.white.pointer {
     width: 30px;
     height: 30px;
+  }
+  h1.home__text {
+    font-size: 34px;
+  }
+  h1.home__text.pale {
+    font-size: 27px !important;
+    margin-top: 25px;
+  }
+  .home__bg {
+    background-position: 60%;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -152,9 +172,7 @@ li.sideNavbar {
   h3.sweet.pz__10 {
     font-size: 40px;
   }
-  h1.home__text {
-    font-size: 14px;
-  }
+
   h4.home__text {
     font-size: 45px;
   }

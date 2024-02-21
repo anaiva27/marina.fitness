@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Home.css";
 import logo from "./img/logo-new-White-c1.png";
+import heroBg from "./img/hero-bg.jpg";
 import logoSmall from "./img/logo-new-White-crop-Marina.png";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 import { dropDelay, popDelay } from "./animate";
 
 function Home() {
   const [collapse, setCollapse] = useState(false);
+  const optionsRef = useRef();
+  const scrollToSection = (ref) => {
+    window.scrollTo({ bottom: ref.current.offsetBottom });
+  };
   // fixed Header
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
@@ -21,6 +26,11 @@ function Home() {
   return (
     <div className="home" id="Home">
       <div className="home__bg">
+        {/* <img
+          src={heroBg}
+          alt="Marina fitness trainer doing exercises"
+          className="bg__absolute"
+        /> */}
         <div className="header d__flex align__items__center pxy__30">
           <div className="logo">
             <img src={collapse ? logoSmall : logo} alt="" />
@@ -98,7 +108,7 @@ function Home() {
           ) : null}
         </div>
         {/* HOME CONTENT */}
-        <div className="container home">
+        <div className="container home" ref={optionsRef}>
           <div className="home__content">
             <div className="home__meta">
               <motion.h1
@@ -106,7 +116,8 @@ function Home() {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="home__text pz__10 highlight"
+                className="home__text pz__10"
+                style={{ scaleY: 1.3 }}
               >
                 TAKE CHARGE of your WELLNESS
               </motion.h1>
@@ -115,9 +126,9 @@ function Home() {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="home__text pz__10 mb__25 pale"
+                className="home__text pz__10 mb__25 pale highlight"
               >
-                to look and feel your best!
+                Reinvent yourself one rep at a time
               </motion.h1>
               <motion.h2
                 variants={dropDelay}
@@ -145,6 +156,7 @@ function Home() {
                 animate="animate"
                 exit="exit"
                 className="button__primary"
+                onClick={() => scrollToSection(optionsRef)}
               >
                 VIEW COACHING OPTIONS
               </motion.button>
