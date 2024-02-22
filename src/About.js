@@ -9,8 +9,8 @@ function About() {
   });
   return (
     <div className="about component__space" id="About">
-      <div className="container">
-        <div className="row reverse">
+      <div className="container about">
+        <div className="row about reverse">
           <div className="col__2">
             <img src={aboutImg} alt="" className="about__img" />
           </div>
@@ -50,7 +50,10 @@ function About() {
                 </strong>
                 .
               </p>
-              <div className="about__button d__flex align__items__center">
+              <div
+                className="about__button d__flex align__items__center"
+                style={{ gap: 30 }}
+              >
                 <a href="#">
                   <button className="about btn pointer">Take quiz</button>
                 </a>

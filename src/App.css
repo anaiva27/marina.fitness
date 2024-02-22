@@ -10,6 +10,9 @@ body {
   background-color: #fff;
   font-family: sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   color: #000;
@@ -76,6 +79,11 @@ p {
 }
 .container.service {
   max-width: 1200px;
+  margin-top: 45px;
+}
+.container.about {
+  max-width: 1400px;
+  margin: auto;
 }
 .reverse {
 }
@@ -178,7 +186,7 @@ button.btn {
   transition: 0.4s all ease;
   height: 50px;
   width: 180px;
-  margin: 0px 10px;
+  margin: 0px 0px;
 }
 .p__color {
   color: rgba(0, 0, 0, 0.75);

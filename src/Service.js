@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Service.css";
 import img4 from "./img/package-img4.jpg";
 import img3 from "./img/package-img3.jpg";
 
-function Service() {
+function Service({ setOptRef }) {
+  const optionsRef = useRef();
+  if (optionsRef) {
+    setOptRef(optionsRef);
+  }
+
   return (
     <div className="service component__space" id="Services">
       <div className="heading">
-        <h1 className="heading">
+        <h1 className="heading" ref={optionsRef}>
           All set to start the{" "}
           <div className="bright" style={{ fontSize: 60 }}>
             good

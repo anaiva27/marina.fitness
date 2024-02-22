@@ -6,12 +6,9 @@ import logoSmall from "./img/logo-new-White-crop-Marina.png";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 import { dropDelay, popDelay } from "./animate";
 
-function Home() {
+function Home({ optionsRef, scrollToSection }) {
   const [collapse, setCollapse] = useState(false);
-  const optionsRef = useRef();
-  const scrollToSection = (ref) => {
-    window.scrollTo({ bottom: ref.current.offsetBottom });
-  };
+
   // fixed Header
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
@@ -108,7 +105,7 @@ function Home() {
           ) : null}
         </div>
         {/* HOME CONTENT */}
-        <div className="container home" ref={optionsRef}>
+        <div className="container home">
           <div className="home__content">
             <div className="home__meta">
               <motion.h1
@@ -156,7 +153,7 @@ function Home() {
                 animate="animate"
                 exit="exit"
                 className="button__primary"
-                onClick={() => scrollToSection(optionsRef)}
+                onClick={() => scrollToSection()}
               >
                 VIEW COACHING OPTIONS
               </motion.button>

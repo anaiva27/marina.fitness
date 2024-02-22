@@ -4,6 +4,8 @@
 img.about__img {
   border-radius: 10px;
   width: 100%;
+  max-width: 590px;
+  margin-left: auto;
 }
 h1.motto__heading {
   margin-bottom: 10px;
@@ -48,10 +50,14 @@ a.bottom__to__top {
 a.bottom__to__top.active {
   display: flex;
 }
+div.row.about {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
 /* RESPONSIVE */
 @media only screen and (max-width: 1024px) {
   .p__color {
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
 }
 @media only screen and (max-width: 425px) {

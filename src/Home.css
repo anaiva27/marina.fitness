@@ -148,7 +148,9 @@ li.sideNavbar {
     display: none;
   }
   h2 {
-    font-size: 14px !important;
+    font-size: 16px !important;
+    text-shadow: 1px 1px #00000083;
+    font-weight: 400;
   }
   svg.bi.bi-justify.white.pointer {
     width: 30px;
