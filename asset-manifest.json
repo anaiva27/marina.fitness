@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.1e850ca5.chunk.css",
-    "main.js": "/static/js/main.4b5a0df8.chunk.js",
-    "main.js.map": "/static/js/main.4b5a0df8.chunk.js.map",
+    "main.js": "/static/js/main.8981efaf.chunk.js",
+    "main.js.map": "/static/js/main.8981efaf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6ea559b5.js",
     "runtime-main.js.map": "/static/js/runtime-main.6ea559b5.js.map",
     "static/js/2.e4fb68c4.chunk.js": "/static/js/2.e4fb68c4.chunk.js",
@@ -18,7 +18,7 @@
     "static/media/CERT4.b92e9ee3.png": "/static/media/CERT4.b92e9ee3.png",
     "static/media/CERT5.43d62f1b.png": "/static/media/CERT5.43d62f1b.png",
     "static/media/CERT6.8ee50406.png": "/static/media/CERT6.8ee50406.png",
-    "static/media/CERT7.3497d634.png": "/static/media/CERT7.3497d634.png",
+    "static/media/CERT7.cbbcabfe.png": "/static/media/CERT7.cbbcabfe.png",
     "static/media/App.css": "/static/media/ProtestRiot-Regular.8de441de.ttf",
     "static/media/blog-01.67ebb920.jpg": "/static/media/blog-01.67ebb920.jpg",
     "static/media/blog-02.6ecd55ed.jpg": "/static/media/blog-02.6ecd55ed.jpg",
@@ -39,6 +39,6 @@
     "static/js/runtime-main.6ea559b5.js",
     "static/js/2.e4fb68c4.chunk.js",
     "static/css/main.1e850ca5.chunk.css",
-    "static/js/main.4b5a0df8.chunk.js"
+    "static/js/main.8981efaf.chunk.js"
   ]
 }
