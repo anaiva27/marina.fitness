@@ -63,9 +63,12 @@ div.row.about {
 @media only screen and (max-width: 425px) {
   button.about.btn.pointer {
     text-transform: capitalize;
-    width: 165px;
+    width: 185px;
     height: 50px;
-    font-size: 13px;
+    font-size: 18px;
     transition: 0.4s ease;
+  }
+  div.about__button {
+    flex-direction: column;
   }
 }
