@@ -74,30 +74,29 @@ function Home({ optionsRef, scrollToSection }) {
           {show ? (
             <div className="sideNavbar">
               <ul className="sidebar d__flex">
-                <li className="sideNavbar black">
-                  <a href="#home" className="black">
-                    Home
-                  </a>
-                </li>
-                <li className="sideNavbar">
-                  <a href="#about" className="black">
-                    About
-                  </a>
-                </li>
                 <li className="sideNavbar">
                   <a href="#services" className="black">
                     Services
                   </a>
                 </li>
-                {/* <li className="sideNavbar">
-                  <a href="#portfolio">Portfolio</a>
-                </li>
-                <li className="sideNavbar">
-                  <a href="#blog">Blog</a>
-                </li> */}
                 <li className="sideNavbar">
                   <a href="#contact" className="black">
                     Contact
+                  </a>
+                </li>
+                <li className="sideNavbar black">
+                  <a href="#home" className="black">
+                    Schedule your initial zoom meeting{" "}
+                    <div
+                      style={{
+                        color: "#f9004d",
+                        display: "inline",
+                        fontSize: 22,
+                        textDecoration: "underline",
+                      }}
+                    >
+                      here
+                    </div>
                   </a>
                 </li>
               </ul>

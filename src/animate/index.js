@@ -177,7 +177,7 @@ export const popDelay = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 3,
+      delay: 2.2,
       duration: 0.7,
       type: "spring",
     },

@@ -114,12 +114,15 @@ h4.home__text {
   width: 50px;
   margin-top: -5px;
 }
+.sideNavbar {
+  z-index: 100;
+}
 ul.sidebar.d__flex {
   flex-wrap: wrap;
   height: 100%;
   position: fixed;
   right: 0%;
-  background: #01010142;
+  background: #010101d2;
   justify-content: center;
   width: 250px;
   top: 0%;
@@ -134,6 +137,10 @@ ul.sidebar.d__flex {
 
 li.sideNavbar {
   padding: 25px 30px;
+}
+li.sideNavbar a {
+  font-size: 20px;
+  font-weight: 500;
 }
 .highlight {
   background-color: rgba(49, 147, 36, 0.482);
