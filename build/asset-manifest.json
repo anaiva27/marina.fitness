@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac460697.chunk.css",
-    "main.js": "/static/js/main.3ef1b938.chunk.js",
-    "main.js.map": "/static/js/main.3ef1b938.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.316f8eb2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.316f8eb2.js.map",
-    "static/js/2.9c0496e8.chunk.js": "/static/js/2.9c0496e8.chunk.js",
-    "static/js/2.9c0496e8.chunk.js.map": "/static/js/2.9c0496e8.chunk.js.map",
-    "static/js/3.a9a41554.chunk.js": "/static/js/3.a9a41554.chunk.js",
-    "static/js/3.a9a41554.chunk.js.map": "/static/js/3.a9a41554.chunk.js.map",
+    "main.css": "/static/css/main.26c774e0.chunk.css",
+    "main.js": "/static/js/main.d23b2c8d.chunk.js",
+    "main.js.map": "/static/js/main.d23b2c8d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6ea559b5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6ea559b5.js.map",
+    "static/js/2.e4fb68c4.chunk.js": "/static/js/2.e4fb68c4.chunk.js",
+    "static/js/2.e4fb68c4.chunk.js.map": "/static/js/2.e4fb68c4.chunk.js.map",
+    "static/js/3.8c09679d.chunk.js": "/static/js/3.8c09679d.chunk.js",
+    "static/js/3.8c09679d.chunk.js.map": "/static/js/3.8c09679d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.ac460697.chunk.css.map": "/static/css/main.ac460697.chunk.css.map",
-    "static/js/2.9c0496e8.chunk.js.LICENSE.txt": "/static/js/2.9c0496e8.chunk.js.LICENSE.txt",
+    "static/css/main.26c774e0.chunk.css.map": "/static/css/main.26c774e0.chunk.css.map",
+    "static/js/2.e4fb68c4.chunk.js.LICENSE.txt": "/static/js/2.e4fb68c4.chunk.js.LICENSE.txt",
+    "static/media/CERT1.5af2a2d6.png": "/static/media/CERT1.5af2a2d6.png",
+    "static/media/CERT2.fd44775e.png": "/static/media/CERT2.fd44775e.png",
+    "static/media/CERT3.e42f4c77.png": "/static/media/CERT3.e42f4c77.png",
+    "static/media/CERT4.b92e9ee3.png": "/static/media/CERT4.b92e9ee3.png",
+    "static/media/CERT5.43d62f1b.png": "/static/media/CERT5.43d62f1b.png",
+    "static/media/CERT6.8ee50406.png": "/static/media/CERT6.8ee50406.png",
+    "static/media/CERT7.3497d634.png": "/static/media/CERT7.3497d634.png",
     "static/media/App.css": "/static/media/ProtestRiot-Regular.8de441de.ttf",
     "static/media/about-9.24eb96f8.jpg": "/static/media/about-9.24eb96f8.jpg",
     "static/media/blog-01.67ebb920.jpg": "/static/media/blog-01.67ebb920.jpg",
@@ -29,9 +36,9 @@
     "static/media/portfolio-4.2d8bf5e6.jpg": "/static/media/portfolio-4.2d8bf5e6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.316f8eb2.js",
-    "static/js/2.9c0496e8.chunk.js",
-    "static/css/main.ac460697.chunk.css",
-    "static/js/main.3ef1b938.chunk.js"
+    "static/js/runtime-main.6ea559b5.js",
+    "static/js/2.e4fb68c4.chunk.js",
+    "static/css/main.26c774e0.chunk.css",
+    "static/js/main.d23b2c8d.chunk.js"
   ]
 }
