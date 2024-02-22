@@ -10,7 +10,7 @@ import img7 from "./img/CERT7.png";
 
 export const Certificate = () => {
   return (
-    <Wrapper>
+    <Wrapper id="Experience">
       <Container>
         <MainHeading>Experience You Can Trust</MainHeading>
         <SubHeading>
