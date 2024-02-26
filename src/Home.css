@@ -1,5 +1,8 @@
 .home__bg {
-  background-image: url(img/hero-bg.jpg);
+  background-image: image-set(
+    url("img/hero-bg-1x.webp") 1x,
+    url("img/hero-bg-2x.webp") 2x
+  );
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
