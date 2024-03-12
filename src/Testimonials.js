@@ -73,24 +73,16 @@ function Testimonials() {
               <Name>Liz Nally</Name>
               <Text>
                 Marina is a knowledgeable and intuitive fitness professional.
-                Her workouts are about total body care through breath, mobility,
-                balance and strength. Marina brings her positive energy to every
-                workout. Her zoom classes saved me during Covid lockdown. She is
-                amazing!
+                Her workouts are about{" "}
+                <strong>
+                  total body care through breath, mobility, balance and strength
+                </strong>
+                . Marina brings her positive energy to every workout. Her zoom
+                classes saved me during Covid lockdown. She is amazing!
               </Text>
             </Wrapper>
           </SwiperSlide>
-          <SwiperSlide>
-            <img src={img2} alt="slide_image" id="bg" />
-            <Wrapper>
-              <Avatar src={avatar} alt="customer's avatar" />
-              <Name>Caitlin Owes</Name>
-              <Text>
-                Marina always displays welcoming energy! The classes are both
-                challenging and creative.
-              </Text>
-            </Wrapper>
-          </SwiperSlide>
+
           <SwiperSlide>
             <img src={img3} alt="slide_image" id="bg" />
             <Wrapper>
@@ -99,7 +91,8 @@ function Testimonials() {
               <Text>
                 Marina is inspirational, extremely well versed in different ways
                 to effectively and safely work your body. Never boring work out!
-                Always feel good after our sessions. Highly recommended!
+                <strong> Always feel good after our sessions. </strong> Highly
+                recommended!
               </Text>
             </Wrapper>
           </SwiperSlide>
@@ -112,8 +105,10 @@ function Testimonials() {
                 Marina is inspiring and very accomplished teacher because she is
                 always searching for self improvements! You will have fun with
                 her easy going ways! I have been practicing yoga under Marina’s
-                guidance for many years and my strength and stamina is at its
-                best!
+                guidance{" "}
+                <strong>
+                  for many years and my strength and stamina is at its best!{" "}
+                </strong>
               </Text>
             </Wrapper>
           </SwiperSlide>
@@ -125,9 +120,10 @@ function Testimonials() {
               <Text>
                 My husband and I worked with Marina as a personal trainer for 2
                 years in person and now almost a year through zoom. She was
-                always very professional and detail oriented. Never did we do an
-                exercise with the wrong posture or position, and I think it’s
-                really important especially for us elderly people. She is a gem!
+                <strong> always very professional and detail oriented. </strong>
+                Never did we do an exercise with the wrong posture or position,
+                and I think it’s really important especially for us elderly
+                people. She is a gem!
               </Text>
             </Wrapper>
           </SwiperSlide>
@@ -139,11 +135,25 @@ function Testimonials() {
               <Text>
                 Marina is a phenomenal trainer with comprehensive knowledge of
                 resistance training and nutrition to fit her client’s individual
-                needs! In 11 months of working together, not only I dropped
-                pounds, gained muscles, developed confidence, but actually grew
-                to love exercise. She is encouraging, patient and dedicated to
-                help her clients achieve real lasting results! Highly, highly
-                recommended!
+                needs! In 11 months of working together, not only{" "}
+                <strong>
+                  I dropped pounds, gained muscles, developed confidence, but
+                  actually grew to love exercise.{" "}
+                </strong>
+                She is encouraging, patient and dedicated to help her clients
+                achieve real lasting results!{" "}
+                <strong> Highly, highly recommended! </strong>
+              </Text>
+            </Wrapper>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img2} alt="slide_image" id="bg" />
+            <Wrapper>
+              <Avatar src={avatar} alt="customer's avatar" />
+              <Name>Caitlin Owes</Name>
+              <Text>
+                Marina always displays welcoming energy! The classes are both
+                <strong> challenging and creative. </strong>
               </Text>
             </Wrapper>
           </SwiperSlide>
@@ -153,10 +163,50 @@ function Testimonials() {
               <Avatar src={avatar} alt="customer's avatar" />
               <Name> Allison P</Name>
               <Text>
-                I love training with Marina! She is extremely knowledgeable
-                about the body and ensures both a safe and effective training
-                session. I learned how to honor the body and push it at the same
-                time! Marina is amazing!
+                I love training with Marina! She is{" "}
+                <strong>extremely knowledgeable about the body </strong> and
+                ensures both a safe and effective training session. I learned
+                how to honor the body and push it at the same time! Marina is
+                amazing!
+              </Text>
+            </Wrapper>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img1} alt="slide_image" id="bg" />
+            <Wrapper>
+              <Avatar src={avatar} alt="customer's avatar" />
+              <Name>Bob Finley</Name>
+              <Text>
+                I had the privilege of having Marina as my personal trainer for
+                over two years! Her ability to custom fit my training with any
+                and all ailments were simply awesome. With her help{" "}
+                <strong>
+                  {" "}
+                  I increased flexibility in my body, lost weight and gained
+                  strength.{" "}
+                </strong>
+                She was a huge part of my rehab after my shoulder surgery. She
+                always has a smile and positive demeanor about her. Her
+                knowledge about anatomy, training techniques is unsurpassed.
+              </Text>
+            </Wrapper>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img2} alt="slide_image" id="bg" />
+            <Wrapper>
+              <Avatar src={avatar} alt="customer's avatar" />
+              <Name> Larry Platt</Name>
+              <Text>
+                I have done functional training and mobility/stretching small
+                groups and one on one with Marina for{" "}
+                <strong>over 5 years </strong>, first in person sessions and now
+                remotely through the zoom. Simply put, she is the best! She will
+                challenge you but will always program and adapt exercise to
+                one’s needs and abilities like my operated knees for example.
+                I'm continuing training with Marina remotely and finding it{" "}
+                <strong>
+                  as effective as if we were together at the gym.{" "}
+                </strong>
               </Text>
             </Wrapper>
           </SwiperSlide>
@@ -249,4 +299,7 @@ const Name = styled.div`
   text-align: center;
   font-size: 22px;
   margin-top: -60px;
+  @media (max-width: 770px) {
+    font-size: 18px;
+  }
 `;
