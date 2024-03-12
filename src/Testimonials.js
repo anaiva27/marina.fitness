@@ -204,17 +204,19 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #ffffffbe;
   margin: auto;
   border-radius: 25px;
   gap: 30px;
   padding: 40px;
   margin-top: 100px;
+  padding-top: 150px;
   @media (max-width: 770px) {
     padding: 20px;
+    gap: 15px;
     margin-top: 70px;
-    padding-top: 120px;
+    padding-top: 110px;
     height: 80%;
     width: 90%;
     justify-content: flex-start;
