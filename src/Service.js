@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import "./Service.css";
 import img4 from "./img/package-img4.jpg";
 import img3 from "./img/package-img3.jpg";
+import img1 from "./img/package-img1.jpg";
+import img2 from "./img/package-img2.jpg";
 
 function Service({ setOptRef }) {
   const optionsRef = useRef();
@@ -32,7 +34,7 @@ function Service({ setOptRef }) {
         <div className="row">
           <div className="col__2 service">
             <img
-              src={img3}
+              src={img1}
               alt="Marina fitness trainer doing exercises"
               className="bg__absolute contain"
             />
@@ -67,9 +69,9 @@ function Service({ setOptRef }) {
 
           <div className="col__2 service">
             <img
-              src={img4}
+              src={img3}
               alt="Marina fitness trainer doing exercises"
-              className="bg__absolute cover"
+              className="bg__absolute contain"
             />
             <div className="service__box pointer">
               <div className="icon">
@@ -102,7 +104,7 @@ function Service({ setOptRef }) {
         <div className="row">
           <div className="col__2 service">
             <img
-              src={img3}
+              src={img2}
               alt="Marina fitness trainer doing exercises"
               className="bg__absolute contain"
             />

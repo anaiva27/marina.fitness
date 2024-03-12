@@ -6,7 +6,7 @@ import { Certificate } from "./Certificate";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Home from "./Home";
-import Project from "./Project";
+import Testimonials from "./Testimonials";
 import Service from "./Service";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       <Service setOptRef={setOptRef} />
       <Certificate />
       <About />
-      <Project />
+      <Testimonials />
       <Blog />
       <Contact />
       <Footer />
