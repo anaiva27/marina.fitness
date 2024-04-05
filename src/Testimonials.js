@@ -56,10 +56,10 @@ function Testimonials() {
             depth: 100,
             modifier: 2.5,
           }}
-          // autoplay={{
-          //   delay: 3500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
           pagination={{ el: ".swiper-pagination", clickable: true }}
           navigation={{
             nextEl: ".swiper-button-next",
@@ -102,7 +102,46 @@ function Testimonials() {
             </Wrapper>
           </SwiperSlide>
           <SwiperSlide>
+            <img src={img2} alt="slide_image" id="bg" />
+            <Wrapper>
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
+              <Name>Brian Carter</Name>
+              <City>Charleston, SC</City>
+              <Text>
+                {" "}
+                I met Marina online and was immediately impressed by{" "}
+                <strong>
+                  her enthusiasm, energy level, and sense of humor
+                </strong>
+                . If you looking for a good coach for (e.x. mobility, strength,
+                nutrition, transformation and mindset) don’t hesitate work with
+                Marina. If you want to finally get on track with your health and
+                fitness, or feel younger, look better, or extend your life, I
+                would recommend you talk to Marina today, and start working with
+                her this week!
+              </Text>
+            </Wrapper>
+          </SwiperSlide>
+          <SwiperSlide>
             <img src={img4} alt="slide_image" id="bg" />
+            <Wrapper>
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
+              <Name>Melissa Valenzuela</Name>
+              <City>Miami, FL</City>
+              <Text>
+                Game Changer for Your Fitness Journey! ⭐⭐⭐⭐⭐ I've had the
+                privilege of working with Marina and I couldn't be happier with
+                the results. Marinas knowledge, dedication, and passion for
+                fitness are evident in every session. She has a deep
+                understanding of human anatomy which allows her to tailor each
+                workout to my specific needs and goals. Her positive energy and
+                enthusiasm are contagious, making each workout session enjoyable
+                and rewarding while also having fun in the process.
+              </Text>
+            </Wrapper>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img1} alt="slide_image" id="bg" />
             <Wrapper>
               {/* <Avatar src={avatar} alt="customer's avatar" /> */}
               <Name>Ginny Roberts </Name>
@@ -123,7 +162,7 @@ function Testimonials() {
             <Wrapper>
               {/* <Avatar src={avatar} alt="customer's avatar" /> */}
               <Name>Karen and Rod</Name>
-              <City>Ocean View, DE</City>
+              <City>Fenwick Island, DE</City>
               <Text>
                 My husband and I worked with Marina as a personal trainer for 2
                 years in person and now almost a year through zoom. She was
@@ -275,7 +314,7 @@ const Wrapper = styled.div`
   margin-top: 100px;
   padding-top: 90px;
   @media (max-width: 770px) {
-    padding: 20px;
+    padding: 10px;
     gap: 15px;
     margin-top: 70px;
     padding-top: 80px;
@@ -319,10 +358,11 @@ const Name = styled.div`
 const City = styled.div`
   color: #000;
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
   font-style: italic;
-  margin-top: -10px;
+  margin-top: -20px;
   @media (max-width: 770px) {
+    margin-top: -10px;
     font-size: 14px;
   }
 `;

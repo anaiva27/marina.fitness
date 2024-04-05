@@ -140,7 +140,7 @@ function Home({ optionsRef, scrollToSection }) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="home__text pz__10"
+                className="home__text pz__5"
               >
                 optimize nutrition and build strength
               </motion.h2>
