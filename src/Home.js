@@ -40,7 +40,7 @@ function Home({ optionsRef, scrollToSection }) {
               <a href="#Services">
                 <li className="nav__items mx__15">Services</li>
               </a>
-              <a href="#Home">
+              <a href="#Testimonials">
                 <li className="nav__items mx__15">Testimonials</li>
               </a>
               {/* <a href="#Portfolio">

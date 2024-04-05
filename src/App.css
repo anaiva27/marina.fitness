@@ -196,7 +196,7 @@ button.btn {
   margin-bottom: 15px;
 }
 button.about.btn.pointer:hover {
-  background: #000;
+  background: #f9004fb9;
   color: #fff !important;
 }
 
@@ -251,7 +251,7 @@ button.about.btn.pointer:hover {
   span.copyright {
     font-size: 13px !important;
   }
-  .footer.d__flex.align__items__center.justify__content__space__between.pz-10 {
+  .footer.d__flex.align__items__center.justify__content__center.pz-10 {
     flex-wrap: wrap;
   }
 }

@@ -57,11 +57,13 @@ function Service({ setOptRef }) {
                 </svg>
               </div>
               <div className="service__meta">
-                <h1 className="service__text">Personalized 360 plan</h1>
+                <h1 className="service__text">Personalized 360 coaching</h1>
                 <p className="p service__text p__color">
-                  Individualized training plan, customized nutrition guide, new
-                  habits cultivation, access to the app, accountability from
-                  your coach
+                  Individualized training plan <br />
+                  customized nutrition guide <br />
+                  new habits cultivation <br />
+                  access to the app <br />
+                  accountability from your coach
                 </p>
               </div>
             </div>
@@ -91,17 +93,21 @@ function Service({ setOptRef }) {
                 </svg>
               </div>
               <div className="service__meta">
-                <h1 className="service__text">Train One on One</h1>
+                <h1 className="service__text">Online One on One Training</h1>
                 <p className="p service__text p__color">
-                  Private online zoom personal training, individualized training
-                  plan, customized nutrition guide, new habits cultivation,
-                  access to the app, accountability from your coach
+                  Private online zoom personal training
+                  <br />
+                  individualized training plan <br /> customized nutrition guide{" "}
+                  <br />
+                  new habits cultivation <br />
+                  access to the app <br />
+                  accountability from your coach
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col__2 service">
             <img
               src={img2}
@@ -168,7 +174,7 @@ function Service({ setOptRef }) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <div className="col__3">
             <div className="service__box pointer">
               <div className="icon">

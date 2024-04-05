@@ -54,12 +54,26 @@ function About() {
                 className="about__button d__flex align__items__center"
                 style={{ gap: 30 }}
               >
-                <a href="#">
-                  <button className="about btn pointer">Take quiz</button>
+                <a
+                  href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
+                  target="_blank"
+                  and
+                  rel="noopener noreferrer"
+                >
+                  <button className="about btn pointer">
+                    Coaching Application
+                  </button>
                 </a>
-                <a href="#">
-                  <button className="about btn pointer">Work with Me</button>
-                </a>
+                {/* <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/tqxNT6nlUG8?si=kWe0y9pwRfxgk2Cl"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe> */}
               </div>
             </div>
           </div>

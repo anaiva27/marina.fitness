@@ -27,18 +27,21 @@ import styled from "styled-components";
 
 function Testimonials() {
   return (
-    <div className="project component__space" id="Portfolio">
+    <div className="project component__space" id="Testimonials">
       <div className="heading">
+        <br />
         <h1 className="heading black">
           What Marina's clients say <br />
           about their experience
         </h1>
-        <p className="heading p__color">
-          There are many variations of passages of Lorem Ipsum available,
-        </p>
-        <p className="heading p__color">
-          but the majority have suffered alteration.
-        </p>
+        <div className="legend__container">
+          <p className="heading p__color">
+            If you ever need support, guidance, or encouragement along your
+            journey, Marina is here for you every step of the way, to help
+            overcome your challenges, achieve your fitness goals and celebrate
+            your victories.
+          </p>
+        </div>
       </div>
       <div className="containerSlider">
         <Swiper
@@ -53,10 +56,10 @@ function Testimonials() {
             depth: 100,
             modifier: 2.5,
           }}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3500,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{ el: ".swiper-pagination", clickable: true }}
           navigation={{
             nextEl: ".swiper-button-next",
@@ -69,8 +72,9 @@ function Testimonials() {
           <SwiperSlide>
             <img src={img1} alt="slide_image" id="bg" />
             <Wrapper>
-              <Avatar src={avatar} alt="customer's avatar" />
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
               <Name>Liz Nally</Name>
+              <City>Ocean View, DE</City>
               <Text>
                 Marina is a knowledgeable and intuitive fitness professional.
                 Her workouts are about{" "}
@@ -86,8 +90,9 @@ function Testimonials() {
           <SwiperSlide>
             <img src={img3} alt="slide_image" id="bg" />
             <Wrapper>
-              <Avatar src={avatar} alt="customer's avatar" />
-              <Name>Lugene Nighly </Name>
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
+              <Name>Lugene Nighly</Name>
+              <City>Bethany Beach, DE</City>
               <Text>
                 Marina is inspirational, extremely well versed in different ways
                 to effectively and safely work your body. Never boring work out!
@@ -99,8 +104,9 @@ function Testimonials() {
           <SwiperSlide>
             <img src={img4} alt="slide_image" id="bg" />
             <Wrapper>
-              <Avatar src={avatar} alt="customer's avatar" />
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
               <Name>Ginny Roberts </Name>
+              <City>Ocean View, DE</City>
               <Text>
                 Marina is inspiring and very accomplished teacher because she is
                 always searching for self improvements! You will have fun with
@@ -115,8 +121,9 @@ function Testimonials() {
           <SwiperSlide>
             <img src={img5} alt="slide_image" id="bg" />
             <Wrapper>
-              <Avatar src={avatar} alt="customer's avatar" />
-              <Name> Karen and Rod</Name>
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
+              <Name>Karen and Rod</Name>
+              <City>Ocean View, DE</City>
               <Text>
                 My husband and I worked with Marina as a personal trainer for 2
                 years in person and now almost a year through zoom. She was
@@ -130,8 +137,9 @@ function Testimonials() {
           <SwiperSlide>
             <img src={img6} alt="slide_image" id="bg" />
             <Wrapper>
-              <Avatar src={avatar} alt="customer's avatar" />
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
               <Name>Kim Wade </Name>
+              <City>Bethany Beach, DE</City>
               <Text>
                 Marina is a phenomenal trainer with comprehensive knowledge of
                 resistance training and nutrition to fit her client’s individual
@@ -149,8 +157,9 @@ function Testimonials() {
           <SwiperSlide>
             <img src={img2} alt="slide_image" id="bg" />
             <Wrapper>
-              <Avatar src={avatar} alt="customer's avatar" />
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
               <Name>Caitlin Owes</Name>
+              <City>Ocean View, DE</City>
               <Text>
                 Marina always displays welcoming energy! The classes are both
                 <strong> challenging and creative. </strong>
@@ -160,8 +169,9 @@ function Testimonials() {
           <SwiperSlide>
             <img src={img7} alt="slide_image" id="bg" />
             <Wrapper>
-              <Avatar src={avatar} alt="customer's avatar" />
-              <Name> Allison P</Name>
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
+              <Name>Allison P</Name>
+              <City>Ocean View, DE</City>
               <Text>
                 I love training with Marina! She is{" "}
                 <strong>extremely knowledgeable about the body </strong> and
@@ -174,8 +184,9 @@ function Testimonials() {
           <SwiperSlide>
             <img src={img1} alt="slide_image" id="bg" />
             <Wrapper>
-              <Avatar src={avatar} alt="customer's avatar" />
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
               <Name>Bob Finley</Name>
+              <City>Ocean View, DE</City>
               <Text>
                 I had the privilege of having Marina as my personal trainer for
                 over two years! Her ability to custom fit my training with any
@@ -194,8 +205,9 @@ function Testimonials() {
           <SwiperSlide>
             <img src={img2} alt="slide_image" id="bg" />
             <Wrapper>
-              <Avatar src={avatar} alt="customer's avatar" />
+              {/* <Avatar src={avatar} alt="customer's avatar" /> */}
               <Name> Larry Platt</Name>
+              <City>Washington, DC</City>
               <Text>
                 I have done functional training and mobility/stretching small
                 groups and one on one with Marina for{" "}
@@ -261,12 +273,12 @@ const Wrapper = styled.div`
   gap: 30px;
   padding: 40px;
   margin-top: 100px;
-  padding-top: 150px;
+  padding-top: 90px;
   @media (max-width: 770px) {
     padding: 20px;
     gap: 15px;
     margin-top: 70px;
-    padding-top: 110px;
+    padding-top: 80px;
     height: 80%;
     width: 90%;
     justify-content: flex-start;
@@ -298,8 +310,19 @@ const Name = styled.div`
   color: #000;
   text-align: center;
   font-size: 22px;
+  font-weight: 600;
   margin-top: -60px;
   @media (max-width: 770px) {
     font-size: 18px;
+  }
+`;
+const City = styled.div`
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: -10px;
+  @media (max-width: 770px) {
+    font-size: 14px;
   }
 `;

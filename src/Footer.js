@@ -1,17 +1,18 @@
 import React from "react";
-import footerImg from "./img/logo (1).png";
+import logoSmall from "./img/logo-new-White-crop-Marina.png";
+
 function Footer() {
   return (
     <div
-      className="footer d__flex align__items__center justify__content__space__between pz-10"
-      style={{ padding: "10px 20px", zIndex: "100" }}
+      className="footer d__flex align__items__center justify__content_center pz-10"
+      style={{ padding: "30px 30px 40px", zIndex: "100", background: "#000" }}
     >
-      <img src={footerImg} alt="" className="footer__img pointer" />
+      {/* <img src={logoSmall} alt="" /> */}
       <span
         className="copyright"
-        style={{ color: "#c6c9d8", fontSize: "14px", opacity: "0.75" }}
+        style={{ color: "#fff", fontSize: "14px", opacity: "0.75" }}
       >
-        Copyright © 2021 programmer Shahriar Sajeeb. All Rights Reserved.
+        Copyright © 2024 Marina Fitness. All Rights Reserved.
       </span>
     </div>
   );
