@@ -159,7 +159,7 @@ function Home({ optionsRef, scrollToSection }) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="home__text pz__10 mb__25 pale highlight"
+                className="home__text pz__10 mb__25 "
               >
                 Reinvent yourself one rep at a time
               </motion.h1>
