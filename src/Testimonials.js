@@ -56,10 +56,10 @@ function Testimonials() {
             depth: 100,
             modifier: 2.5,
           }}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3500,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{ el: ".swiper-pagination", clickable: true }}
           navigation={{
             nextEl: ".swiper-button-next",
@@ -261,6 +261,23 @@ function Testimonials() {
               </Text>
             </Wrapper>
           </SwiperSlide>
+          <SwiperSlide>
+            <img src={img5} alt="slide_image" id="bg" />
+            <Wrapper>
+              <Name> Maggie</Name>
+              <City>Miami, Fl</City>
+              <iframe
+                // width="560"
+                // height="315"
+                src="https://www.youtube.com/embed/XtWIpUZhwN0?si=Wpo2CEYggM1Kfgn8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </Wrapper>
+          </SwiperSlide>
 
           <div className="slider-controler">
             <div className="swiper-button-prev slider-arrow">
@@ -321,6 +338,10 @@ const Wrapper = styled.div`
     height: 80%;
     width: 90%;
     justify-content: flex-start;
+  }
+  & > iframe {
+    width: 100%;
+    margin: 30px auto auto;
   }
 `;
 const Avatar = styled.img`

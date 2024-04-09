@@ -45,6 +45,12 @@ p {
 .black {
   color: #fff !important;
 }
+.underline {
+  text-decoration: underline;
+}
+.bright {
+  color: #f9004d;
+}
 .d__flex {
   display: flex;
 }
@@ -78,8 +84,8 @@ p {
   min-height: 75vh;
 }
 .container.service {
-  max-width: 1200px;
-  margin-top: 45px;
+  width: 100%;
+  margin: 45px auto 0;
 }
 .container.about {
   max-width: 1400px;
@@ -111,6 +117,17 @@ p {
 .row {
   display: flex;
   width: 90%;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 100%;
+  gap: 30px;
+}
+.row-service {
+  display: flex;
+  width: 97%;
   margin: 20px auto;
   flex-wrap: wrap;
   overflow: hidden;
@@ -238,6 +255,12 @@ button.about.btn.pointer:hover {
   }
   .row {
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .row-service {
+    flex-direction: column;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 768px) {

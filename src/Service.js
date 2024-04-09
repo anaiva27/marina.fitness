@@ -22,21 +22,22 @@ function Service({ setOptRef }) {
           fight?
         </h1>
         <p className="heading p__color">
-          Individualized training plan, customized nutrition guide, new habits
-          cultivation, access to the app, accountability from your coach
-        </p>
-        <p className="heading p__color">
-          Private mobility and functional yoga sessions
+          Imagine stepping into a version of your life where chronic pain
+          doesn't dictate your days.
+          <br />
+          <br />
+          Now is your time to feel empowered and educated about movement,
+          nutrition and your body.
         </p>
       </div>
 
       <div className="container service">
-        <div className="row">
+        <div className="row-service">
           <div className="col__2 service">
             <img
               src={img1}
               alt="Marina fitness trainer doing exercises"
-              className="bg__absolute contain"
+              className="bg__absolute cover"
             />
             <div className="service__box pointer">
               <div className="icon">
@@ -59,11 +60,10 @@ function Service({ setOptRef }) {
               <div className="service__meta">
                 <h1 className="service__text">Personalized 360 coaching</h1>
                 <p className="p service__text p__color">
-                  Individualized training plan <br />
-                  customized nutrition guide <br />
-                  new habits cultivation <br />
-                  access to the app <br />
-                  accountability from your coach
+                  - Individualized training plan <br />
+                  - Customized nutrition guide <br />
+                  - New habits cultivation <br />
+                  - Access to the app <br />- Accountability from your coach
                 </p>
               </div>
             </div>
@@ -71,9 +71,9 @@ function Service({ setOptRef }) {
 
           <div className="col__2 service">
             <img
-              src={img3}
+              src={img2}
               alt="Marina fitness trainer doing exercises"
-              className="bg__absolute contain"
+              className="bg__absolute cover"
             />
             <div className="service__box pointer">
               <div className="icon">
@@ -95,13 +95,50 @@ function Service({ setOptRef }) {
               <div className="service__meta">
                 <h1 className="service__text">Online One on One Training</h1>
                 <p className="p service__text p__color">
-                  Private online zoom personal training
+                  - Private online zoom personal training
                   <br />
-                  individualized training plan <br /> customized nutrition guide{" "}
+                  - Individualized training plan <br /> - Customized nutrition
+                  guide <br />
+                  - New habits cultivation <br />
+                  - Access to the app <br />- Accountability from your coach
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col__2 service">
+            <img
+              src={img4}
+              alt="Marina fitness trainer doing exercises"
+              className="bg__absolute cover"
+            />
+            <div className="service__box pointer">
+              <div className="icon">
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path>
+                  <line x1="2" y1="20" x2="2" y2="20"></line>
+                </svg>
+              </div>
+              <div className="service__meta">
+                <h1 className="service__text">Group Mobility Classes</h1>
+                <p className="p service__text p__color">
+                  - Flexibility
                   <br />
-                  new habits cultivation <br />
-                  access to the app <br />
-                  accountability from your coach
+                  - Control <br /> - Strength
+                  <br />
+                  - Joint Health <br />
+                  - Coordination and kinesthetic awareness <br />- All in one
+                  class, sprinkled with some education on your specific body and
+                  human movement in general.
                 </p>
               </div>
             </div>

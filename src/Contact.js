@@ -9,12 +9,35 @@ function Contact() {
           <div className="contact__box">
             <div className="contact__meta">
               <h1 className="hire__text black">Hire Me.</h1>
-              <p className="hire__text black">Connect with me via email:</p>
+              <p className="hire__text black">
+                Now is your time to feel empowered and educated about movement,
+                nutrition and your body!
+                <br />
+                <br />
+                Ask me a question I’m here to help:{" "}
+              </p>
               <p className="hire__text black">
                 <strong>marina@marinafitness.pro</strong>
               </p>
+
+              <br />
+              <br />
+              <p className="hire__text black">
+                Or fill up mu coaching application to get started
+              </p>
+              <br />
+              <a
+                href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
+                target="_blank"
+                and
+                rel="noopener noreferrer"
+              >
+                <button className="about btn pointer">
+                  Coaching Application
+                </button>
+              </a>
             </div>
-            <div className="input__box">
+            {/* <div className="input__box">
               <input
                 type="text"
                 className="contact name"
@@ -38,7 +61,7 @@ function Contact() {
               <button className="btn contact pointer" type="submit">
                 Submit
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="col__2">

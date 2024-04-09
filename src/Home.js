@@ -74,30 +74,67 @@ function Home({ optionsRef, scrollToSection }) {
           {show ? (
             <div className="sideNavbar">
               <ul className="sidebar d__flex">
-                <li className="sideNavbar">
-                  <a href="#services" className="black">
-                    Services
-                  </a>
-                </li>
-                <li className="sideNavbar">
-                  <a href="#contact" className="black">
-                    Contact
-                  </a>
-                </li>
                 <li className="sideNavbar black">
-                  <a href="#home" className="black">
-                    Schedule your initial zoom meeting{" "}
-                    <div
-                      style={{
-                        color: "#f9004d",
-                        display: "inline",
-                        fontSize: 22,
-                        textDecoration: "underline",
-                      }}
-                    >
-                      here
-                    </div>
+                  <a
+                    className="black underline"
+                    href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
+                    target="_blank"
+                    and
+                    rel="noopener noreferrer"
+                  >
+                    Coaching Application
                   </a>
+                </li>
+                <br />
+                <br />
+                <li className="sideNavbar black">
+                  <p className="black">
+                    Supplements from trusted sources, that I personally use:
+                  </p>
+                </li>
+                <li className="sideNavbar">
+                  <a
+                    href="https://www.ryzesuperfoods.com"
+                    className="bright underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://www.ryzesuperfoods.com
+                  </a>
+                  <p className="black">
+                    <br />
+                    USE CODE MARINABOGATKINA for 15% discount
+                  </p>
+                </li>
+                <br />
+                <li className="sideNavbar">
+                  <a
+                    href="https://promixnutrition.com"
+                    className=" underline bright"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://promixnutrition.com
+                  </a>
+                  <p className="black">
+                    <br />
+                    USE CODE MARINABOGATKINA for 20% discount
+                  </p>
+                </li>
+                <br />
+                <li className="sideNavbar">
+                  <a
+                    href="https://s.thorne.com/ZY6dX"
+                    className="bright underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://s.thorne.com/ZY6dX
+                  </a>
+                  <p className="black">
+                    <br />
+                    Use my link to get 15% off
+                  </p>
                 </li>
               </ul>
             </div>

@@ -57,7 +57,6 @@ function About() {
                 <a
                   href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
                   target="_blank"
-                  and
                   rel="noopener noreferrer"
                 >
                   <button className="about btn pointer">

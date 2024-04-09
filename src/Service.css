@@ -9,6 +9,9 @@ p.heading.p__color {
   margin-bottom: 0;
   text-align: center;
   line-height: 1.2;
+  display: block;
+  width: 80%;
+  margin: auto;
 }
 .service__box {
   border-radius: 10px;
@@ -54,13 +57,14 @@ div.service {
 }
 div.service img.cover {
   position: absolute;
-  top: -20%;
+  /* top: -20%;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   z-index: 0;
   object-fit: cover;
   width: 100%;
+  height: 100%;
   opacity: 1;
   border-radius: 10px;
 }
