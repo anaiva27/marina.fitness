@@ -23,7 +23,7 @@ function Contact() {
               <br />
               <br />
               <p className="hire__text black">
-                Or fill up mu coaching application to get started
+                Or fill up my coaching application to get started
               </p>
               <br />
               <a
