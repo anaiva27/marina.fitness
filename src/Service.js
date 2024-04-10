@@ -9,7 +9,7 @@ import parse from "html-react-parser";
 
 const contentGroup = [
   `
-  <h1 className="bright" style={{ fontSize: 25, marginBottom: 20 }}>
+  <h1 className="bright heading__services">
           Group Mobility Classes
         </h1>
         <strong>
@@ -59,9 +59,9 @@ const contentGroup = [
         <br />
   `,
   `
-  <h1 className="bright" style={{ fontSize: 25, marginBottom: 20 }}>
+  <h1 className="bright heading__services">
   Online One on One Training</h1>      
-        <br />
+       
         - Private online zoom personal training
         <br />
         - Individualized training plan
@@ -75,6 +75,7 @@ const contentGroup = [
         - Accountability from your coach
         <br />
         <br />
+        <br />
         <a
                   href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
                   target="_blank"
@@ -85,12 +86,10 @@ const contentGroup = [
                   </button>
                 </a>
         <br />
-        <br />
   `,
   `
-  <h1 className="bright" style={{ fontSize: 25, marginBottom: 20 }}>
+  <h1 className="bright heading__services" >
   Personalized 360 Coaching</h1>      
-        <br />
         - Individualized training plan
         <br />
         - Customized nutrition guide
@@ -102,6 +101,7 @@ const contentGroup = [
         - Accountability from your coach
         <br />
         <br />
+        <br />
         <a
                   href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
                   target="_blank"
@@ -111,7 +111,6 @@ const contentGroup = [
                     Coaching Application
                   </button>
                 </a>
-        <br />
         <br />
   `,
 ];

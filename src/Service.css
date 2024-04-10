@@ -13,6 +13,10 @@ p.heading.p__color {
   width: 80%;
   margin: auto;
 }
+.heading__services {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
 .service__box {
   border-radius: 10px;
   width: 100%;
