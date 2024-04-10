@@ -88,7 +88,7 @@ button.btn {
   background-color: #f9004d;
   color: #fff !important;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   transition: 0.4s all ease;
 }
 button.view__more:hover {

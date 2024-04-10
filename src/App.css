@@ -202,7 +202,7 @@ button.btn {
   background-color: #f9004d;
   color: #000 !important;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   transition: 0.4s all ease;
   height: 50px;
   width: 180px;
@@ -232,7 +232,7 @@ button.about.btn.pointer:hover {
   color: #fff;
   font-size: 17px;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  /* letter-spacing: 1.5px; */
   max-width: 350px;
   margin-top: 40px;
   cursor: pointer;
