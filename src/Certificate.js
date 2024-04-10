@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import img1 from "./img/CERT1.png";
+// import img1 from "./img/CERT1.png";
+import img1 from "./img/CERT1-1.png";
+import img7 from "./img/CERT2-2.png";
 import img2 from "./img/CERT2.png";
 import img3 from "./img/CERT3.png";
 import img4 from "./img/CERT4.png";
 import img5 from "./img/CERT5.png";
 import img6 from "./img/CERT6.png";
-import img7 from "./img/CERT7.png";
+// import img7 from "./img/CERT7.png";
 
 export const Certificate = () => {
   return (

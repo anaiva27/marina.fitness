@@ -5,9 +5,14 @@ import heroBg from "./img/hero-bg.jpg";
 import logoSmall from "./img/logo-new-White-crop-Marina.png";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 import { dropDelay, popDelay } from "./animate";
+import { useClickOutside } from "./portal/useClickOutside";
 
 function Home({ optionsRef, scrollToSection }) {
   const [collapse, setCollapse] = useState(false);
+  const ref = useRef();
+  // Toogle Menu
+  const [show, setShow] = useState(false);
+  //useClickOutside(ref, show ? show : () => null);
 
   // fixed Header
   window.addEventListener("scroll", function () {
@@ -18,8 +23,7 @@ function Home({ optionsRef, scrollToSection }) {
       window.scrollY === 0 ? (prev = false) : (prev = true)
     );
   });
-  // Toogle Menu
-  const [show, setShow] = useState(false);
+
   return (
     <div className="home" id="Home">
       <div className="home__bg">

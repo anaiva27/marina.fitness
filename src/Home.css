@@ -129,7 +129,7 @@ ul.sidebar.d__flex {
   height: 100%;
   position: fixed;
   right: 0%;
-  background: #010101d2;
+  background: #010101ec;
   justify-content: center;
   width: 350px;
   top: 0%;
@@ -201,4 +201,7 @@ li.sideNavbar a {
   max-width: 220px;
   margin-top: -20px;
   margin-left: 20px;
+}
+.logo {
+  cursor: pointer;
 }

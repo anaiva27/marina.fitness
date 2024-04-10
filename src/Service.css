@@ -54,6 +54,7 @@ h1.service__text {
 div.service {
   border-radius: 10px;
   min-height: 370px;
+  cursor: pointer;
 }
 div.service img.cover {
   position: absolute;
@@ -80,6 +81,11 @@ div.service img.contain {
   opacity: 1;
   border-radius: 10px;
 }
+button.service {
+  width: 100%;
+  margin: 20px auto;
+}
+
 /* RESPONSIVE */
 @media only screen and (max-width: 1024px) {
   .service__box {

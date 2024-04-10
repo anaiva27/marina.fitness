@@ -5,11 +5,123 @@ import img3 from "./img/package-img3.jpg";
 import img1 from "./img/package-img1.jpg";
 import img2 from "./img/package-img2.jpg";
 import { Modal } from "./portal";
+import parse from "html-react-parser";
+
+const contentGroup = [
+  `
+  <h1 className="bright" style={{ fontSize: 25, marginBottom: 20 }}>
+          Group Mobility Classes
+        </h1>
+        <strong>
+          In this class we will explore a movement enhanced mobility system that
+          develops maximum body control, flexibility,and usable range of motion.
+          Imagine an exercise class that combines:
+        </strong>
+        <br />
+        - Flexibility
+        <br />
+        - Control
+        <br />
+        - Strength
+        <br />
+        - Joint health
+        <br />
+        - Coordination and kinesthetic awareness
+        <br />
+        <br />
+        All in one class, sprinkled with some education on your specific body
+        and human movement in general!
+        <br />
+        <br />
+        Class is designed for all fitness levels, whether you are an athlete, a
+        yogi, a runner, recovering from injury, or elderly person who wants to
+        improve quality of life or a fitness professional who wants to learn
+        more about movement and injury prevention.
+        <br />
+        <br />
+        <h3>To sign up purchase 5 pack:</h3>
+        <a
+          href="https://buy.stripe.com/00g7w33cycgJ5yM3cm"
+          className="underline bright"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         
+          <button
+            className="about btn pointer service"
+          >
+            JOIN HERE
+          </button>
+        </a>
+        And join private WhatsApp (PLACE TO CONNECT GROUP) with classes schedule
+        and zoom info
+        <br />
+        <br />
+  `,
+  `
+  <h1 className="bright" style={{ fontSize: 25, marginBottom: 20 }}>
+  Online One on One Training</h1>      
+        <br />
+        - Private online zoom personal training
+        <br />
+        - Individualized training plan
+        <br />
+        - Customized nutrition guide
+        <br />
+        - New habits cultivation
+        <br />
+        - Access to the app
+        <br />
+        - Accountability from your coach
+        <br />
+        <br />
+        <a
+                  href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="about btn pointer">
+                    Coaching Application
+                  </button>
+                </a>
+        <br />
+        <br />
+  `,
+  `
+  <h1 className="bright" style={{ fontSize: 25, marginBottom: 20 }}>
+  Personalized 360 Coaching</h1>      
+        <br />
+        - Individualized training plan
+        <br />
+        - Customized nutrition guide
+        <br />
+        - New habits cultivation
+        <br />
+        - Access to the app
+        <br />
+        - Accountability from your coach
+        <br />
+        <br />
+        <a
+                  href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="about btn pointer">
+                    Coaching Application
+                  </button>
+                </a>
+        <br />
+        <br />
+  `,
+];
 
 function Service({ setOptRef }) {
   const [isOpen, setIsOpen] = useState(false);
-  const openModal = (val) => {
+  const [content, setContent] = useState("");
+  const openModal = (val, num) => {
     setIsOpen(val);
+    setContent(contentGroup[num]);
   };
   const optionsRef = useRef();
   if (optionsRef) {
@@ -38,7 +150,7 @@ function Service({ setOptRef }) {
 
       <div className="container service">
         <div className="row-service">
-          <div className="col__2 service" onClick={() => openModal(true)}>
+          <div className="col__2 service" onClick={() => openModal(true, 2)}>
             <img
               src={img1}
               alt="Marina fitness trainer doing exercises"
@@ -63,7 +175,7 @@ function Service({ setOptRef }) {
                 </svg>
               </div>
               <div className="service__meta">
-                <h1 className="service__text">Personalized 360 coaching</h1>
+                <h1 className="service__text">Personalized 360 Coaching</h1>
                 <p className="p service__text p__color">
                   - Individualized training plan <br />
                   - Customized nutrition guide <br />
@@ -74,7 +186,7 @@ function Service({ setOptRef }) {
             </div>
           </div>
 
-          <div className="col__2 service" onClick={() => openModal(true)}>
+          <div className="col__2 service" onClick={() => openModal(true, 1)}>
             <img
               src={img2}
               alt="Marina fitness trainer doing exercises"
@@ -110,7 +222,7 @@ function Service({ setOptRef }) {
               </div>
             </div>
           </div>
-          <div className="col__2 service" onClick={() => openModal(true)}>
+          <div className="col__2 service" onClick={() => openModal(true, 0)}>
             <img
               src={img4}
               alt="Marina fitness trainer doing exercises"
@@ -283,55 +395,7 @@ function Service({ setOptRef }) {
           </div> */}
       </div>
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <h1 className="bright" style={{ fontSize: 25, marginBottom: 20 }}>
-          Group Mobility Classes
-        </h1>
-        <strong>
-          In this class we will explore a movement enhanced mobility system that
-          develops maximum body control, flexibility,and usable range of motion.
-          Imagine an exercise class that combines:
-        </strong>
-        <br />
-        - Flexibility
-        <br />
-        - Control
-        <br />
-        - Strength
-        <br />
-        - Joint health
-        <br />
-        - Coordination and kinesthetic awareness
-        <br />
-        <br />
-        All in one class, sprinkled with some education on your specific body
-        and human movement in general!
-        <br />
-        <br />
-        Class is designed for all fitness levels, whether you are an athlete, a
-        yogi, a runner, recovering from injury, or elderly person who wants to
-        improve quality of life or a fitness professional who wants to learn
-        more about movement and injury prevention.
-        <br />
-        <br />
-        <h3>To sign up purchase 5 pack:</h3>
-        <a
-          href="https://buy.stripe.com/00g7w33cycgJ5yM3cm"
-          className=" underline bright"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          <button
-            className="about btn pointer"
-            style={{ width: "100%", margin: "20px auto" }}
-          >
-            JOIN HERE
-          </button>
-        </a>{" "}
-        And join private WhatsApp (PLACE TO CONNECT GROUP) with classes schedule
-        and zoom info
-        <br />
-        <br />
+        {parse(content || "")}
       </Modal>
     </div>
   );
