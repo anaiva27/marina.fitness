@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Home.css";
 import logo from "./img/logo-new-White-c1.png";
 import heroBg from "./img/hero-bg.jpg";
@@ -18,11 +18,27 @@ function Home({ optionsRef, scrollToSection }) {
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 0);
-    console.log("window.scrollY", window.scrollY);
     setCollapse((prev) =>
       window.scrollY === 0 ? (prev = false) : (prev = true)
     );
   });
+
+  useEffect(() => {
+    const navItems = document.querySelectorAll(".nav__items");
+    const toggleMenu = document.querySelector(".toggle__menu");
+    if (collapse) {
+      navItems.forEach((item) => {
+        item.classList.add("collapsed");
+      });
+      console.log("t", toggleMenu);
+      toggleMenu?.classList?.add("collapsed-toggle");
+    } else if (!collapse) {
+      navItems.forEach((item) => {
+        item.classList.remove("collapsed");
+      });
+      toggleMenu?.classList?.remove("collapsed-toggle");
+    }
+  }, [collapse]);
 
   return (
     <div className="home" id="Home">

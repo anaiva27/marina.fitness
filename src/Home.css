@@ -23,6 +23,13 @@ li.nav__items {
   padding-bottom: 5px;
   color: #fff;
 }
+.collapsed {
+  margin-bottom: -5px;
+  padding-bottom: 0px !important;
+}
+.collapsed-toggle {
+  margin-top: 4px !important;
+}
 ul.navbar {
   display: flex;
   flex-direction: row;
@@ -119,7 +126,7 @@ h4.home__text {
   justify-content: flex-end;
   z-index: 1000;
   width: 50px;
-  margin-top: -5px;
+  margin-top: -4px;
 }
 .sideNavbar {
   z-index: 100;
