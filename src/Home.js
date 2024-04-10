@@ -54,11 +54,11 @@ function Home({ optionsRef, scrollToSection }) {
           </div>
           <div className="navigation">
             <ul className="navbar d__flex">
-              <a href="#Experience">
-                <li className="nav__items mx__15">Experience</li>
-              </a>
               <a href="#Services">
                 <li className="nav__items mx__15">Services</li>
+              </a>
+              <a href="#Experience">
+                <li className="nav__items mx__15">Experience</li>
               </a>
               <a href="#Testimonials">
                 <li className="nav__items mx__15">Testimonials</li>
