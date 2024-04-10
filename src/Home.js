@@ -204,7 +204,7 @@ function Home({ optionsRef, scrollToSection }) {
               {/* <h3 className="home__text sweet pz__10">JS Developer.</h3>
               <h4 className="home__text pz__10">based in USA.</h4> */}
               <motion.button
-                variants={popDelay}
+                variants={dropDelay}
                 initial="initial"
                 animate="animate"
                 exit="exit"

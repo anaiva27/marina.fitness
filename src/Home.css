@@ -84,7 +84,7 @@ h2.home__text {
 h1.home__text.bright {
   color: #006a56;
   font-weight: 500;
-  text-shadow: 2px 1px #000;
+  text-shadow: 1px 1px #000;
 }
 h3.home__text {
   font-size: 50px;
