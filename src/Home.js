@@ -99,7 +99,7 @@ function Home({ optionsRef, scrollToSection }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://www.ryzesuperfoods.com
+                    Ryzesuperfoods.com
                   </a>
                   <p className="black">
                     <br />
@@ -114,7 +114,7 @@ function Home({ optionsRef, scrollToSection }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://promixnutrition.com
+                    Promixnutrition.com
                   </a>
                   <p className="black">
                     <br />
@@ -129,7 +129,7 @@ function Home({ optionsRef, scrollToSection }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://s.thorne.com/ZY6dX
+                    Thorne.com
                   </a>
                   <p className="black">
                     <br />

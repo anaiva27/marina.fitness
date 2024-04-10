@@ -1,11 +1,16 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Service.css";
 import img4 from "./img/package-img4.jpg";
 import img3 from "./img/package-img3.jpg";
 import img1 from "./img/package-img1.jpg";
 import img2 from "./img/package-img2.jpg";
+import { Modal } from "./portal";
 
 function Service({ setOptRef }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const openModal = (val) => {
+    setIsOpen(val);
+  };
   const optionsRef = useRef();
   if (optionsRef) {
     setOptRef(optionsRef);
@@ -33,7 +38,7 @@ function Service({ setOptRef }) {
 
       <div className="container service">
         <div className="row-service">
-          <div className="col__2 service">
+          <div className="col__2 service" onClick={() => openModal(true)}>
             <img
               src={img1}
               alt="Marina fitness trainer doing exercises"
@@ -69,7 +74,7 @@ function Service({ setOptRef }) {
             </div>
           </div>
 
-          <div className="col__2 service">
+          <div className="col__2 service" onClick={() => openModal(true)}>
             <img
               src={img2}
               alt="Marina fitness trainer doing exercises"
@@ -105,7 +110,7 @@ function Service({ setOptRef }) {
               </div>
             </div>
           </div>
-          <div className="col__2 service">
+          <div className="col__2 service" onClick={() => openModal(true)}>
             <img
               src={img4}
               alt="Marina fitness trainer doing exercises"
@@ -277,6 +282,57 @@ function Service({ setOptRef }) {
             </div>
           </div> */}
       </div>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <h1 className="bright" style={{ fontSize: 25, marginBottom: 20 }}>
+          Group Mobility Classes
+        </h1>
+        <strong>
+          In this class we will explore a movement enhanced mobility system that
+          develops maximum body control, flexibility,and usable range of motion.
+          Imagine an exercise class that combines:
+        </strong>
+        <br />
+        - Flexibility
+        <br />
+        - Control
+        <br />
+        - Strength
+        <br />
+        - Joint health
+        <br />
+        - Coordination and kinesthetic awareness
+        <br />
+        <br />
+        All in one class, sprinkled with some education on your specific body
+        and human movement in general!
+        <br />
+        <br />
+        Class is designed for all fitness levels, whether you are an athlete, a
+        yogi, a runner, recovering from injury, or elderly person who wants to
+        improve quality of life or a fitness professional who wants to learn
+        more about movement and injury prevention.
+        <br />
+        <br />
+        <h3>To sign up purchase 5 pack:</h3>
+        <a
+          href="https://buy.stripe.com/00g7w33cycgJ5yM3cm"
+          className=" underline bright"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          <button
+            className="about btn pointer"
+            style={{ width: "100%", margin: "20px auto" }}
+          >
+            JOIN HERE
+          </button>
+        </a>{" "}
+        And join private WhatsApp (PLACE TO CONNECT GROUP) with classes schedule
+        and zoom info
+        <br />
+        <br />
+      </Modal>
     </div>
   );
 }
