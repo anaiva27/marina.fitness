@@ -228,6 +228,7 @@ button.about.btn.pointer:hover {
   border-radius: 6px;
   border: none;
   /* background: linear-gradient(to left, #e66465, #ee3c18); */
+  /* old-color: f9004d */
   background-color: #006a56;
   color: #fff;
   font-size: 17px;

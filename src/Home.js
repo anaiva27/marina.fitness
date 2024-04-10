@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Home.css";
 import logo from "./img/logo-new-White-c1.png";
 import heroBg from "./img/hero-bg.jpg";
-import logoSmall from "./img/logo-new-White-crop-Marina.png";
+import logoSmall from "./img/logo-new-White-small.png";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 import { dropDelay, popDelay } from "./animate";
 import { useClickOutside } from "./portal/useClickOutside";
