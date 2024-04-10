@@ -81,8 +81,8 @@ const MainHeading = styled.h1`
   color: #bebebe;
   text-align: center;
 `;
-const SubHeading = styled.h2`
-  font-size: 23px;
+const SubHeading = styled.p`
+  font-size: 18px;
   color: #fff;
   text-align: center;
   line-height: 130%;
@@ -97,13 +97,13 @@ const Row = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 45px;
+  gap: 75px;
 
   & > div > img {
     display: block;
     width: 100%;
     object-fit: contain;
-    max-width: 300px;
+    max-width: 200px;
   }
   &.mobile {
     display: none;
