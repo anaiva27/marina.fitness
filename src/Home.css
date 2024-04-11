@@ -52,51 +52,50 @@ ul.navbar {
   max-width: 900px;
   display: flex;
   height: 100%;
-  margin-left: 2%;
+  margin-left: 10%;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 h1.home__text {
-  font-size: min(3.5vw, 42px);
-  font-weight: 900;
-  letter-spacing: 3px;
+  font-size: 58px;
   color: #fff;
-  line-height: 150%;
-  /* color: #006A56; */
-  margin-bottom: -15px;
+  line-height: 120%;
+  font-family: "PoppinsExtraBold" !important;
+  margin-top: -20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  /* color: #2fa463; */
   text-align: center;
-  /* font-family: Poppins, sans-serif; */
-  /* font-family: "ProtestRegular"; */
-  text-shadow: 2px 1px #000;
+  text-shadow: 1px 1px #000;
 }
 h2.home__text {
-  font-size: 18px;
-  text-align: center;
+  font-size: 22px;
   line-height: 120%;
   font-weight: 400;
+  color: #2fa463;
   letter-spacing: 0px;
+  text-transform: uppercase;
   font-family: Poppins, sans-serif;
-  color: #fff;
-  margin-top: -10px;
-  text-shadow: 2px 1px #000;
+  /* margin-top: 10px; */
+  text-shadow: 1px 1px #000;
 }
 h1.home__text.bright {
-  color: #006a56;
+  color: #2fa463;
   font-weight: 500;
   text-shadow: 1px 1px #000;
 }
 h3.home__text {
-  font-size: 50px;
-  font-weight: 800;
-  font-family: Montserrat, sans-serif;
-  line-height: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 130%;
 }
 h4.home__text {
   font-size: 50px;
   font-weight: 800;
   line-height: 40px;
-  font-family: Montserrat, sans-serif;
 }
 .header {
   transition: 0.4s all ease;
@@ -178,7 +177,7 @@ li.sideNavbar a {
     height: 30px;
   }
   h1.home__text {
-    font-size: 34px;
+    font-size: 38px;
   }
   h1.home__text.pale {
     font-size: 27px !important;
@@ -195,7 +194,11 @@ li.sideNavbar a {
   h3.sweet.pz__10 {
     font-size: 40px;
   }
-
+  .home__meta {
+    margin-left: 0;
+    margin: auto;
+    align-items: center;
+  }
   h4.home__text {
     font-size: 45px;
   }

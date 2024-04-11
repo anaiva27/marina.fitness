@@ -60,7 +60,7 @@ function About() {
                   rel="noopener noreferrer"
                 >
                   <button className="about btn pointer">
-                    Coaching Application
+                    COACHING APPLICATION
                   </button>
                 </a>
                 {/* <iframe

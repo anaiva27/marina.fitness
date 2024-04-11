@@ -164,17 +164,7 @@ function Home({ optionsRef, scrollToSection }) {
         <div className="container home">
           <div className="home__content">
             <div className="home__meta">
-              <motion.h1
-                variants={dropDelay}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                className="home__text pz__10"
-                style={{ scaleY: 1.3 }}
-              >
-                TAKE CHARGE of your WELLNESS
-              </motion.h1>
-              <motion.h1
+              <motion.h2
                 variants={dropDelay}
                 initial="initial"
                 animate="animate"
@@ -182,17 +172,30 @@ function Home({ optionsRef, scrollToSection }) {
                 className="home__text pz__10 mb__25 bright"
               >
                 Reinvent yourself one rep at a time
-              </motion.h1>
-              <motion.h2
+              </motion.h2>
+              <motion.h1
                 variants={dropDelay}
                 initial="initial"
                 animate="animate"
                 exit="exit"
                 className="home__text pz__10"
               >
-                Work with me to improve your mobility,
-              </motion.h2>
-              <motion.h2
+                TAKE CHARGE of
+                <br />
+                your WELLNESS
+              </motion.h1>
+
+              <motion.h3
+                variants={dropDelay}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="home__text pz__10"
+              >
+                Work with me to improve your mobility, <br />
+                optimize nutrition and build strength
+              </motion.h3>
+              {/* <motion.h2
                 variants={dropDelay}
                 initial="initial"
                 animate="animate"
@@ -200,7 +203,7 @@ function Home({ optionsRef, scrollToSection }) {
                 className="home__text pz__5"
               >
                 optimize nutrition and build strength
-              </motion.h2>
+              </motion.h2> */}
               {/* <h3 className="home__text sweet pz__10">JS Developer.</h3>
               <h4 className="home__text pz__10">based in USA.</h4> */}
               <motion.button
