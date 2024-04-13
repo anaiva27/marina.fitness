@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5493fe1.chunk.css",
-    "main.js": "/static/js/main.fcc6dfda.chunk.js",
-    "main.js.map": "/static/js/main.fcc6dfda.chunk.js.map",
+    "main.css": "/static/css/main.c1521bce.chunk.css",
+    "main.js": "/static/js/main.45feccfc.chunk.js",
+    "main.js.map": "/static/js/main.45feccfc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.690b38f1.js",
     "runtime-main.js.map": "/static/js/runtime-main.690b38f1.js.map",
     "static/css/2.7b5f89e5.chunk.css": "/static/css/2.7b5f89e5.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.2e00e31b.chunk.js.map": "/static/js/3.2e00e31b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7b5f89e5.chunk.css.map": "/static/css/2.7b5f89e5.chunk.css.map",
-    "static/css/main.e5493fe1.chunk.css.map": "/static/css/main.e5493fe1.chunk.css.map",
+    "static/css/main.c1521bce.chunk.css.map": "/static/css/main.c1521bce.chunk.css.map",
     "static/js/2.e5e71e91.chunk.js.LICENSE.txt": "/static/js/2.e5e71e91.chunk.js.LICENSE.txt",
     "static/media/1.36b96fc1.jpg": "/static/media/1.36b96fc1.jpg",
     "static/media/2.07533469.jpg": "/static/media/2.07533469.jpg",
@@ -28,6 +28,7 @@
     "static/media/CERT4.b92e9ee3.png": "/static/media/CERT4.b92e9ee3.png",
     "static/media/CERT5.43d62f1b.png": "/static/media/CERT5.43d62f1b.png",
     "static/media/CERT6.8ee50406.png": "/static/media/CERT6.8ee50406.png",
+    "static/media/MarinaLogo2.a017230e.png": "/static/media/MarinaLogo2.a017230e.png",
     "static/media/App.css": "/static/media/ProtestRiot-Regular.8de441de.ttf",
     "static/media/avatar.fb1231bb.png": "/static/media/avatar.fb1231bb.png",
     "static/media/blog-01.67ebb920.jpg": "/static/media/blog-01.67ebb920.jpg",
@@ -35,7 +36,6 @@
     "static/media/blog-03.1bced0df.jpg": "/static/media/blog-03.1bced0df.jpg",
     "static/media/fruit-shop.86855e06.jpg": "/static/media/fruit-shop.86855e06.jpg",
     "static/media/Home.css": "/static/media/hero-bg.af4001fd.jpg",
-    "static/media/logo-new-White-c1.72d76e4f.png": "/static/media/logo-new-White-c1.72d76e4f.png",
     "static/media/logo-new-White-crop-Marina.57daa6a6.png": "/static/media/logo-new-White-crop-Marina.57daa6a6.png",
     "static/media/logo-new-White-small.8a57c351.png": "/static/media/logo-new-White-small.8a57c351.png",
     "static/media/marina-portrait.d96f24a1.jpg": "/static/media/marina-portrait.d96f24a1.jpg",
@@ -51,7 +51,7 @@
     "static/js/runtime-main.690b38f1.js",
     "static/css/2.7b5f89e5.chunk.css",
     "static/js/2.e5e71e91.chunk.js",
-    "static/css/main.e5493fe1.chunk.css",
-    "static/js/main.fcc6dfda.chunk.js"
+    "static/css/main.c1521bce.chunk.css",
+    "static/js/main.45feccfc.chunk.js"
   ]
 }
