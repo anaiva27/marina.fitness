@@ -130,18 +130,17 @@ function Service({ setOptRef }) {
   return (
     <div className="service component__space" id="Services">
       <div className="heading">
-        <h1 className="heading" ref={optionsRef}>
+        <br />
+        <h1 className="motto__heading center" ref={optionsRef}>
           All set to start the{" "}
-          <div className="bright" style={{ fontSize: 60 }}>
+          <div className="bright" style={{ fontSize: 45 }}>
             good
           </div>{" "}
           fight?
         </h1>
         <p className="heading p__color">
-          Imagine stepping into a version of your life where chronic pain
-          doesn't dictate your days.
-          <br />
-          <br />
+          {/* Imagine stepping into a version of your life where chronic pain
+          doesn't dictate your days. */}
           Now is your time to feel empowered and educated about movement,
           nutrition and your body.
         </p>

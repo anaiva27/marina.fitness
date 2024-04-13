@@ -15,7 +15,7 @@ function About() {
             <img src={aboutImg} alt="" className="about__img" />
           </div>
           <div className="col__2">
-            <h1 className="motto__heading">
+            <h1 className="motto__heading left">
               Supercharge vitality <br /> by increasing your <br />
               knowledge and activity
             </h1>

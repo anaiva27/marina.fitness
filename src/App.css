@@ -121,6 +121,12 @@ p {
 .sweet {
   color: #2fa463;
 }
+.center {
+  text-align: center !important;
+}
+.left {
+  text-align: left !important;
+}
 .row {
   display: flex;
   width: 90%;

@@ -14,23 +14,15 @@ export const Certificate = () => {
   return (
     <Wrapper id="Experience">
       <Container>
-        <MainHeading>Experience You Can Trust</MainHeading>
+        <MainHeading className="motto__heading center">
+          Experience You Can Trust
+        </MainHeading>
         <SubHeading>
           Marina completed over 500 hours yoga teacher training Empowered yoga,
           Dimitra yoga, Flow school with Bonnie Weeks. Including these
           certificates and training workshops
         </SubHeading>
-        <Row>
-          <div>
-            <img src={img1} alt="nasm certificate" />
-          </div>
-          <div>
-            <img src={img2} alt="nasm certificate" />
-          </div>
-          <div>
-            <img src={img3} alt="nasm certificate" className="center" />
-          </div>
-        </Row>
+
         <Row>
           <div>
             <img src={img4} alt="nasm certificate" />
@@ -44,6 +36,17 @@ export const Certificate = () => {
           </div>
           <div>
             <img src={img7} alt="nasm certificate" />
+          </div>
+        </Row>
+        <Row>
+          <div>
+            <img src={img1} alt="nasm certificate" />
+          </div>
+          <div>
+            <img src={img2} alt="nasm certificate" />
+          </div>
+          <div>
+            <img src={img3} alt="nasm certificate" className="center" />
           </div>
         </Row>
         <Row className="mobile">
@@ -109,8 +112,9 @@ const Row = styled.div`
     @media (max-width: 768px) {
       display: block;
       img {
-        max-width: 200px;
+        max-width: 140px;
         margin: auto;
+        margin-top: -60px;
       }
     }
   }

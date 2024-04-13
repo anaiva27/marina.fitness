@@ -30,7 +30,7 @@ function Testimonials() {
     <div className="project component__space" id="Testimonials">
       <div className="heading">
         <br />
-        <h1 className="heading white">
+        <h1 className="motto__heading center">
           What Marina's clients say <br />
           about their experience
         </h1>

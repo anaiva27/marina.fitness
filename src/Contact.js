@@ -11,7 +11,7 @@ function Contact() {
         <div className="col__2">
           <div className="contact__box">
             <div className="contact__meta">
-              <h1 className="hire__text black">Hire Me.</h1>
+              <h1 className="motto__heading left black">Hire Me.</h1>
               <p className="hire__text black">
                 Now is your time to feel empowered and educated about movement,
                 nutrition and your body!
@@ -50,7 +50,8 @@ function Contact() {
                       <input
                         type="text"
                         name="FNAME"
-                        className=" text"
+                        className="text"
+                        required=""
                         id="mce-FNAME"
                         value={formName}
                         onChange={(v) => setFormName(v.target.value)}
@@ -76,7 +77,7 @@ function Contact() {
                       <input
                         type="text"
                         name="MMERGE6"
-                        className=" text"
+                        className="text"
                         id="mce-MMERGE6"
                         value={formMessage}
                         onChange={(v) => setFormMessage(v.target.value)}
