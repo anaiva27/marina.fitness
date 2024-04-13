@@ -4,6 +4,7 @@ import contactImg from "./img/marina-portrait.jpg";
 function Contact() {
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");
+  const [formMessage, setFormMessage] = useState("");
   return (
     <div className="contact component__space" id="Contact">
       <div className="row">
@@ -77,7 +78,8 @@ function Contact() {
                         name="MMERGE6"
                         className=" text"
                         id="mce-MMERGE6"
-                        value=""
+                        value={formMessage}
+                        onChange={(v) => setFormMessage(v.target.value)}
                       />
                     </div>
                     {/* <div className="mc-field-group input-group">
@@ -141,7 +143,7 @@ function Contact() {
                         id="mc-embedded-subscribe"
                         className="button"
                         value="SUBSCRIBE"
-                        disabled={!formEmail || !formName}
+                        disabled={!formEmail || !formName || !formMessage}
                       />
                     </div>
                   </div>

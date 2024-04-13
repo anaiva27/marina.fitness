@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Home.css";
-import logo from "./img/logo-new-White-c1.png";
+import logo from "./img/MarinaLogo2.png";
 import heroBg from "./img/hero-bg.jpg";
 import logoSmall from "./img/logo-new-White-small.png";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
@@ -50,7 +50,7 @@ function Home({ optionsRef, scrollToSection }) {
         /> */}
         <div className="header d__flex align__items__center pxy__30">
           <div className="logo">
-            <img src={collapse ? logoSmall : logo} alt="" />
+            <img src={logo} alt="" />
           </div>
           <div className="navigation">
             <ul className="navbar d__flex">
