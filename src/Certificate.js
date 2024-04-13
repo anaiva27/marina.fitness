@@ -58,7 +58,6 @@ export const Certificate = () => {
 
 const Wrapper = styled.div`
   width: 100%;
-  margin: 30px auto;
   background-color: #191919;
   padding: 20px;
   display: flex;
@@ -103,7 +102,7 @@ const Row = styled.div`
     display: block;
     width: 100%;
     object-fit: contain;
-    max-width: 200px;
+    max-width: 150px;
   }
   &.mobile {
     display: none;

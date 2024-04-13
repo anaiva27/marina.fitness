@@ -19,11 +19,11 @@ function App() {
     <div className="App">
       <Home scrollToSection={scrollToSection} optRef={optRef} />
       <Service setOptRef={setOptRef} />
-      <Certificate />
       <About />
       <Testimonials />
       {/* <Blog /> */}
       <Contact />
+      <Certificate />
       <Footer />
     </div>
   );

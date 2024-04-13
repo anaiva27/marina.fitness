@@ -25,6 +25,37 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Marina Fitness</title>
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style type="text/css">
+      #mc_embed_signup {
+        background: #191919;
+        color: #fff;
+        clear: left;
+        font: 14px Helvetica, Arial, sans-serif;
+      }
+      form.validate {
+        margin: 0 !important;
+      }
+      input#mc-embedded-subscribe {
+        background-color: #2fa463 !important;
+        color: #fff !important;
+        padding: 5px 15px;
+        height: 55px !important;
+        font-size: 18px !important;
+        font-weight: 800 !important;
+        text-shadow: 1px 1px #00000088;
+        margin-top: 20px !important;
+      }
+      input {
+        color: #000 !important;
+      }
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -59,6 +90,33 @@
         "script",
         "https://chimpstatic.com/mcjs-connected/js/users/81d7f5090e271a5e5249e16c7/69f5ba839452609992b67a9f7.js"
       );
+    </script>
+    <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[1] = "FNAME";
+        ftypes[1] = "text";
+        fnames[0] = "EMAIL";
+        ftypes[0] = "email";
+        fnames[6] = "MMERGE6";
+        ftypes[6] = "text";
+        fnames[7] = "MMERGE7";
+        ftypes[7] = "radio";
+        fnames[2] = "LNAME";
+        ftypes[2] = "text";
+        fnames[3] = "ADDRESS";
+        ftypes[3] = "address";
+        fnames[4] = "PHONE";
+        ftypes[4] = "phone";
+        fnames[5] = "BIRTHDAY";
+        ftypes[5] = "birthday";
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
     </script>
   </body>
 </html>

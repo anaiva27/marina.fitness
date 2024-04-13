@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import contactImg from "./img/marina-portrait.jpg";
 function Contact() {
+  const [formName, setFormName] = useState("");
+  const [formEmail, setFormEmail] = useState("");
   return (
     <div className="contact component__space" id="Contact">
       <div className="row">
@@ -17,13 +19,139 @@ function Contact() {
                 Ask me a question I’m here to help:{" "}
               </p>
               <p className="hire__text black">
-                <strong>marina@marinafitness.pro</strong>
+                <a
+                  href="mailto:marina@marinafitness.pro"
+                  style={{ color: "#fff", textDecoration: "underline" }}
+                >
+                  <strong>marina@marinafitness.pro</strong>
+                </a>
               </p>
-
+              <br />
+              <p className="hire__text black">
+                Or fill up this form to receive my personalized offers:{" "}
+              </p>
+              <div id="mc_embed_signup">
+                <form
+                  action="https://marinafitness.us18.list-manage.com/subscribe/post?u=81d7f5090e271a5e5249e16c7&amp;id=5616982dce&amp;f_id=00acc2e1f0"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  className="validate"
+                  target="_blank"
+                >
+                  <div id="mc_embed_signup_scroll">
+                    <div className="indicates-required">
+                      {/* <span className="asterisk">*</span>  */}* indicates
+                      required
+                    </div>
+                    <div className="mc-field-group">
+                      <label for="mce-FNAME">First Name* (required) </label>
+                      <input
+                        type="text"
+                        name="FNAME"
+                        className=" text"
+                        id="mce-FNAME"
+                        value={formName}
+                        onChange={(v) => setFormName(v.target.value)}
+                      />
+                    </div>
+                    <div className="mc-field-group">
+                      <label for="mce-EMAIL">
+                        Email Address* (required)
+                        {/* <span className="asterisk">*</span> */}
+                      </label>
+                      <input
+                        type="email"
+                        name="EMAIL"
+                        className="required email"
+                        id="mce-EMAIL"
+                        required=""
+                        value={formEmail}
+                        onChange={(v) => setFormEmail(v.target.value)}
+                      />
+                    </div>
+                    <div className="mc-field-group">
+                      <label for="mce-MMERGE6">Message </label>
+                      <input
+                        type="text"
+                        name="MMERGE6"
+                        className=" text"
+                        id="mce-MMERGE6"
+                        value=""
+                      />
+                    </div>
+                    {/* <div className="mc-field-group input-group">
+                      <strong>Subscribe confirmation </strong>
+                      <ul>
+                        <li>
+                          <input
+                            type="radio"
+                            name="MMERGE7"
+                            id="mce-MMERGE70"
+                            value="I want to subscribe to Marina's email list to get personalized offers"
+                          />
+                          <label for="mce-MMERGE70">
+                            I want to subscribe to Marina's email list to get
+                            personalized offers
+                          </label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            name="MMERGE7"
+                            id="mce-MMERGE71"
+                            value="I do not wish to subscribe"
+                          />
+                          <label for="mce-MMERGE71">
+                            I do not wish to subscribe
+                          </label>
+                        </li>
+                      </ul>
+                    </div> */}
+                    <div hidden="">
+                      <input type="hidden" name="tags" value="159" />
+                    </div>
+                    <div id="mce-responses" className="clear">
+                      <div
+                        className="response"
+                        id="mce-error-response"
+                        style={{ display: "none" }}
+                      ></div>
+                      <div
+                        className="response"
+                        id="mce-success-response"
+                        style={{ display: "none" }}
+                      ></div>
+                    </div>
+                    <div
+                      aria-hidden="true"
+                      style={{ position: "absolute", left: "-5000px" }}
+                    >
+                      <input
+                        type="text"
+                        name="b_81d7f5090e271a5e5249e16c7_5616982dce"
+                        tabindex="-1"
+                        value=""
+                      />
+                    </div>
+                    <div className="clear">
+                      <input
+                        type="submit"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        className="button"
+                        value="SUBSCRIBE"
+                        disabled={!formEmail || !formName}
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
               <br />
               <br />
               <p className="hire__text black">
-                Or fill up my coaching application to get started
+                Alternatively, you can fill up my coaching application to get
+                started
               </p>
               <br />
               <a
@@ -33,7 +161,7 @@ function Contact() {
                 rel="noopener noreferrer"
               >
                 <button className="about btn pointer">
-                  Coaching Application
+                  COACHING APPLICATION
                 </button>
               </a>
             </div>

@@ -1,11 +1,11 @@
 .project {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     #030303b4,
     #00000019 60%,
     #08080816 40%,
     #ffffff00
-  );
+  ); */
 }
 img.project__img {
   border-radius: 10px;

@@ -30,12 +30,12 @@ function Testimonials() {
     <div className="project component__space" id="Testimonials">
       <div className="heading">
         <br />
-        <h1 className="heading black">
+        <h1 className="heading white">
           What Marina's clients say <br />
           about their experience
         </h1>
         <div className="legend__container">
-          <p className="heading p__color">
+          <p className=" p__color">
             If you ever need support, guidance, or encouragement along your
             journey, Marina is here for you every step of the way, to help
             overcome your challenges, achieve your fitness goals and celebrate
@@ -57,7 +57,7 @@ function Testimonials() {
             modifier: 2.5,
           }}
           autoplay={{
-            delay: 3500,
+            delay: 4500,
             disableOnInteraction: false,
           }}
           pagination={{ el: ".swiper-pagination", clickable: true }}
