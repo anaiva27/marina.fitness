@@ -46,7 +46,6 @@ export const ModalContainer = styled.div`
   z-index: 2;
   @media (max-width: 500px) {
     width: 95%;
-    // margin: auto;
   }
 `;
 
