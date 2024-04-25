@@ -20,7 +20,8 @@ function About() {
               knowledge and activity
             </h1>
             <br />
-            <h1 className="about__heading">Meet Marina</h1>
+            <h1 className="about__heading motto__heading left">Meet Marina</h1>
+            <br />
             <div className="about__meta">
               <p className="about__text p__color">
                 <strong>

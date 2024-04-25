@@ -10,7 +10,6 @@ img.about__img {
 h1.motto__heading {
   margin-bottom: 10px;
   font-weight: 500;
-  font-family: "ProtestRegular";
   font-family: "PoppinsExtraBold" !important;
   text-align: start;
   font-size: 45px;
@@ -73,5 +72,12 @@ div.row.about {
   }
   div.about__button {
     flex-direction: column;
+  }
+  h1.motto__heading {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: "PoppinsExtraBold" !important;
+    text-align: start;
+    font-size: 35px;
   }
 }

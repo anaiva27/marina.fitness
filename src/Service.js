@@ -45,16 +45,15 @@ const contentGroup = [
           className="underline bright"
           target="_blank"
           rel="noopener noreferrer"
-        >
-         
-          <button
-            className="about btn pointer service"
           >
-            JOIN HERE
+          
+          <button
+          className="about btn pointer service"
+          >
+          JOIN HERE
           </button>
-        </a>
-        And join private WhatsApp (PLACE TO CONNECT GROUP) with classes schedule
-        and zoom info
+          </a>
+          <a href="https://chat.whatsapp.com/BH1wTrbdkFf1wwqU1ovviY" target="_blank" rel="noopener noreferrer">And <span className="inline__link">JOIN PRIVATE WhatsApp</span></a> (place to connect group) with classes schedule and zoom info
         <br />
         <br />
   `,
