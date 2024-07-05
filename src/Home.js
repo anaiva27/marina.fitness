@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Home.css";
+import "./RevealPage.css";
 import logo from "./img/MarinaLogo2.png";
 import heroBg from "./img/hero-bg.jpg";
 import logoSmall from "./img/logo-new-White-small.png";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 import { dropDelay, popDelay } from "./animate";
 import { useClickOutside } from "./portal/useClickOutside";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 function Home({ optionsRef, scrollToSection }) {
   const [collapse, setCollapse] = useState(false);
@@ -19,7 +22,7 @@ function Home({ optionsRef, scrollToSection }) {
     const header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 0);
     setCollapse((prev) =>
-      window.scrollY === 0 ? (prev = false) : (prev = true)
+      window.scrollY === 0 ? (prev = false) : (prev = true),
     );
   });
 
@@ -40,8 +43,36 @@ function Home({ optionsRef, scrollToSection }) {
     }
   }, [collapse]);
 
+  const container = useRef();
+  const tl = useRef();
+
+  useGSAP(() => {
+    gsap.to(".line", {
+      height: "100%",
+      duration: 2,
+      delay: 1,
+    });
+    gsap.to(".line", { opacity: 0, display: "none", delay: 2 });
+    gsap.to(".loader", {
+      backgroundColor: "#ffffff",
+      delay: 2,
+    });
+    gsap.to(".loader", {
+      opacity: 0,
+      display: "none",
+      delay: 2,
+    });
+  });
+
   return (
     <div className="home" id="Home">
+      <div className="loader">
+        <div className="line">
+          {/* <div className="marquee">
+          <div className="marquee-container"></div>
+        </div> */}
+        </div>
+      </div>
       <div className="home__bg">
         {/* <img
           src={heroBg}

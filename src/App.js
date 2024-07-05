@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Home from "./Home";
 import Testimonials from "./Testimonials";
 import Service from "./Service";
+import { RevealPage } from "./RevealPage";
 
 function App() {
   const [optRef, setOptRef] = useState();
@@ -17,6 +18,7 @@ function App() {
   };
   return (
     <div className="App">
+      {/* <RevealPage /> */}
       <Home scrollToSection={scrollToSection} optRef={optRef} />
       <Service setOptRef={setOptRef} />
       <About />
