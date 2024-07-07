@@ -193,7 +193,7 @@ function Home({ optionsRef, scrollToSection }) {
                 <br />
                 <li className="sideNavbar">
                   <a
-                    href="https://s.thorne.com/ZY6dX"
+                    href="https://www.thorne.com/u/AM1155640?affid=AM1155640&utm_campaign=Affiliate%20Programs&utm_medium=Ambassador&utm_source=Custom%20Link&utm_content=Marina%20Bogatkina%20-%20Dispensary"
                     className="bright underline"
                     target="_blank"
                     rel="noopener noreferrer"
