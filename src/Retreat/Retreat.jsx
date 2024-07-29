@@ -10,7 +10,7 @@ export const Retreat = () => {
         <img src={heroImg} alt="" />
       </HeroSection>
       <IntroSection>
-        <h1>WHAT WOULD IT BE LIKE LIVING A LIFE AS A CELEBRATION?</h1>
+        <H1>WHAT WOULD IT BE LIKE LIVING A LIFE AS A CELEBRATION?</H1>
         <h3>
           How would it feel to be fully in touch with your sacred feminine
           power?
@@ -48,6 +48,10 @@ export const Retreat = () => {
     </>
   );
 };
+
+const H1 = styled.h1`
+  font-size: 50px;
+`;
 
 const HeroSection = styled.div`
   width: 100%;
@@ -112,4 +116,5 @@ const ButtonPrimary = styled.button`
   color: white;
   font-size: 22px;
   text-transform: uppercase;
+  border-radius: 4px;
 `;
