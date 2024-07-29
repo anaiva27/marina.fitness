@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://marinafitness.pro/",
+  "homepage": "https://marinafitness.pro",
   "private": true,
   "dependencies": {
     "@gsap/react": "^2.1.1",
