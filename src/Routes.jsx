@@ -20,6 +20,7 @@ export const Routes = () => {
       <Home scrollToSection={scrollToSection} optRef={optRef} />
       <Service setOptRef={setOptRef} />
       <About />
+      {/* <About /> */}
       <Testimonials />
       <Contact />
       <Certificate />
