@@ -13,6 +13,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+button {
+  font-family: "Poppins";
+}
 @font-face {
   font-family: "PoppinsExtraBold";
   src: local("PoppinsExtraBold"),

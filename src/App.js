@@ -1,34 +1,37 @@
-import { useState } from "react";
-import About from "./About";
+import { useEffect } from "react";
 import "./App.css";
-import Blog from "./Blog";
-import { Certificate } from "./Certificate";
-import Contact from "./Contact";
+import { Routes } from "./Routes";
 import Footer from "./Footer";
-import Home from "./Home";
-import Testimonials from "./Testimonials";
-import Service from "./Service";
-import { RevealPage } from "./RevealPage";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useHistory,
+} from "react-router-dom";
+import { Retreat } from "./Retreat/Retreat";
 
 function App() {
-  const [optRef, setOptRef] = useState();
-  const scrollToSection = () => {
-    if (!optRef) return;
-    window.scrollTo({ top: optRef.current.offsetTop });
-  };
   return (
-    <div className="App">
-      {/* <RevealPage /> */}
-      <Home scrollToSection={scrollToSection} optRef={optRef} />
-      <Service setOptRef={setOptRef} />
-      <About />
-      <Testimonials />
-      {/* <Blog /> */}
-      <Contact />
-      <Certificate />
-      <Footer />
-    </div>
+    // <div className="App">
+    <Router>
+      <Switch>
+        <Route path="/retreat" component={Retreat} />
+        <Route path="/" component={Routes} />
+        <Route path="*" component={<Redirect />} />
+      </Switch>
+    </Router>
+    // </div>
   );
 }
 
 export default App;
+
+const Redirect = () => {
+  const history = useHistory();
+  // const navigate = useNavigate();
+  useEffect(() => {
+    // navigate("/");
+    history.pushState("/");
+  }, []);
+  return null;
+};
