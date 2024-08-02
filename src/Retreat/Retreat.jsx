@@ -674,7 +674,7 @@ const List = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   li {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
