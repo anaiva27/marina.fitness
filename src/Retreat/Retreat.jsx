@@ -14,6 +14,8 @@ import sliderImg4 from "./assets/sliderImg4.jpg";
 import sliderImg5 from "./assets/sliderImg5.jpg";
 import sliderImg6 from "./assets/sliderImg6.jpg";
 import marinaAmberImg from "./assets/marina-abmer.jpg";
+import roomsImg from "./assets/rooms.png";
+import img11 from "./assets/img11.png";
 import styled, { css } from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
@@ -250,7 +252,6 @@ export const Retreat = () => {
                 vegan or vegetarians meals (with some fish and chicken options)
               </Body>
             </li>
-
             <li>
               <Body>
                 <strong>—</strong> Tour to Moras archeological site and Maras
@@ -320,6 +321,121 @@ export const Retreat = () => {
           </SwiperSlide>
         </Swiper>
       </IncludedSection>
+      {/* <NotIncludedSection>
+        <H1>
+          WHAT'S <span>NOT</span> INCLUDED:
+        </H1>
+        <NotIncludedList>
+          <ul role="list">
+            <li>
+              <Body>Airline tickets</Body>
+            </li>
+            <li>
+              <Body>Spa services</Body>
+            </li>
+            <li>
+              <Body>Travel insurance</Body>
+            </li>
+          </ul>
+        </NotIncludedList>
+      </NotIncludedSection> */}
+      <DescriptionWrapper>
+        <Description
+          style={{
+            backgroundColor: "#cfc4c0",
+            margin: "50px auto 0",
+            maxWidth: 1300,
+          }}
+        >
+          <SideImage>
+            <img src={roomsImg} alt="" />
+          </SideImage>
+          <SideContent>
+            <H1>THE ROOMS</H1>
+            <Body>
+              The bungalows at the Samadhi Center are modeled after the seven
+              chakras, the energetic centers in yogic tradition.
+              <br />
+              <br />
+              Each bungalow is adorned with corresponding colors, flowers, and
+              crystals to symbolize the unique energy and characteristics of
+              each chakra.
+              <br />
+              <br />
+              Every room offers a breathtaking view of the mountains.
+            </Body>
+          </SideContent>
+        </Description>
+      </DescriptionWrapper>
+      <NotIncludedSection>
+        <H1>
+          WHAT'S <span>NOT</span> INCLUDED:
+        </H1>
+        <NotIncludedList>
+          <ul role="list">
+            <li>
+              <Body>Airline tickets</Body>
+            </li>
+            <li>
+              <Body>Spa services</Body>
+            </li>
+            <li>
+              <Body>Travel insurance</Body>
+            </li>
+          </ul>
+        </NotIncludedList>
+      </NotIncludedSection>
+      <NotIncludedSection>
+        <H1>PRICES:</H1>
+        <NotIncludedList>
+          <Body>$2399 Early bird Special until October 1st 2024</Body>
+          <Body>After October 1st is $2699 based on triple occupancy</Body>
+          <Body>$799 is non refundable deposit</Body>
+          <Body>50 % by December 1st (not refundable after January 1st)</Body>
+          <Body>
+            Another 50% by February 15th (not refundable after March 15th)
+          </Body>
+        </NotIncludedList>
+      </NotIncludedSection>
+      <HistorySection>
+        <SideContent history>
+          <H1>TRAVEL INFORMATION</H1>
+          <Body>
+            For your convinience fly to Alejandro Velasco Astete International
+            Airport, Cusco, Peru (CUZ).
+            <br />
+            <br />
+            From there our dedicated shuttle service will transport you through
+            the most scenic, jaw dropping journey to Samadhi retreat center in
+            Huayllabamba, Sacred Valley
+          </Body>
+        </SideContent>
+        <SideHistoryImage>
+          <img src={img11} alt="" />
+        </SideHistoryImage>
+      </HistorySection>
+      <NotIncludedSection>
+        <H1>CONTACT INFO:</H1>
+        <ContactList>
+          <ul>
+            <li>
+              <Body>Email: ahom.holistichealth@gmail.com</Body>
+            </li>
+            <li>
+              <Body>Phone numbers: M: 1-302-747-3415</Body>
+            </li>
+            <li>
+              <Body>A: 1-302-339-7729</Body>
+            </li>
+            <li>
+              <Body>Instagram: @marina.bogatkina</Body>
+            </li>
+            <li>
+              <Body>@ahom.holistichealth</Body>
+            </li>
+          </ul>
+        </ContactList>
+      </NotIncludedSection>
     </>
   );
 };
@@ -480,6 +596,18 @@ const SideContent = styled.div`
         padding: 50px 60px;
         margin-left: -40px;
       `}
+  }
+`;
+const DescriptionWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfc4c0;
+  img {
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
   }
 `;
 const HeroSection = styled.div`
@@ -666,6 +794,44 @@ const IncludedSection = styled.div`
     padding: 30px 0;
   }
 `;
+const NotIncludedSection = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  margin: 0px 0;
+  padding: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #cfc4c0;
+  color: white !important;
+  p {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  span {
+    color: white;
+    display: inline;
+  }
+  h1 {
+    white-space: nowrap;
+    font-size: 40px;
+    width: 500px;
+    text-align: right;
+  }
+  @media (max-width: 1000px) {
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      white-space: wrap;
+      font-size: 40px;
+      width: fit-content;
+      text-align: center;
+    }
+  }
+`;
 const List = styled.div`
   padding: 20px 30px;
   max-width: 1200px;
@@ -679,6 +845,46 @@ const List = styled.div`
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+`;
+const NotIncludedList = styled.div`
+  padding: 13px 0 0;
+  max-width: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  li {
+    margin-bottom: 25px;
+    //text-shadow: 0.5px 0px 0px #000000aa;
+  }
+  @media (max-width: 700px) {
+    padding: 0;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+`;
+const ContactList = styled.div`
+  padding: 13px 0 0;
+  max-width: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  li {
+    margin-bottom: 25px;
+    //text-shadow: 0.5px 0px 0px #000000aa;
+  }
+  @media (max-width: 700px) {
+    padding: 0;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 `;
 const ButtonPrimary = styled.button`
