@@ -7,7 +7,20 @@ import mandalaImg from "./assets/mandala21.png";
 import women1 from "./assets/women1.jpg";
 import amberImg from "./assets/amberImg1.png";
 import marinaImg from "./assets/marinaImg1.png";
+import sliderImg1 from "./assets/sliderImg1.jpg";
+import sliderImg2 from "./assets/sliderImg2.jpg";
+import sliderImg3 from "./assets/sliderImg3.jpg";
+import sliderImg4 from "./assets/sliderImg4.jpg";
+import sliderImg5 from "./assets/sliderImg5.jpg";
+import sliderImg6 from "./assets/sliderImg6.jpg";
+import marinaAmberImg from "./assets/marina-abmer.jpg";
 import styled, { css } from "styled-components";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
+import "swiper/swiper.min.css";
+import "swiper/modules/pagination/pagination.min.css";
+import "swiper/modules/navigation/navigation.min.css";
+import "./retreat.css";
 
 export const Retreat = () => {
   return (
@@ -30,7 +43,16 @@ export const Retreat = () => {
             , where we offer a pathway to dissolve emotional barriers,
             rediscover vibrant health, and awaken the blissful woman within you.
           </Body>
-          <ButtonPrimary>The time is now</ButtonPrimary>
+          <ButtonPrimary
+            onClick={() =>
+              window.open(
+                "https://book.stripe.com/aEUcQn28u3KdbXa6oP",
+                "_blank",
+              )
+            }
+          >
+            The time is now
+          </ButtonPrimary>
         </Content>
       </IntroSection>
       <ExploreSection>
@@ -58,7 +80,13 @@ export const Retreat = () => {
           <strong>embodying feminine practices, self-nourishment</strong>, and
           hitting the reset button in our busy lives.
         </Body>
-        <ButtonPrimary>Reserve your spot</ButtonPrimary>
+        <ButtonPrimary
+          onClick={() =>
+            window.open("https://book.stripe.com/aEUcQn28u3KdbXa6oP", "_blank")
+          }
+        >
+          Reserve your spot
+        </ButtonPrimary>
       </ExploreSection>
       <WideImg src={wallpaper1} alt="" />
       <Description>
@@ -147,6 +175,151 @@ export const Retreat = () => {
           <img src={marinaImg} alt="" />
         </SideImg>
       </MeetSection>
+      <HistorySection>
+        <SideContent history>
+          <Body>
+            Marina and Amber's bond spans over a decade, evolving from friends
+            and colleagues to what feels like soul sisters connected across
+            countless lifetimes. United by a shared vision of life, wellness,
+            and values, they have cultivated a community of empowered,
+            open-minded individuals. Their combined commitment to making a
+            meaningful impact on people's lives has been remarkable.
+            <br />
+            <br />
+            Now, they invite others to join them for an unforgettable experience
+            — Women’s retreat that promises to nurture physical, emotional, and
+            spiritual well-being amidst the mystical landscape of Peru
+          </Body>
+        </SideContent>
+        <SideHistoryImage>
+          <img src={marinaAmberImg} alt="" />
+        </SideHistoryImage>
+      </HistorySection>
+
+      <IncludedSection>
+        <H1>WHAT'S INCLUDED:</H1>
+        <List>
+          <ul role="list">
+            <li>
+              <Body>
+                <strong>—</strong> 6 nights of accommodation in shared chakra
+                bungalows
+              </Body>
+            </li>
+
+            <li>
+              <Body>
+                <strong>—</strong> Access to all amenities of the center
+                (jacuzzi, chakra meditation garden and more!)
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Shuttle services from and to Cusco airport
+                Personalized gift bag
+              </Body>
+            </li>
+
+            <li>
+              <Body>
+                <strong>—</strong> Temazcal (sweat lodge) ceremony and
+                breathwork
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Cacao ceremony and ecstatic dance Sharing
+                circles by bonfire
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Sacred feminine workshop
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Sharing bonfire circle
+              </Body>
+            </li>
+          </ul>
+          <ul role="list">
+            <li>
+              <Body>
+                <strong>—</strong> 3 organic, healthy, locally sourced mostly
+                vegan or vegetarians meals (with some fish and chicken options)
+              </Body>
+            </li>
+
+            <li>
+              <Body>
+                <strong>—</strong> Tour to Moras archeological site and Maras
+                salineras
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Local Trekking around Samadhi
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Pottery workshop with local
+              </Body>
+            </li>
+
+            <li>
+              <Body>
+                <strong>—</strong> Group zoom prep call + one month integration
+                after retreat thought zoom classes
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Personalized gift bag
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Daily movement (mobility and yoga classes)
+                and meditation
+              </Body>
+            </li>
+          </ul>
+        </List>
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          slidesPerView={"auto"}
+          loop={true}
+          navigation={true}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          // pagination={{ clickable: true }}
+          className="mySwiper"
+          onPaginationUpdate={(i) => {}}
+        >
+          <SwiperSlide>
+            <img src={sliderImg1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={sliderImg4} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={sliderImg3} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={sliderImg2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={sliderImg5} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={sliderImg6} alt="" />
+          </SwiperSlide>
+        </Swiper>
+      </IncludedSection>
     </>
   );
 };
@@ -188,6 +361,23 @@ const SideImage = styled.div`
   z-index: 5;
   img {
     margin-left: -20%;
+    width: 100% !important;
+    object-fit: cover;
+    object-position: center;
+  }
+  @media (max-width: 1000px) {
+    width: 100% !important;
+    img {
+      margin: 0;
+    }
+  }
+`;
+const SideHistoryImage = styled.div`
+  width: 50% !important;
+  position: relative;
+  z-index: 5;
+  img {
+    margin-right: -30%;
     width: 100% !important;
     object-fit: cover;
     object-position: center;
@@ -283,6 +473,14 @@ const SideContent = styled.div`
       margin-left: 0px;
     }
   }
+  @media (min-width: 1000px) {
+    ${({ history }) =>
+      history &&
+      css`
+        padding: 50px 60px;
+        margin-left: -40px;
+      `}
+  }
 `;
 const HeroSection = styled.div`
   width: 100%;
@@ -302,6 +500,18 @@ const Description = styled.div`
   margin: auto;
   flex-direction: row-reverse;
   gap: 35px;
+  padding: 40px;
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+    background-color: #f5eee9;
+  }
+`;
+const HistorySection = styled.div`
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  margin: auto;
+  flex-direction: row-reverse;
   padding: 40px;
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
@@ -444,10 +654,38 @@ const ExploreSection = styled.div`
     }
   }
 `;
+const IncludedSection = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1000px) {
+    padding: 30px 0;
+  }
+`;
+const List = styled.div`
+  padding: 20px 30px;
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  li {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+`;
 const ButtonPrimary = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   text-align: center;
   width: 100%;
   max-width: 350px;
