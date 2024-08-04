@@ -1,9 +1,9 @@
-.swiper {
+.mySwiperRetreat {
   width: 100%;
   height: fit-content !important;
 }
 
-.swiper-slide {
+.swiper-slide.styled {
   text-align: center;
   font-size: 18px;
   background: #fff;

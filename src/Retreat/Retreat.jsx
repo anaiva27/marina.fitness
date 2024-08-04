@@ -82,13 +82,13 @@ export const Retreat = () => {
           <strong>embodying feminine practices, self-nourishment</strong>, and
           hitting the reset button in our busy lives.
         </Body>
-        <ButtonPrimary
+        {/* <ButtonPrimary
           onClick={() =>
             window.open("https://book.stripe.com/aEUcQn28u3KdbXa6oP", "_blank")
           }
         >
           Reserve your spot
-        </ButtonPrimary>
+        </ButtonPrimary> */}
       </ExploreSection>
       <WideImg src={wallpaper1} alt="" />
       <Description>
@@ -124,6 +124,17 @@ export const Retreat = () => {
               </Body>
             </li>
           </ul>
+          <ButtonPrimary
+            style={{ marginBottom: 25 }}
+            onClick={() =>
+              window.open(
+                "https://book.stripe.com/aEUcQn28u3KdbXa6oP",
+                "_blank",
+              )
+            }
+          >
+            Reserve your spot
+          </ButtonPrimary>
         </SideContent>
       </Description>
       <MeetSection>
@@ -288,6 +299,14 @@ export const Retreat = () => {
             </li>
           </ul>
         </List>
+        <ButtonPrimary
+          style={{ marginBottom: 25 }}
+          onClick={() =>
+            window.open("https://book.stripe.com/aEUcQn28u3KdbXa6oP", "_blank")
+          }
+        >
+          Reserve your spot
+        </ButtonPrimary>
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           slidesPerView={"auto"}
@@ -298,25 +317,25 @@ export const Retreat = () => {
             disableOnInteraction: false,
           }}
           // pagination={{ clickable: true }}
-          className="mySwiper"
+          className="mySwiperRetreat"
           onPaginationUpdate={(i) => {}}
         >
-          <SwiperSlide>
+          <SwiperSlide className="styled">
             <img src={sliderImg1} alt="" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="styled">
             <img src={sliderImg4} alt="" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="styled">
             <img src={sliderImg3} alt="" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="styled">
             <img src={sliderImg2} alt="" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="styled">
             <img src={sliderImg5} alt="" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="styled">
             <img src={sliderImg6} alt="" />
           </SwiperSlide>
         </Swiper>
@@ -364,6 +383,17 @@ export const Retreat = () => {
               <br />
               Every room offers a breathtaking view of the mountains.
             </Body>
+            {/* <ButtonPrimary
+              style={{ marginBottom: 25 }}
+              onClick={() =>
+                window.open(
+                  "https://book.stripe.com/aEUcQn28u3KdbXa6oP",
+                  "_blank",
+                )
+              }
+            >
+              Reserve your spot
+            </ButtonPrimary> */}
           </SideContent>
         </Description>
       </DescriptionWrapper>
@@ -391,9 +421,23 @@ export const Retreat = () => {
           <Body>$2399 Early bird Special until October 1st 2024</Body>
           <Body>After October 1st is $2699 based on triple occupancy</Body>
           <Body>$799 is non refundable deposit</Body>
-          <Body>50 % by December 1st (not refundable after January 1st)</Body>
+          <Body>50% by December 1st (not refundable after January 1st)</Body>
           <Body>
             Another 50% by February 15th (not refundable after March 15th)
+          </Body>
+          <Body>
+            {" "}
+            <ButtonPrimary
+              style={{ marginBottom: 25 }}
+              onClick={() =>
+                window.open(
+                  "https://book.stripe.com/aEUcQn28u3KdbXa6oP",
+                  "_blank",
+                )
+              }
+            >
+              Reserve your spot
+            </ButtonPrimary>
           </Body>
         </NotIncludedList>
       </NotIncludedSection>
@@ -419,19 +463,58 @@ export const Retreat = () => {
         <ContactList>
           <ul>
             <li>
-              <Body>Email: ahom.holistichealth@gmail.com</Body>
+              <Body darkColor>
+                <a
+                  style={{ color: "#635341" }}
+                  href="https://chat.whatsapp.com/Di8wpdXuvjEHMHE234V8jX"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CLick Here to Join my WhatsApp Group
+                </a>
+              </Body>
             </li>
             <li>
-              <Body>Phone numbers: M: 1-302-747-3415</Body>
+              <Body>
+                Email:{" "}
+                <a href="mailto:ahom.holistichealth@gmail.com">
+                  ahom.holistichealth@gmail.com
+                </a>
+              </Body>
             </li>
             <li>
-              <Body>A: 1-302-339-7729</Body>
+              <Body>
+                Phone numbers: M: <a href="tel:302-747-3415">1-302-747-3415</a>
+              </Body>
             </li>
             <li>
-              <Body>Instagram: @marina.bogatkina</Body>
+              <Body>
+                A: <a href="tel:302-339-7729">1-302-339-7729</a>
+              </Body>
             </li>
             <li>
-              <Body>@ahom.holistichealth</Body>
+              <Body>
+                Instagram:{" "}
+                <a
+                  href="https://www.instagram.com/marina.bogatkina/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @marina.bogatkina
+                </a>
+              </Body>
+            </li>
+            <li>
+              <Body>
+                {" "}
+                <a
+                  href="https://www.instagram.com/ahom.holistichealth/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @ahom.holistichealth
+                </a>
+              </Body>
             </li>
           </ul>
         </ContactList>
@@ -451,6 +534,12 @@ const Body = styled.p`
   font-size: 20px;
   max-width: 1000px;
 
+  ${({ darkColor }) =>
+    darkColor &&
+    css`
+      color: #635341;
+      word-wrap: break-word;
+    `}
   @media (max-width: 1000px) {
     font-size: 18px;
   }
@@ -630,6 +719,7 @@ const Description = styled.div`
   gap: 35px;
   padding: 40px;
   @media (max-width: 1000px) {
+    padding: 20px;
     flex-direction: column-reverse;
     background-color: #f5eee9;
   }
@@ -878,12 +968,20 @@ const ContactList = styled.div`
     margin-bottom: 25px;
     //text-shadow: 0.5px 0px 0px #000000aa;
   }
+  a {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+  }
   @media (max-width: 700px) {
     padding: 0;
     ul {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+    }
+    p {
+      font-size: max(15px, 3vw);
     }
   }
 `;
