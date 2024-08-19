@@ -358,6 +358,67 @@ export const Retreat = () => {
           </ul>
         </NotIncludedList>
       </NotIncludedSection> */}
+      <ScheduleSection>
+        <H1>TENTATIVE SCHEDULE</H1>
+        <DaytName>Tuesday Arrival</DaytName>
+        <Body>
+          Evening yoga, opening circle + setting intention meditation.
+        </Body>
+        <ScheduleTable>
+          <div>
+            <DaytName>Day 2</DaytName>
+            <Body>
+              Gentle morning Yoga and Meditation <br /> Divine feminine Workshop{" "}
+              <br />
+              Hip Mobility <br />
+              Fire sharing circle
+            </Body>
+          </div>
+          <div>
+            <DaytName>Day 4</DaytName>
+            <Body>
+              Spinal Mobility workshop <br />
+              Pottery Workshop
+              <br />
+              Tour to Inkas Archeological sights
+            </Body>
+          </div>
+          <div>
+            <DaytName>Day 6</DaytName>
+            <Body>
+              Morning yoga + meditation <br />
+              Trekking near Samadhi
+              <br />
+              Meditation + movement
+              <br /> Temazcal + cold plunge, sharing circle
+            </Body>
+          </div>
+          <div>
+            <DaytName>Day 3</DaytName>
+            <Body>
+              Morning Yoga and Meditation
+              <br />
+              Yin yoga themed around feminine energy
+              <br />
+            </Body>
+          </div>
+          <div>
+            <DaytName>Day 5</DaytName>
+            <Body>
+              Morning yoga + prompts for journaling <br />
+              Cacao Ceremony and ecstatic dance
+            </Body>
+          </div>
+          <div>
+            <DaytName>Day 7</DaytName>
+            <Body>
+              Morning movement + laughing yoga <br />
+              11 - 12am farewell circle (gifts giveaway) <br />
+              Transportation to Cuzco or Pisac
+            </Body>
+          </div>
+        </ScheduleTable>
+      </ScheduleSection>
       <DescriptionWrapper>
         <Description
           style={{
@@ -736,19 +797,6 @@ const HistorySection = styled.div`
     background-color: #f5eee9;
   }
 `;
-const MeetSection = styled.div`
-  width: 100%;
-  max-width: 1300px;
-  display: flex;
-  margin: auto;
-  flex-direction: row;
-  position: relative;
-  padding: 40px;
-  @media (max-width: 1000px) {
-    flex-direction: column;
-    padding: 20px;
-  }
-`;
 const HostName = styled.div`
   font-size: 50px;
   color: #635341;
@@ -757,6 +805,22 @@ const HostName = styled.div`
   font-weight: 600;
   @media (max-width: 1000px) {
     display: none;
+  }
+`;
+const MeetSection = styled.div`
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  position: relative;
+  padding: 40px;
+  ${HostName} {
+    border-bottom: 0.5px solid #635341;
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding: 20px;
   }
 `;
 const HostNameMobile = styled.div`
@@ -881,7 +945,7 @@ const IncludedSection = styled.div`
   justify-content: center;
 
   @media (max-width: 1000px) {
-    padding: 30px 0;
+    padding: 30px 0 0;
   }
 `;
 const NotIncludedSection = styled.div`
@@ -920,6 +984,50 @@ const NotIncludedSection = styled.div`
       width: fit-content;
       text-align: center;
     }
+  }
+`;
+const DaytName = styled.div`
+  font-size: 30px;
+  color: #635341;
+  margin-bottom: 20px;
+  font-weight: 600;
+`;
+const ScheduleSection = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfc4c0;
+  padding: 50px 30px 0px;
+  ${H1} {
+    margin-bottom: 25px;
+  }
+  ${DaytName} {
+    margin-bottom: 0;
+  }
+  & > ${DaytName}, ${H1}, & > ${Body} {
+    text-align: center;
+  }
+`;
+const ScheduleTable = styled.div`
+  max-width: 1200px;
+  padding: 30px 20px 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  ${DaytName} {
+    border-bottom: 0.5px solid #635341;
+    margin-bottom: 7px;
+  }
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 `;
 const List = styled.div`
