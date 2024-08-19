@@ -374,6 +374,15 @@ export const Retreat = () => {
               Fire sharing circle
             </Body>
           </div>
+          <DayMobile>
+            <DaytName>Day 3</DaytName>
+            <Body>
+              Morning Yoga and Meditation
+              <br />
+              Yin yoga themed around feminine energy
+              <br />
+            </Body>
+          </DayMobile>
           <div>
             <DaytName>Day 4</DaytName>
             <Body>
@@ -383,7 +392,14 @@ export const Retreat = () => {
               Tour to Inkas Archeological sights
             </Body>
           </div>
-          <div>
+          <DayMobile>
+            <DaytName>Day 5</DaytName>
+            <Body>
+              Morning yoga + prompts for journaling <br />
+              Cacao Ceremony and ecstatic dance
+            </Body>
+          </DayMobile>
+          <DayDesktop>
             <DaytName>Day 6</DaytName>
             <Body>
               Morning yoga + meditation <br />
@@ -392,8 +408,8 @@ export const Retreat = () => {
               Meditation + movement
               <br /> Temazcal + cold plunge, sharing circle
             </Body>
-          </div>
-          <div>
+          </DayDesktop>
+          <DayDesktop>
             <DaytName>Day 3</DaytName>
             <Body>
               Morning Yoga and Meditation
@@ -401,14 +417,24 @@ export const Retreat = () => {
               Yin yoga themed around feminine energy
               <br />
             </Body>
-          </div>
-          <div>
+          </DayDesktop>
+          <DayDesktop>
             <DaytName>Day 5</DaytName>
             <Body>
               Morning yoga + prompts for journaling <br />
               Cacao Ceremony and ecstatic dance
             </Body>
-          </div>
+          </DayDesktop>
+          <DayMobile>
+            <DaytName>Day 6</DaytName>
+            <Body>
+              Morning yoga + meditation <br />
+              Trekking near Samadhi
+              <br />
+              Meditation + movement
+              <br /> Temazcal + cold plunge, sharing circle
+            </Body>
+          </DayMobile>
           <div>
             <DaytName>Day 7</DaytName>
             <Body>
@@ -1021,6 +1047,7 @@ const ScheduleTable = styled.div`
     border-bottom: 0.5px solid #635341;
     margin-bottom: 7px;
   }
+
   @media (max-width: 700px) {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -1110,4 +1137,16 @@ const ButtonPrimary = styled.button`
   font-size: 22px;
   text-transform: uppercase;
   border-radius: 4px;
+`;
+const DayDesktop = styled.div`
+  display: block;
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+const DayMobile = styled.div`
+  display: none;
+  @media (max-width: 700px) {
+    display: block;
+  }
 `;
