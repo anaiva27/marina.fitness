@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.9c09316f.chunk.css",
-    "main.js": "/static/js/main.443bcc0b.chunk.js",
-    "main.js.map": "/static/js/main.443bcc0b.chunk.js.map",
+    "main.js": "/static/js/main.a2b32643.chunk.js",
+    "main.js.map": "/static/js/main.a2b32643.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3ee93783.js",
     "runtime-main.js.map": "/static/js/runtime-main.3ee93783.js.map",
     "static/css/2.9fc4fcca.chunk.css": "/static/css/2.9fc4fcca.chunk.css",
-    "static/js/2.6cb3a8e0.chunk.js": "/static/js/2.6cb3a8e0.chunk.js",
-    "static/js/2.6cb3a8e0.chunk.js.map": "/static/js/2.6cb3a8e0.chunk.js.map",
+    "static/js/2.ba8a2322.chunk.js": "/static/js/2.ba8a2322.chunk.js",
+    "static/js/2.ba8a2322.chunk.js.map": "/static/js/2.ba8a2322.chunk.js.map",
     "static/js/3.84618ce6.chunk.js": "/static/js/3.84618ce6.chunk.js",
     "static/js/3.84618ce6.chunk.js.map": "/static/js/3.84618ce6.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.9fc4fcca.chunk.css.map": "/static/css/2.9fc4fcca.chunk.css.map",
     "static/css/main.9c09316f.chunk.css.map": "/static/css/main.9c09316f.chunk.css.map",
-    "static/js/2.6cb3a8e0.chunk.js.LICENSE.txt": "/static/js/2.6cb3a8e0.chunk.js.LICENSE.txt",
+    "static/js/2.ba8a2322.chunk.js.LICENSE.txt": "/static/js/2.ba8a2322.chunk.js.LICENSE.txt",
     "static/media/1.36b96fc1.jpg": "/static/media/1.36b96fc1.jpg",
     "static/media/2.07533469.jpg": "/static/media/2.07533469.jpg",
     "static/media/3.42a22028.jpg": "/static/media/3.42a22028.jpg",
@@ -42,6 +42,12 @@
     "static/media/hero-bg.af4001fd.jpg": "/static/media/hero-bg.af4001fd.jpg",
     "static/media/hero-img.3bf80e8d.png": "/static/media/hero-img.3bf80e8d.png",
     "static/media/img11.c685dd1e.png": "/static/media/img11.c685dd1e.png",
+    "static/media/img122.a71f0be5.jpg": "/static/media/img122.a71f0be5.jpg",
+    "static/media/img1234.4d9757de.jpg": "/static/media/img1234.4d9757de.jpg",
+    "static/media/img456.72ec059a.jpg": "/static/media/img456.72ec059a.jpg",
+    "static/media/img554.0663bb2b.JPG": "/static/media/img554.0663bb2b.JPG",
+    "static/media/img5677.b5147d7f.JPG": "/static/media/img5677.b5147d7f.JPG",
+    "static/media/img999.c6f94cc9.JPG": "/static/media/img999.c6f94cc9.JPG",
     "static/media/logo-new-White-crop-Marina.57daa6a6.png": "/static/media/logo-new-White-crop-Marina.57daa6a6.png",
     "static/media/logo-new-White-small.8a57c351.png": "/static/media/logo-new-White-small.8a57c351.png",
     "static/media/mandala21.4f06a859.png": "/static/media/mandala21.4f06a859.png",
@@ -69,8 +75,8 @@
   "entrypoints": [
     "static/js/runtime-main.3ee93783.js",
     "static/css/2.9fc4fcca.chunk.css",
-    "static/js/2.6cb3a8e0.chunk.js",
+    "static/js/2.ba8a2322.chunk.js",
     "static/css/main.9c09316f.chunk.css",
-    "static/js/main.443bcc0b.chunk.js"
+    "static/js/main.a2b32643.chunk.js"
   ]
 }
