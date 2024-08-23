@@ -790,6 +790,8 @@ const SideContent = styled.div`
     yulia &&
     css`
       background-color: transparent !important;
+      padding: 0;
+      margin-bottom: 25px;
     `}
   @media (max-width: 1000px) {
     width: 100%;
