@@ -15,6 +15,7 @@ import sliderImg5 from "./assets/sliderImg5.jpg";
 import sliderImg6 from "./assets/sliderImg6.jpg";
 import marinaAmberImg from "./assets/marina-abmer.jpg";
 import roomsImg from "./assets/rooms.png";
+import yuliaImg from "./assets/yulia.JPG";
 import img11 from "./assets/img11.png";
 import styled, { css } from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -208,6 +209,33 @@ export const Retreat = () => {
           <img src={marinaAmberImg} alt="" />
         </SideHistoryImage>
       </HistorySection>
+      <YuliaSection>
+        <SideHistoryImage>
+          <img src={yuliaImg} alt="" />
+        </SideHistoryImage>
+        <SideContent yulia>
+          <HostName>Guest Teacher Yulia</HostName>
+          <Body>
+            Yulia is an art and mindfulness educator with over{" "}
+            <strong>15 years of global experience as an art curator</strong>.
+            Eight years ago, she discovered Human Design and began incorporating
+            mindfulness practices to gain deeper insights into her own path and
+            better serve others. <br /> <br /> Four years ago, Yulia moved to
+            Mexico, where she immersed herself in ancient traditions and
+            techniques related to the four elements and spiritual temazcali,
+            actively engaging with the local community. She is a Sun-Dancer in
+            Lakota traditions, a Human Design and Genetic Keys reader, a
+            dedicated Vipassana meditator, a Reiki Master, and an art historian.
+            Yulia's mission is to{" "}
+            <strong>
+              empower women by blending ancient and contemporary mindfulness
+              tools
+            </strong>{" "}
+            to achieve transformative results.
+          </Body>
+        </SideContent>
+        <HostNameMobile>Guest Teacher Yulia</HostNameMobile>
+      </YuliaSection>
 
       <IncludedSection>
         <H1>WHAT'S INCLUDED:</H1>
@@ -241,18 +269,19 @@ export const Retreat = () => {
             </li>
             <li>
               <Body>
-                <strong>—</strong> Cacao ceremony and ecstatic dance Sharing
-                circles by bonfire
+                <strong>—</strong> Cacao ceremony and ecstatic dance
               </Body>
             </li>
-            <li>
-              <Body>
-                <strong>—</strong> Sacred feminine workshop
-              </Body>
-            </li>
+
             <li>
               <Body>
                 <strong>—</strong> Sharing bonfire circle
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Daily movement (mobility and yoga classes)
+                and meditation
               </Body>
             </li>
           </ul>
@@ -288,13 +317,12 @@ export const Retreat = () => {
             </li>
             <li>
               <Body>
-                <strong>—</strong> Personalized gift bag
+                <strong>—</strong> Temazcal led by Yulia
               </Body>
             </li>
             <li>
               <Body>
-                <strong>—</strong> Daily movement (mobility and yoga classes)
-                and meditation
+                <strong>—</strong> Personalized gift bag
               </Body>
             </li>
           </ul>
@@ -532,7 +560,7 @@ export const Retreat = () => {
         <SideContent history>
           <H1>TRAVEL INFORMATION</H1>
           <Body>
-            For your convinience fly to Alejandro Velasco Astete International
+            For your convenience fly to Alejandro Velasco Astete International
             Airport, Cusco, Peru (CUZ).
             <br />
             <br />
@@ -758,6 +786,11 @@ const SideContent = styled.div`
       }
     }
   }
+  ${({ yulia }) =>
+    yulia &&
+    css`
+      background-color: transparent !important;
+    `}
   @media (max-width: 1000px) {
     width: 100%;
     margin-top: 10px;
@@ -819,6 +852,21 @@ const HistorySection = styled.div`
   flex-direction: row-reverse;
   padding: 40px;
   @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+    background-color: #f5eee9;
+  }
+`;
+const YuliaSection = styled.div`
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  margin: auto;
+  background-color: #eee3d9be;
+  flex-direction: row-reverse;
+  padding: 40px;
+  margin-bottom: 50px;
+  @media (max-width: 1000px) {
+    margin-bottom: 10px;
     flex-direction: column-reverse;
     background-color: #f5eee9;
   }
