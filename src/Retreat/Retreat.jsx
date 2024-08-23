@@ -13,6 +13,12 @@ import sliderImg3 from "./assets/sliderImg3.jpg";
 import sliderImg4 from "./assets/sliderImg4.jpg";
 import sliderImg5 from "./assets/sliderImg5.jpg";
 import sliderImg6 from "./assets/sliderImg6.jpg";
+import sliderImg7 from "./assets/img122.jpg";
+import sliderImg8 from "./assets/img456.jpg";
+import sliderImg9 from "./assets/img554.JPG";
+import sliderImg10 from "./assets/img999.JPG";
+import sliderImg11 from "./assets/img1234.jpg";
+import sliderImg12 from "./assets/img5677.JPG";
 import marinaAmberImg from "./assets/marina-abmer.jpg";
 import roomsImg from "./assets/rooms.png";
 import yuliaImg from "./assets/yulia.JPG";
@@ -305,19 +311,20 @@ export const Retreat = () => {
             </li>
             <li>
               <Body>
-                <strong>—</strong> Pottery workshop with local
+                <strong>—</strong> 4 elements and altar creation workshop with
+                Yulia
               </Body>
             </li>
 
             <li>
               <Body>
-                <strong>—</strong> Group zoom prep call + one month integration
-                after retreat thought zoom classes
+                <strong>—</strong> Temazcal led by Yulia
               </Body>
             </li>
             <li>
               <Body>
-                <strong>—</strong> Temazcal led by Yulia
+                <strong>—</strong> Group zoom prep call + one month integration
+                after retreat thought zoom classes
               </Body>
             </li>
             <li>
@@ -365,6 +372,24 @@ export const Retreat = () => {
           </SwiperSlide>
           <SwiperSlide className="styled">
             <img src={sliderImg6} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="styled">
+            <img src={sliderImg7} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="styled">
+            <img src={sliderImg9} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="styled">
+            <img src={sliderImg10} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="styled">
+            <img src={sliderImg8} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="styled">
+            <img src={sliderImg11} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="styled">
+            <img src={sliderImg12} alt="" />
           </SwiperSlide>
         </Swiper>
       </IncludedSection>
