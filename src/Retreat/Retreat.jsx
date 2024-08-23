@@ -222,7 +222,7 @@ export const Retreat = () => {
             mindfulness practices to gain deeper insights into her own path and
             better serve others. <br /> <br /> Four years ago, Yulia moved to
             Mexico, where she immersed herself in ancient traditions and
-            techniques related to the four elements and spiritual temazcali,
+            techniques related to the four elements and spiritual temazcal,
             actively engaging with the local community. She is a Sun-Dancer in
             Lakota traditions, a Human Design and Genetic Keys reader, a
             dedicated Vipassana meditator, a Reiki Master, and an art historian.
