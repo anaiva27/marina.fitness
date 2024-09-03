@@ -617,8 +617,8 @@ export const Retreat = () => {
             <li>
               <Body>
                 Email:{" "}
-                <a href="mailto:ahom.holistichealth@gmail.com">
-                  ahom.holistichealth@gmail.com
+                <a href="mailto:marina@marinafitness.pro">
+                  marina@marinafitness.pro
                 </a>
               </Body>
             </li>
