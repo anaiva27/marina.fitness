@@ -10,7 +10,7 @@ import { useClickOutside } from "./portal/useClickOutside";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-function Home({ optionsRef, scrollToSection }) {
+function Home({ optionsRef, retreatsRef, scrollToSection }) {
   const [collapse, setCollapse] = useState(false);
   const ref = useRef();
   // Toogle Menu
@@ -85,6 +85,9 @@ function Home({ optionsRef, scrollToSection }) {
           </div>
           <div className="navigation">
             <ul className="navbar d__flex">
+              <a href="#Retreats">
+                <li className="nav__items mx__15">Retreats</li>
+              </a>
               <a href="#Services">
                 <li className="nav__items mx__15">Services</li>
               </a>
@@ -261,9 +264,19 @@ function Home({ optionsRef, scrollToSection }) {
                 animate="animate"
                 exit="exit"
                 className="button__primary"
-                onClick={() => scrollToSection()}
+                onClick={() => scrollToSection(optionsRef)}
               >
                 VIEW COACHING OPTIONS
+              </motion.button>
+              <motion.button
+                variants={dropDelay}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="button__primary"
+                onClick={() => scrollToSection(retreatsRef)}
+              >
+                CHECK OUT RETREATS
               </motion.button>
             </div>
           </div>

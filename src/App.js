@@ -8,19 +8,19 @@ import {
   Switch,
   useHistory,
 } from "react-router-dom";
-import { Retreat } from "./Retreat/Retreat";
+import { SamadhiRetreat } from "./SamadhiRetreat/SamadhiRetreat";
+import { WellnessRetreat } from "./WellnessRetreat/WellnessRetreat";
 
 function App() {
   return (
-    // <div className="App">
     <Router>
       <Switch>
-        <Route path="/retreat" component={Retreat} />
+        <Route path="/wellness-retreat" component={WellnessRetreat} />
+        <Route path="/retreat" component={SamadhiRetreat} />
         <Route path="/" component={Routes} />
         <Route path="*" component={<Redirect />} />
       </Switch>
     </Router>
-    // </div>
   );
 }
 

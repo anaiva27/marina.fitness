@@ -8,17 +8,24 @@ import Footer from "./Footer";
 import Home from "./Home";
 import Testimonials from "./Testimonials";
 import Service from "./Service";
+import RetreatSection from "./RetreatSection";
 
 export const Routes = () => {
   const [optRef, setOptRef] = useState();
-  const scrollToSection = () => {
-    if (!optRef) return;
-    window.scrollTo({ top: optRef.current.offsetTop });
+  const [retreatRef, setRetreatRef] = useState();
+  const scrollToSection = (ref) => {
+    if (!ref) return;
+    window.scrollTo({ top: ref.current.offsetTop });
   };
   return (
     <>
-      <Home scrollToSection={scrollToSection} optRef={optRef} />
+      <Home
+        scrollToSection={scrollToSection}
+        optRef={optRef}
+        retreatsRef={retreatRef}
+      />
       <Service setOptRef={setOptRef} />
+      <RetreatSection setOptRef={setRetreatRef} />
       <About />
       {/* <About /> */}
       <Testimonials />

@@ -30,6 +30,14 @@ p.heading.p__color {
   height: 100%;
   z-index: 5;
 }
+.retreat__box {
+  border-radius: 10px;
+  width: 100%;
+  padding: 55px;
+  transition: 0.4s ease;
+  height: 100%;
+  z-index: 5;
+}
 .service__box:hover {
   transform: scale(5px);
   background-color: #000000ae;
@@ -93,7 +101,13 @@ button.service {
   width: 100%;
   margin: 20px auto;
 }
-
+img.retreat {
+  width: 100%;
+  margin: 10px auto;
+  object-fit: contain;
+  max-width: 800px;
+  border-radius: 10px;
+}
 /* RESPONSIVE */
 @media only screen and (max-width: 1024px) {
   .service__box {
