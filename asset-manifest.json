@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c09316f.chunk.css",
-    "main.js": "/static/js/main.9a83a505.chunk.js",
-    "main.js.map": "/static/js/main.9a83a505.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.3ee93783.js",
-    "runtime-main.js.map": "/static/js/runtime-main.3ee93783.js.map",
+    "main.css": "/static/css/main.119e0ab3.chunk.css",
+    "main.js": "/static/js/main.4ff67aea.chunk.js",
+    "main.js.map": "/static/js/main.4ff67aea.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bf3f3606.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bf3f3606.js.map",
     "static/css/2.9fc4fcca.chunk.css": "/static/css/2.9fc4fcca.chunk.css",
-    "static/js/2.ba8a2322.chunk.js": "/static/js/2.ba8a2322.chunk.js",
-    "static/js/2.ba8a2322.chunk.js.map": "/static/js/2.ba8a2322.chunk.js.map",
-    "static/js/3.84618ce6.chunk.js": "/static/js/3.84618ce6.chunk.js",
-    "static/js/3.84618ce6.chunk.js.map": "/static/js/3.84618ce6.chunk.js.map",
+    "static/js/2.babe826f.chunk.js": "/static/js/2.babe826f.chunk.js",
+    "static/js/2.babe826f.chunk.js.map": "/static/js/2.babe826f.chunk.js.map",
+    "static/js/3.8c9af780.chunk.js": "/static/js/3.8c9af780.chunk.js",
+    "static/js/3.8c9af780.chunk.js.map": "/static/js/3.8c9af780.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.9fc4fcca.chunk.css.map": "/static/css/2.9fc4fcca.chunk.css.map",
-    "static/css/main.9c09316f.chunk.css.map": "/static/css/main.9c09316f.chunk.css.map",
-    "static/js/2.ba8a2322.chunk.js.LICENSE.txt": "/static/js/2.ba8a2322.chunk.js.LICENSE.txt",
+    "static/css/main.119e0ab3.chunk.css.map": "/static/css/main.119e0ab3.chunk.css.map",
+    "static/js/2.babe826f.chunk.js.LICENSE.txt": "/static/js/2.babe826f.chunk.js.LICENSE.txt",
     "static/media/1.36b96fc1.jpg": "/static/media/1.36b96fc1.jpg",
     "static/media/2.07533469.jpg": "/static/media/2.07533469.jpg",
     "static/media/3.42a22028.jpg": "/static/media/3.42a22028.jpg",
@@ -73,10 +73,10 @@
     "static/media/yulia.c7b261da.JPG": "/static/media/yulia.c7b261da.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ee93783.js",
+    "static/js/runtime-main.bf3f3606.js",
     "static/css/2.9fc4fcca.chunk.css",
-    "static/js/2.ba8a2322.chunk.js",
-    "static/css/main.9c09316f.chunk.css",
-    "static/js/main.9a83a505.chunk.js"
+    "static/js/2.babe826f.chunk.js",
+    "static/css/main.119e0ab3.chunk.css",
+    "static/js/main.4ff67aea.chunk.js"
   ]
 }
