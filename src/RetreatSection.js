@@ -60,7 +60,7 @@ function RetreatSection({ setOptRef }) {
         </div>
         <div className="row-service">
           <div
-            className="col__2 service"
+            className="col__2"
             onClick={() => window.open("/mizata-retreat")}
           >
             <img
