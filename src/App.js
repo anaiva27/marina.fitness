@@ -10,11 +10,13 @@ import {
 } from "react-router-dom";
 import { SamadhiRetreat } from "./SamadhiRetreat/SamadhiRetreat";
 import { WellnessRetreat } from "./WellnessRetreat/WellnessRetreat";
+import { MizataRetreat } from "./MizataRetreat/MizataRetreat";
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/mizata-retreat" component={MizataRetreat} />
         <Route path="/wellness-retreat" component={WellnessRetreat} />
         <Route path="/retreat" component={SamadhiRetreat} />
         <Route path="/" component={Routes} />

@@ -1,8 +1,8 @@
-import React from "react";
-import heroImg from "./assets/hero-img.png";
+import React, { useState } from "react";
+import heroImg from "./assets/heroCRimg.jpg";
 import exploreImg from "./assets/explore-img.png";
 import logoImg from "./assets/Samahdi-logo1.png";
-import wallpaper1 from "./assets/wallpaper1.jpeg";
+import wallpaper1 from "./assets/wideImgHero.jpg";
 import mandalaImg from "./assets/mandala21.png";
 import women1 from "./assets/women1.jpg";
 import amberImg from "./assets/amberImg1.png";
@@ -30,64 +30,54 @@ import "swiper/swiper.min.css";
 import "swiper/modules/pagination/pagination.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 import "./retreat.css";
+import { Modal } from "../portal";
 
 export const WellnessRetreat = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const openModal = (val, num) => {
+    setIsOpen(val);
+  };
   return (
     <>
       <HeroSection>
         <img src={heroImg} alt="" />
       </HeroSection>
       <IntroSection>
-        <Mandala src={mandalaImg} alt="" />
+        {/* <Mandala src={mandalaImg} alt="" /> */}
         <Content>
-          <H1>WHAT WOULD IT BE LIKE LIVING A LIFE AS A CELEBRATION?</H1>
-          <h3>Get in touch with your sacred feminine power</h3>
+          <H1>
+            This is more than just a retreat - it’s an invitation to transform
+            your life!
+          </H1>
+          {/* <h3>Move Eat Thrive</h3> */}
           <Body>
-            In today's hectic world, many of us experience disconnection,
-            navigating on autopilot through the burdens of stress, work, family
-            responsibilities, and health challenges.{" "}
-            <strong>
-              Welcome to women’s retreat at the magical land of Peru
-            </strong>
-            , where we offer a pathway to dissolve emotional barriers,
-            rediscover vibrant health, and awaken the blissful woman within you.
+            Reconnect with your true self, learn new skills how to cope with
+            stress, change your perspective and set on a new path of healing,
+            wellness and success. Returning home renewed, invigorated, with more
+            tools and our support after retreat.
           </Body>
-          <ButtonPrimary
-            onClick={() =>
-              window.open(
-                "https://book.stripe.com/aEUcQn28u3KdbXa6oP",
-                "_blank",
-              )
-            }
-          >
+          <ButtonPrimary onClick={() => openModal(true)}>
             The time is now
           </ButtonPrimary>
         </Content>
       </IntroSection>
       <ExploreSection>
         <img src={exploreImg} alt="" />
-        <Logo src={logoImg} alt="" />
+        {/* <Logo src={logoImg} alt="" /> */}
+        <H1>Neureus Retreats</H1>
         <Body>
-          Samadhi is a serene and eco-conscious retreat center situated in the
-          Andes Mountains of Sacred Valley, Peru. Founded by mindful
-          individuals, it serves as a{" "}
-          <strong>
-            sanctuary for healing, sacred reciprocity, and communion
-          </strong>{" "}
-          with Pacha Mama (Mother Earth) and the Divine.
+          Nereus Retreat center is located on the Osa Peninsula – a region
+          described by National Geographic as one of the most “biologically
+          intense” places on the planet located between the Pacific to the west
+          and the tropical fjord Golfo Dulce on the east.
           <br />
           <br />
-          Built with heartfelt intention, the center cultivates organic
-          vegetables on-site, prepares food with blessings, and fosters a warm
-          and inviting atmosphere where joy, connection, and deep healing
-          thrive.
-          <br />
-          <br />
-          Samadhi Center at the sacred land of Peru is an ideal destination for
-          your next journey — a journey focused on cultural immersion,
-          awe-inspiring nature,{" "}
-          <strong>embodying feminine practices, self-nourishment</strong>, and
-          hitting the reset button in our busy lives.
+          While the Osa comprises only 3% of Costa Rica’s total land area, it is
+          home to more than 50% of the country’s animal and plant species.
+          Famous Corcovado National Park is a biodiverse Eden home to some 140
+          species of mammals, 400 species of birds, 116 species of reptiles and
+          amphibians, 40 species of fish, four species of sea turtles and more
+          than 500 species of trees.
         </Body>
         {/* <ButtonPrimary
           onClick={() =>
@@ -98,7 +88,121 @@ export const WellnessRetreat = () => {
         </ButtonPrimary> */}
       </ExploreSection>
       <WideImg src={wallpaper1} alt="" />
-      <Description>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} variant="large">
+        <Subtitle>
+          Book your transformation retreat and save $ by paying a full price (by
+          December 1st only, non refundable)
+        </Subtitle>
+        <Body>
+          {" "}
+          <br />
+          <br />
+          <Subtitle>
+            1. Triple occupancy room ( XL3 twin bed with private bathroom)
+          </Subtitle>
+          <br />
+          $2695 + transaction fee special price by December 1st, only if paid in
+          full
+          <br />
+          <ButtonPrimary
+            style={{ marginBottom: 15, marginTop: 15 }}
+            onClick={() =>
+              window.open("https://buy.stripe.com/7sIdUr28ugwZ6CQ00x", "_blank")
+            }
+          >
+            Reserve your spot
+          </ButtonPrimary>
+          VS
+          <br />
+          <br />
+          $2995 + transaction fees ( secure your spot with deposit, and get a
+          payment plan)
+          <br />
+          Deposit $799 + transaction fee
+          <br />
+          <ButtonPrimary
+            style={{ marginBottom: 15, marginTop: 15 }}
+            onClick={() =>
+              window.open("https://buy.stripe.com/4gwcQnaF0gwZ5yMfZy", "_blank")
+            }
+          >
+            Reserve your spot
+          </ButtonPrimary>
+          <br />
+          <br />
+          <Subtitle>
+            2. Double occupancy room ( two XL twin beds or one king size bed)
+          </Subtitle>
+          <br />
+          $3195 + transaction fee special price if paid by December 1st and only
+          if paid in full
+          <br />
+          <ButtonPrimary
+            style={{ marginBottom: 15, marginTop: 15 }}
+            onClick={() =>
+              window.open("https://buy.stripe.com/8wM5nV3cy2G9bXa5kS", "_blank")
+            }
+          >
+            Reserve your spot
+          </ButtonPrimary>
+          <br />
+          VS
+          <br />
+          <br />
+          $3495 + transaction fees regular price ( secure your spot with
+          deposit, and get a payment plan)
+          <br />
+          Deposit $799 + transaction fee:
+          <br />
+          <ButtonPrimary
+            style={{ marginBottom: 15, marginTop: 15 }}
+            onClick={() =>
+              window.open("https://buy.stripe.com/4gwcQnaF0gwZ5yMfZy", "_blank")
+            }
+          >
+            Reserve your spot
+          </ButtonPrimary>
+          <br />
+          <br />
+          <Subtitle>
+            {" "}
+            3. Single rooms ( queen size beds. Shared bathroom with the room
+            next door)
+          </Subtitle>
+          <br />
+          $3095 + transaction fee special price if paid by December 1st and paid
+          in full
+          <br />
+          <ButtonPrimary
+            style={{ marginBottom: 15, marginTop: 15 }}
+            onClick={() =>
+              window.open("https://buy.stripe.com/4gw3fNdRcbcFgdqfZx", "_blank")
+            }
+          >
+            Reserve your spot
+          </ButtonPrimary>
+          <br />
+          VS
+          <br />
+          <br />
+          $3395 + transaction fee regular price ( secure your spot with deposit,
+          and get a payment plan)
+          <br />
+          Deposit $799 + transaction fee
+          <br />
+          <ButtonPrimary
+            style={{ marginBottom: 15, marginTop: 15 }}
+            onClick={() =>
+              window.open("https://buy.stripe.com/4gwcQnaF0gwZ5yMfZy", "_blank")
+            }
+          >
+            Reserve your spot
+          </ButtonPrimary>
+          <br />
+          <br />
+        </Body>
+      </Modal>
+      {/* <Description>
         <SideImage>
           <img src={women1} alt="" />
         </SideImage>
@@ -143,8 +247,9 @@ export const WellnessRetreat = () => {
             Reserve your spot
           </ButtonPrimary>
         </SideContent>
-      </Description>
-      <MeetSection>
+      </Description> */}
+
+      {/* <MeetSection>
         <HostNameMobile>Meet Amber</HostNameMobile>
         <SideImg>
           <img src={amberImg} alt="" />
@@ -194,8 +299,9 @@ export const WellnessRetreat = () => {
         <SideImg>
           <img src={marinaImg} alt="" />
         </SideImg>
-      </MeetSection>
-      <HistorySection>
+      </MeetSection> */}
+
+      {/* <HistorySection>
         <SideContent history>
           <Body>
             Marina and Amber's bond spans over a decade, evolving from friends
@@ -241,9 +347,9 @@ export const WellnessRetreat = () => {
           </Body>
         </SideContent>
         <HostNameMobile>Guest Teacher Yulia</HostNameMobile>
-      </YuliaSection>
+      </YuliaSection> */}
 
-      <IncludedSection>
+      {/* <IncludedSection>
         <H1>WHAT'S INCLUDED:</H1>
         <List>
           <ul role="list">
@@ -347,11 +453,6 @@ export const WellnessRetreat = () => {
           slidesPerView={"auto"}
           loop={true}
           navigation={true}
-          // autoplay={{
-          //   delay: 4000,
-          //   disableOnInteraction: false,
-          // }}
-          // pagination={{ clickable: true }}
           className="mySwiperRetreat"
           onPaginationUpdate={(i) => {}}
         >
@@ -392,7 +493,8 @@ export const WellnessRetreat = () => {
             <img src={sliderImg12} alt="" />
           </SwiperSlide>
         </Swiper>
-      </IncludedSection>
+      </IncludedSection> */}
+
       {/* <NotIncludedSection>
         <H1>
           WHAT'S <span>NOT</span> INCLUDED:
@@ -411,7 +513,8 @@ export const WellnessRetreat = () => {
           </ul>
         </NotIncludedList>
       </NotIncludedSection> */}
-      <ScheduleSection>
+
+      {/* <ScheduleSection>
         <H1>TENTATIVE SCHEDULE</H1>
         <DaytName>Tuesday Arrival</DaytName>
         <Body>
@@ -497,8 +600,9 @@ export const WellnessRetreat = () => {
             </Body>
           </div>
         </ScheduleTable>
-      </ScheduleSection>
-      <DescriptionWrapper>
+      </ScheduleSection> */}
+
+      {/* <DescriptionWrapper>
         <Description
           style={{
             backgroundColor: "#cfc4c0",
@@ -523,20 +627,10 @@ export const WellnessRetreat = () => {
               <br />
               Every room offers a breathtaking view of the mountains.
             </Body>
-            {/* <ButtonPrimary
-              style={{ marginBottom: 25 }}
-              onClick={() =>
-                window.open(
-                  "https://book.stripe.com/aEUcQn28u3KdbXa6oP",
-                  "_blank",
-                )
-              }
-            >
-              Reserve your spot
-            </ButtonPrimary> */}
           </SideContent>
         </Description>
       </DescriptionWrapper>
+
       <NotIncludedSection>
         <H1>
           WHAT'S <span>NOT</span> INCLUDED:
@@ -580,8 +674,9 @@ export const WellnessRetreat = () => {
             </ButtonPrimary>
           </Body>
         </NotIncludedList>
-      </NotIncludedSection>
-      <HistorySection>
+      </NotIncludedSection> */}
+
+      {/* <HistorySection>
         <SideContent history>
           <H1>TRAVEL INFORMATION</H1>
           <Body>
@@ -658,16 +753,23 @@ export const WellnessRetreat = () => {
             </li>
           </ul>
         </ContactList>
-      </NotIncludedSection>
+      </NotIncludedSection> */}
     </>
   );
 };
 
 const H1 = styled.h1`
   font-size: 50px;
-  color: #635341;
+  color: #394406;
   @media (max-width: 1000px) {
     font-size: 32px;
+  }
+`;
+const Subtitle = styled.h2`
+  font-size: 25px;
+  color: #394406;
+  @media (max-width: 1000px) {
+    font-size: 25px !important;
   }
 `;
 const Body = styled.p`
@@ -1204,7 +1306,7 @@ const ButtonPrimary = styled.button`
   width: 100%;
   max-width: 350px;
   height: 55px;
-  background-color: #635341;
+  background-color: #394406;
   border: none;
   color: white;
   letter-spacing: 0.5px;
