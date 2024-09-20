@@ -35,12 +35,9 @@ function RetreatSection({ setOptRef }) {
         </h1>
       </div>
 
-      <div className="container service">
+      <div className="container ">
         <div className="row-service">
-          <div
-            className="col__2 service"
-            onClick={() => window.open("/retreat")}
-          >
+          <div className="col__2 " onClick={() => window.open("/retreat")}>
             <img
               src={heroImg}
               alt="Marina fitness trainer doing exercises"
@@ -51,7 +48,7 @@ function RetreatSection({ setOptRef }) {
 
         <div className="row-service">
           <div
-            className="col__2 service"
+            className="col__2 "
             onClick={() => window.open("/wellness-retreat")}
           >
             <img
