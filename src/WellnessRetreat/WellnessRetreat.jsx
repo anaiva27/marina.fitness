@@ -1,28 +1,17 @@
 import React, { useState } from "react";
 import heroImg from "./assets/heroCRimg.jpg";
 import exploreImg from "./assets/explore-img.png";
-import logoImg from "./assets/Samahdi-logo1.png";
 import wallpaper1 from "./assets/wideImgHero.jpg";
-import mandalaImg from "./assets/mandala21.png";
-import women1 from "./assets/women1.jpg";
-import amberImg from "./assets/amberImg1.png";
-import marinaImg from "./assets/marinaImg1.png";
-import sliderImg1 from "./assets/sliderImg1.jpg";
-import sliderImg2 from "./assets/sliderImg2.jpg";
-import sliderImg3 from "./assets/sliderImg3.jpg";
-import sliderImg4 from "./assets/sliderImg4.jpg";
-import sliderImg5 from "./assets/sliderImg5.jpg";
-import sliderImg6 from "./assets/sliderImg6.jpg";
-import sliderImg7 from "./assets/img122.jpg";
-import sliderImg8 from "./assets/img456.jpg";
-import sliderImg9 from "./assets/img554.JPG";
-import sliderImg10 from "./assets/img999.JPG";
-import sliderImg11 from "./assets/img1234.jpg";
-import sliderImg12 from "./assets/img5677.JPG";
-import marinaAmberImg from "./assets/marina-abmer.jpg";
-import roomsImg from "./assets/rooms.png";
-import yuliaImg from "./assets/yulia.JPG";
-import img11 from "./assets/img11.png";
+import imgGrid1 from "./assets/gridImg1.jpg";
+import imgGrid2 from "./assets/gridImg2.jpg";
+import imgGrid3 from "./assets/gridImg3.jpg";
+import imgGrid4 from "./assets/gridImg4.jpg";
+import imgGrid5 from "./assets/gridImg5.jpg";
+import imgGrid6 from "./assets/gridImg6.jpg";
+import imgHost1 from "./assets/hostImgAg1.jpg";
+import imgHost2 from "./assets/hostImgAg2.jpg";
+import imgHost3 from "./assets/hostImgM1.jpg";
+import imgHost4 from "./assets/hostImgM2.jpg";
 import styled, { css } from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
@@ -45,7 +34,7 @@ export const WellnessRetreat = () => {
       <IntroSection>
         {/* <Mandala src={mandalaImg} alt="" /> */}
         <Content>
-          <H1>
+          <H1 style={{ textTransform: "uppercase" }}>
             This is more than just a retreat - it’s an invitation to transform
             your life!
           </H1>
@@ -54,7 +43,11 @@ export const WellnessRetreat = () => {
             Reconnect with your true self, learn new skills how to cope with
             stress, change your perspective and set on a new path of healing,
             wellness and success. Returning home renewed, invigorated, with more
-            tools and our support after retreat.
+            tools and our support after retreat. A perfect opportunity to embark
+            on a journey of profound personal growth and discovery.
+            <br />
+            <br />
+            Press this reset button and book a tour retreat today!
           </Body>
           <ButtonPrimary onClick={() => openModal(true)}>
             The time is now
@@ -72,6 +65,13 @@ export const WellnessRetreat = () => {
           and the tropical fjord Golfo Dulce on the east.
           <br />
           <br />
+          Immerse yourself in the lush jungles of Costa Rica, where nature’s
+          tranquility meets transformative wellness. Our exclusive retreat is
+          designed to rejuvenate your mind, body, and soul through a blend of
+          functional movement (mobility, yoga and strength training),
+          meditation, mindfulness, self hypnosis, nutrition, and adventure.
+          <br />
+          <br />
           While the Osa comprises only 3% of Costa Rica’s total land area, it is
           home to more than 50% of the country’s animal and plant species.
           Famous Corcovado National Park is a biodiverse Eden home to some 140
@@ -87,7 +87,7 @@ export const WellnessRetreat = () => {
           Reserve your spot
         </ButtonPrimary> */}
       </ExploreSection>
-      <WideImg src={wallpaper1} alt="" />
+
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} variant="large">
         <Subtitle>
           Book your transformation retreat and save $ by paying a full price (by
@@ -202,6 +202,164 @@ export const WellnessRetreat = () => {
           <br />
         </Body>
       </Modal>
+
+      <WideImg src={wallpaper1} alt="" />
+      {/* <H1>
+        Experience exhilarating adventures, from guided tours to Corcovado
+        National park, cacao farm, mangrove kayak tours or take a surf lesson.
+      </H1>
+      <br />
+      <br /> */}
+      <DiscroverGrid>
+        <div>
+          <img src={imgGrid5} alt="" />
+        </div>{" "}
+        <div>
+          <img src={imgGrid4} alt="" />
+        </div>{" "}
+        <div>
+          <img src={imgGrid6} alt="" />
+        </div>
+        <div>
+          <SubtitleCap>
+            {" "}
+            <H1>Experience</H1> the Ultimate Mind-Body Connection in our daily
+            fitness, yoga, pilates and mobility sessions, guided by Marina and
+            Jeanine who will help you deepen your practice and connect with your
+            physical body.{" "}
+          </SubtitleCap>
+        </div>
+        <div>
+          <img src={imgGrid3} alt="" style={{ marginTop: "2px" }} />
+        </div>
+        <div>
+          <SubtitleCap>
+            {" "}
+            <H1>Expand</H1> your mindset in truly transformative workshops with
+            Agustín. An expert in performance coaching, he will challenge and
+            elevate your mindset and help you embrace new perspectives and
+            cultivate a positive outlook.
+          </SubtitleCap>
+        </div>
+        <div>
+          <img src={imgGrid1} alt="" />
+        </div>
+        <div>
+          <SubtitleCap>
+            <H1>Nourish</H1> your body with fresh, locally-sourced ingredients
+            with our specially curated nutrition plan. Each meal is designed to
+            nourish and energize, supporting your physical well-being while
+            delighting your taste buds. As well as learn about optimal nutrition
+            with our expert Jeanine who guided hundreds on their journey.
+          </SubtitleCap>
+        </div>
+        <div>
+          <img src={imgGrid2} alt="" />
+        </div>
+      </DiscroverGrid>
+
+      <MeetSection>
+        <H1 style={{ margin: "50px auto" }}>Meet your facilitators</H1>
+        <HostGrid>
+          <div id="second">
+            <img src={imgHost1} alt="" style={{ aspectRatio: 1 }} />
+          </div>
+          <div style={{ aspectRatio: 1 }} id="first">
+            <H1 style={{ margin: "20px auto 0 " }}>Agustín</H1>
+            <Body>
+              Agustín R. Quevedo is the co-founder of WholeFit, LLC,
+              specializing in holistic health and wellness coaching. With over
+              30 years of experience across business, education, and health &
+              fitness, he offers extensive expertise in comprehensive wellness
+              strategies. Agustín holds a Juris Doctor from St. Thomas
+              University, an MBA from the University of Miami, and an MS in
+              Exercise Science and Nutrition from the University of Central
+              Florida. He is also pursuing a doctorate in Performance Psychology
+              from the University of Western States.
+            </Body>
+          </div>
+          <div id="third">
+            <Body>
+              <Subtitle>
+                Agustín's certifications demonstrate his commitment to
+                excellence and include:
+              </Subtitle>
+              <br />
+              <Body> • WholeFit Certified Master Transformation Coach</Body>
+              <Body>
+                {" "}
+                • WholeFit Certified Mindfulness & Meditation Instructor
+              </Body>
+              <Body> • NCSF Master Trainer & Sports Nutritionist</Body>
+              <Body> • NASM Certified Personal Trainer</Body>
+              <Body> • Precision Nutrition Certified Coach</Body>
+              <Body>
+                {" "}
+                • Precision Nutrition Certified Sleep, Stress Management, and
+                Recovery Coach
+              </Body>
+              <Body> • NGH Certified Motivational Hypnotist & Instructor</Body>
+              <Body> • Certified Master of NLP & Coaching</Body>
+              <Body> • Certified Master of Emotional Release Therapy</Body>
+              <Body> • University of Miami Certified Professional Coach</Body>
+              <Body> • ICF Professional Coach</Body>
+            </Body>
+          </div>
+          <div id="forth">
+            <img src={imgHost2} alt="" />
+          </div>
+        </HostGrid>
+
+        <HostGrid>
+          <div id="second">
+            <img src={imgHost3} alt="" style={{ aspectRatio: 1 }} />
+          </div>
+          <div style={{ aspectRatio: 1 }} id="first">
+            <H1 style={{ margin: "20px auto 0 " }}>Marina</H1>
+            <Body>
+              Marina is a passionate wellness and movement educator, her fitness
+              and wellness journey began in 2010 with yoga and it quickly grew
+              into passion and lifestyle. She graduated from two 200 hours RYT
+              training - Empowered Yoga in 2013 in Wilmington Delaware. The
+              following year I completed Vinyasa YTT at Dimitra Yoga Lewes
+              Delaware and taught there for 8 years. Years of teaching yoga lead
+              her to different movement modalities such as Cross Fit and long
+              distance running. Then she decided to go back to college and
+              become a Physical Therapy Assistant. 3 years in PTA school
+              deepened my knowledge in physiology, anatomy and kinesiology. In
+              2019 she became a Certified Personal Trainer.
+            </Body>
+          </div>
+          <div id="third">
+            <Body>
+              <Subtitle>Her credentials also include:</Subtitle>
+              <br />
+              <Body> • Functional Range Conditioning (FRC) coach</Body>
+              <Body> • Precision Nutrition Coach L1</Body>
+              <Body> • Balanced Athlete coach L1</Body>
+              <Body> • Kettle Bell coach through NESTA</Body>
+              <Body> • Pain Free Performance Specialist (PPSC)</Body>
+              <br />
+              <Body>
+                Marina studied mindfulness with Sound True and Jack Kornfield,
+                participated in four Vipassana Silent meditation retreats and
+                studied Yin yoga and myofascial release. Beyond her professional
+                endeavors, Marina's heart lies in exploring the world,
+                particularly drawn to Mexico, Central, and South America. Here,
+                she discovers profound connections with the enigmatic cultures,
+                traditions, and spiritual teachings that enrich her journey.
+                Through her teachings and travels, she not only inspires but
+                empowers others to embrace wellness in all its forms, wherever
+                their journeys may take them.
+              </Body>
+            </Body>
+          </div>
+          <div id="forth">
+            <img src={imgHost4} alt="" />
+          </div>
+        </HostGrid>
+      </MeetSection>
+
       {/* <Description>
         <SideImage>
           <img src={women1} alt="" />
@@ -759,15 +917,24 @@ export const WellnessRetreat = () => {
 };
 
 const H1 = styled.h1`
-  font-size: 50px;
+  font-size: 3vw;
   color: #394406;
+  text-transform: uppercase;
   @media (max-width: 1000px) {
-    font-size: 32px;
+    font-size: 6.5vw;
   }
 `;
 const Subtitle = styled.h2`
   font-size: 25px;
   color: #394406;
+  @media (max-width: 1000px) {
+    font-size: 25px !important;
+  }
+`;
+const SubtitleCap = styled.h3`
+  font-size: 20px;
+  color: #394406;
+  text-transform: uppercase;
   @media (max-width: 1000px) {
     font-size: 25px !important;
   }
@@ -786,6 +953,114 @@ const Body = styled.p`
     font-size: 18px;
   }
 `;
+const DiscroverGrid = styled.div`
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+  img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+  div {
+    aspect-ratio: 1;
+    top: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h3 {
+    padding: 20px;
+    font-size: 1.7vw;
+  }
+  h1 {
+    font-size: 3vw !important;
+  }
+  @media (min-width: 1001px) {
+    div {
+      position: relative;
+      max-width: 33vw;
+    }
+  }
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    div {
+      position: sticky;
+      max-width: unset;
+    }
+    h3 {
+      padding: 20px;
+      font-size: 4vw !important;
+    }
+    h1 {
+      font-size: 6.5vw !important;
+    }
+  }
+`;
+
+const HostGrid = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  & > div > p {
+    padding: 30px;
+  }
+  div {
+    /* aspect-ratio: 1; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h3 {
+    padding: 20px;
+    font-size: 1.7vw;
+  }
+  h1 {
+    font-size: 3vw !important;
+  }
+  @media (min-width: 1001px) {
+    div {
+      position: relative;
+    }
+  }
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    div {
+      max-width: unset;
+      aspect-ratio: unset;
+    }
+    h3 {
+      padding: 20px;
+      font-size: 4vw !important;
+    }
+    h1 {
+      font-size: 6.5vw !important;
+    }
+    div#first {
+      order: 1;
+    }
+    div#second {
+      order: 2;
+    }
+    div#third {
+      order: 3;
+    }
+    div#forth {
+      order: 4;
+    }
+  }
+`;
+
 const Logo = styled.img`
   width: 40% !important;
   margin-top: -150px;
@@ -1015,7 +1290,7 @@ const MeetSection = styled.div`
   max-width: 1300px;
   display: flex;
   margin: auto;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
   padding: 40px;
   ${HostName} {
@@ -1121,7 +1396,7 @@ const ExploreSection = styled.div`
   align-items: center;
   justify-content: center;
   h1 {
-    color: #1c2a14;
+    /* color: #1c2a14; */
   }
   p {
     padding: 20px;

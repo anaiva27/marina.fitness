@@ -276,7 +276,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
                 className="button__primary"
                 onClick={() => scrollToSection(retreatsRef)}
               >
-                CHECK OUT RETREATS
+                CHECK OUT MY RETREATS
               </motion.button>
             </div>
           </div>
