@@ -347,10 +347,10 @@ export const SamadhiRetreat = () => {
           slidesPerView={"auto"}
           loop={true}
           navigation={true}
-          // autoplay={{
-          //   delay: 4000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
           // pagination={{ clickable: true }}
           className="mySwiperRetreat"
           onPaginationUpdate={(i) => {}}

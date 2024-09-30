@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import heroImg from "./assets/heroCRimg.jpg";
 import exploreImg from "./assets/explore-img.png";
 import wallpaper1 from "./assets/wideImgHero.jpg";
+import workshop1 from "./assets/workshopImg3.jpg";
 import imgGrid1 from "./assets/gridImg1.jpg";
 import imgGrid2 from "./assets/gridImg2.jpg";
 import imgGrid3 from "./assets/gridImg3.jpg";
@@ -12,6 +13,12 @@ import imgHost1 from "./assets/hostImgAg1.jpg";
 import imgHost2 from "./assets/hostImgAg2.jpg";
 import imgHost3 from "./assets/hostImgM1.jpg";
 import imgHost4 from "./assets/hostImgM2.jpg";
+import imgHost5 from "./assets/hostImgJ1.jpg";
+import imgHost6 from "./assets/hostImgJ2.jpg";
+import sliderImg1 from "./assets/slider1.jpg";
+import sliderImg2 from "./assets/slider2.jpg";
+import sliderImg3 from "./assets/slider3.jpg";
+import sliderImg4 from "./assets/slider4.jpg";
 import styled, { css } from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
@@ -332,7 +339,7 @@ export const WellnessRetreat = () => {
           </div>
           <div id="third">
             <Body>
-              <Subtitle>Her credentials also include:</Subtitle>
+              <Subtitle>Marina's credentials also include:</Subtitle>
               <br />
               <Body> • Functional Range Conditioning (FRC) coach</Body>
               <Body> • Precision Nutrition Coach L1</Body>
@@ -341,7 +348,7 @@ export const WellnessRetreat = () => {
               <Body> • Pain Free Performance Specialist (PPSC)</Body>
               <br />
               <Body>
-                Marina studied mindfulness with Sound True and Jack Kornfield,
+                She studied mindfulness with Sound True and Jack Kornfield,
                 participated in four Vipassana Silent meditation retreats and
                 studied Yin yoga and myofascial release. Beyond her professional
                 endeavors, Marina's heart lies in exploring the world,
@@ -358,8 +365,650 @@ export const WellnessRetreat = () => {
             <img src={imgHost4} alt="" />
           </div>
         </HostGrid>
+
+        <HostGrid>
+          <div id="second">
+            <img src={imgHost5} alt="" style={{ aspectRatio: 1 }} />
+          </div>
+          <div style={{ aspectRatio: 1 }} id="first">
+            <H1 style={{ margin: "20px auto 0 " }}>Jeanine</H1>
+            <Body>
+              Jeanine DeLorme is a passionate and dedicated health and wellness
+              professional with over 25 years of experience in fitness, dance,
+              and holistic coaching. From an early age, Jeanine immersed herself
+              in a wide array of athletic pursuits, excelling in swimming,
+              diving, basketball, volleyball, and track. Her love for physical
+              challenge and expression eventually led her to discover the
+              beauty, and complexity of classical and Russian ballet. She
+              dedicated 25 years to teaching ballet, becoming a certified
+              Cecchetti Ballet instructor across levels I-VII. Her teaching not
+              only honed the skills of countless dancers but also deepened her
+              understanding of body mechanics and movement aesthetics.
+            </Body>
+          </div>
+          <div id="third">
+            <Body>
+              <Subtitle>
+                Jeanine's comprehensive expertise is backed by an impressive
+                array of credentials, including:
+              </Subtitle>
+              <br />
+              <Body>
+                {" "}
+                • Bachelor of Science in Kinesiology and Exercise Science
+              </Body>
+              <Body>
+                {" "}
+                • Certified Cecchetti Ballet Instructor (Levels I-VII)
+              </Body>
+              <Body>
+                {" "}
+                • Pilates Certifications through Ball Fitness and Lagree
+              </Body>
+              <Body>
+                {" "}
+                • Certified Spin Instructor through Mad Dogg Athletics
+              </Body>
+              <Body> • Certified Zumba Instructor</Body>
+              <Body>
+                {" "}
+                • Certified Personal Trainer through NASM (National Academy of
+                Sports Medicine){" "}
+              </Body>
+              <Body> • ISSA (International Sports Sciences Association)</Body>
+              <Body>
+                {" "}
+                • Nutrition Certification through Precision Nutrition
+              </Body>
+              <Body>
+                {" "}
+                • Certified Hypnotherapist through the National Guild of
+                Hypnotists
+              </Body>
+              <Body>
+                {" "}
+                • Certified Master Health Coach through Dr. Sears Wellness
+                Institute
+              </Body>
+              <Body>
+                {" "}
+                • Certified Metabolic Balance Coach through Metabolic Balance
+              </Body>
+
+              <br />
+              <Body>
+                After the birth of her three children, Jeanine faced personal
+                challenges with weight gain. Determined to reclaim her health
+                through holistic methods, she embarked on a journey of balanced
+                nutrition and resistance training. This transformative
+                experience ignited a new passion for fitness and wellness
+                coaching. Jeanine's enthusiasm for body movement and athletic
+                challenges continued to flourish as she competed in women's
+                fitness and bikini competitions, earning recognition and fame at
+                the professional level. Her relentless drive and positive
+                attitude have been instrumental in her success as both a
+                competitor and a coach.
+                <br />
+                <br />
+                As a seasoned coach and personal trainer, Jeanine has dedicated
+                herself to guiding clients toward realizing their full
+                potential. Her extensive experience and empathetic approach have
+                empowered countless men and women to soar to new heights in
+                their health and wellness journeys.
+              </Body>
+            </Body>
+          </div>
+          <div id="forth">
+            <img src={imgHost6} alt="" />
+          </div>
+        </HostGrid>
       </MeetSection>
 
+      <IncludedSection>
+        <H1>WHAT'S INCLUDED:</H1>
+        <List>
+          <ul role="list">
+            <li>
+              <Body>
+                <strong>—</strong> 7 night accommodation of your choice
+              </Body>
+            </li>
+
+            <li>
+              <Body>
+                <strong>—</strong> 3 organic, locally sourced, cooked with love
+                and ancient knowledge meals tailored to your needs
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Shuttle from and to airport
+              </Body>
+            </li>
+
+            <li>
+              <Body>
+                <strong>—</strong> Daily mindful movement practice : yoga,
+                stretching, mobility, pilates and strength training lead by
+                Jeanine and Marina
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Daily meditation and mindfulness
+              </Body>
+            </li>
+
+            <li>
+              <Body>
+                <strong>—</strong> Full day tour to Corcovado National Park
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Bonfire sharing circle at the beach
+              </Body>
+            </li>
+          </ul>
+          <ul role="list">
+            <li>
+              <Body>
+                <strong>—</strong> Resort amenities
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Personal gift bag + manual
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Five transformative workshops: meditation &
+                mindfulness, self hypnosis, spine and hips mobility, and
+                nutrition workshop (***read the workshop's description below) to
+                empower your mind, body and soul through the science of
+                mindfulness, movement and nutrition led by Augustine, Jeanine
+                and Marina.
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Group zoom prep call + one month integration
+                after retreat through zoom session (one guided meditation and
+                QnA, one session of QnA for nutrition with Jeannie, one month
+                access to Marina’s online yoga and mobility classes).
+              </Body>
+            </li>
+          </ul>
+        </List>
+        <ButtonPrimary
+          style={{ marginBottom: 25 }}
+          onClick={() =>
+            window.open("https://book.stripe.com/aEUcQn28u3KdbXa6oP", "_blank")
+          }
+        >
+          Reserve your spot
+        </ButtonPrimary>
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          slidesPerView={"auto"}
+          loop={true}
+          navigation={true}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          // pagination={{ clickable: true }}
+          className="mySwiperRetreat"
+          onPaginationUpdate={(i) => {}}
+        >
+          <SwiperSlide className="styled">
+            <img src={sliderImg1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="styled">
+            <img src={sliderImg4} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="styled">
+            <img src={sliderImg3} alt="" />
+          </SwiperSlide>
+          <SwiperSlide className="styled">
+            <img src={sliderImg2} alt="" />
+          </SwiperSlide>
+        </Swiper>
+      </IncludedSection>
+
+      <WorkshopSection>
+        <H1>Workshop Details </H1>
+        <Subtitle>
+          Evidence-Based Mindfulness & Meditation Training (6-8 hrs):
+        </Subtitle>
+        <Body>
+          Mindfulness can make drastic positive shifts in your physical and
+          mental health.
+        </Body>
+        <Body>
+          Researches have shown that people who are more mindful are generally
+          happier and report less anxiety, symptoms of depression, anger, and
+          worries. A higher degree of mindfulness is also associated with
+          reduced stress and increased gratitude, hope, and vitality.
+          <br />
+          <br />
+          So, if practicing mindfulness holds such powerful potential for our
+          well-being, why aren’t we all doing it every day? The reason is that
+          we often need more guidance and support than simply downloading an
+          app. We need to better understand the underlying processes and
+          research behind mindfulness. <br />
+          <br /> This program is designed to walk you through everything you
+          need to fully understand mindfulness and experience the profound
+          effects it can have on your life.
+        </Body>
+        <Subtitle>
+          What you will learn and how it’s going to benefit you:
+        </Subtitle>
+        <ListWorkshop>
+          <ul role="list">
+            <li>
+              <Body>
+                <strong>—</strong> Information and practice integrated with
+                research and evidence.
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Small, informal practices that help weave
+                mindfulness into your daily routine.
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> An examination of mindfulness in the broader
+                context of life and how we perceive things.
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> Understanding the foundation of psychological
+                processes that mindfulness rests upon.
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> A detailed handbook with worksheets and
+                homework to practice and integrate the knowledge and experience.
+              </Body>
+            </li>
+          </ul>
+        </ListWorkshop>
+
+        <Subtitle>Mastering the Art of Self Hypnosis (6-8 hrs):</Subtitle>
+        <Body>
+          You will learn how to unlock the power of your subconscious mind with
+          our comprehensive Self-Hypnosis for Health & Wellness course. This
+          training program is designed to teach you the fundamentals of
+          self-hypnosis, providing you with effective tools to promote
+          relaxation, enhance personal development, and achieve your goals.
+          <br />
+          <br />
+          Based on scientific research and practical applications, this course
+          offers step-by-step guidance to help you master the art of
+          self-hypnosis. Whether you are new to hypnosis or looking to deepen
+          your practice, our structured yet flexible program is suitable for all
+          experience levels.
+        </Body>
+        <Subtitle>What you will learn:</Subtitle>
+        <ListWorkshop>
+          <ul role="list">
+            <li>
+              <Body>
+                <strong>—</strong> How to reach a state of deep relaxation and
+                how to reduce the impact of daily stressors.
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> How to enhance the quality of your sleep by
+                calming your mind and body before bedtime.
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> How to boost your concentration and mental
+                clarity for improved performance in various areas of life.
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> How to manage anxiety, negative thoughts, and
+                emotions through effective self-hypnosis techniques.
+              </Body>
+            </li>
+            <li>
+              <Body>
+                <strong>—</strong> How to set and achieve personal goals, build
+                self-confidence, and foster a positive mindset, alleviate
+                chronic pain and enhance physical well-being.
+              </Body>
+            </li>
+          </ul>
+        </ListWorkshop>
+        <Body>
+          By the end of the course, you will have gained the skills and
+          confidence to practice self-hypnosis independently, allowing you to
+          harness the full potential of your mind for lasting wellness and
+          personal transformation
+        </Body>
+        <br />
+        <br />
+        <Subtitle> The Holistic Nutrition & Metabolic Workshop</Subtitle>
+        <Body>
+          This is a comprehensive, hands-on experience designed to empower
+          participants with the knowledge and tools to optimize their health
+          through natural and integrative approaches. This workshop delves deep
+          into the interconnectedness of nutrition, metabolism, and overall
+          well-being, emphasizing the importance of a balanced lifestyle that
+          harmonizes body, mind, and spirit.
+          <br />
+          <br />
+          Participants will explore the fundamentals of holistic nutrition,
+          learning how whole foods, herbs, and natural supplements can enhance
+          metabolic function, support detoxification, and boost energy levels.
+          The workshop will cover topics such as the role of macronutrients and
+          micronutrients, the impact of stress and sleep on metabolism, and
+          personalized dietary strategies based on individual metabolic types.
+          <br />
+          <br />
+          In addition to educational sessions, the workshop includes practical
+          activities such as meal planning, cooking demonstrations, and guided
+          meditations to help participants integrate what they've learned into
+          their daily lives. Attendees will also have the opportunity to assess
+          their current health status through various diagnostic tools, receive
+          personalized nutrition and lifestyle recommendations, and participate
+          in group discussions to share experiences and insights.
+          <br />
+          <br />
+          By the end of the workshop, participants will leave with a deeper
+          understanding of how to nourish their bodies holistically, achieve
+          metabolic balance, and maintain long-term health and vitality. This
+          workshop is ideal for anyone seeking to take a proactive approach to
+          their health, whether they are new to holistic practices or looking to
+          deepen their existing knowledge.
+        </Body>
+        <br />
+        <br />
+        <Subtitle>IV and V Hips and Spine Mobility workshop</Subtitle>
+        <Body>
+          These two workshops are 90 minutes long each are body weight movement
+          practice, however true mobility is strength! Despite the fact we are
+          not gonna be using external load (weights), the practice does
+          challenge the body and nervous system as much as resistance training -
+          so be ready to work hard!
+          <br />
+          <br />
+          These two workshops are dedicated to enhancing hips and spine mobility
+          through the Functional Range System (FRS). It will cover techniques
+          and exercises designed to improve the range of motion, joint health,
+          and overall movement quality of the hips and spine. The sessions
+          integrate scientific principles with practical applications to address
+          mobility limitations and support functional movement. First we will
+          earn the foundational concepts of the Functional Range System,
+          focusing on controlled articular rotations (CARs) and end-range
+          training.
+          <br />
+          <br />
+          As built on we will learn Pails and Rails techniques to help teach the
+          central nervous system (CNS) how to control and function in newly
+          acquired ranges. Utilizing isometric contraction teaches the nervous
+          system to have active control over a particular range. <br />
+          <br />
+          These techniques help expand the available range of motion at any
+          given joint, will help build strength and tissue adaptation in both
+          the shortened and lengthened ranges of motion. With the basic
+          principles from the FRC system we will move through creative,
+          intelligent and functional sequences that will make you rethink what
+          functional movement is.
+          <br />
+          <br />
+          As a result you will learn how to move better with more control, as
+          well as you will learn skills to enhance hip and spine mobility,
+          drills to mitigate risk of injuries, strengthen your joints, and
+          improve movement efficiency ! and most importantly feel great in your
+          body.
+        </Body>
+      </WorkshopSection>
+
+      <WideImg src={workshop1} alt="" />
+
+      <ScheduleSection>
+        <H1>TENTATIVE SCHEDULE</H1>
+        <DaytName>Day 1 April 23rd</DaytName>
+        <Body>
+          Arrival + Gentle yoga with Marina <br />
+          Introduction circle with gift bag giveaway <br />
+          Dinner
+        </Body>
+        <ScheduleTable>
+          <div>
+            <DaytName>Day 2</DaytName>
+            <Body>
+              8.30 - 9.30 am Full Body Strength with Jeanine <br />
+              9.45 - 11 am breakfast
+              <br />
+              11 am - 1 pm Mindfulness workshop part I with Agustin
+              <br />
+              1 pm - 2 pm lunch <br />
+              2.00 pm - 5.30 pm Mindfulness workshop part II with Agustine
+              <br />
+              6 pm - 7pm Power Yoga with Marina
+              <br />
+              7.30 pm dinner
+              <br />
+              8.30 pm sharing circle
+              <br />
+            </Body>
+          </div>
+          <DayMobile>
+            <DaytName>Day 3</DaytName>
+            <Body>
+              8 -8.30 Morning meditation w/Agustin
+              <br />
+              8.30-9.30 am HIIT w/Jeanine
+              <br />
+              9.45 Breakfast
+              <br />
+              11am - 1 pm Self hypnosis workshop part one w/Agustin
+              <br />
+              1.00- 2.00 Lunch <br />
+              2.00 pm - 6 pm Self hypnosis workshop part two w/Agustin
+              <br />
+              Free time <br />
+              7.30 pm Dinner
+              <br />
+            </Body>
+          </DayMobile>
+          <div>
+            <DaytName>Day 4</DaytName>
+            <Body>
+              8.00 - 9.00 Morning Meditation w/Agustin
+              <br />
+              9 am - 10.30 Spine mobility w/Marina <br />
+              10.30 Breakfast <br />
+              Free time for excursions and spa
+              <br />
+              5 -6 pm Stretch class w/Jeanine at the beach and sunset meditation
+              <br />
+              7.30 Dinner <br />
+            </Body>
+          </div>
+          <DayMobile>
+            <DaytName>Day 5</DaytName>
+            <Body>
+              8- 9 Meditation with Agustin
+              <br />
+              9.00 - 10.30 Hips Mobility workshop w/Marina
+              <br />
+              Breakfast <br />
+              Free time
+              <br />
+              6 -7 Pilates w/Jeannie
+              <br />
+              7.30 pm Dinner <br />
+            </Body>
+          </DayMobile>
+          <DayDesktop>
+            <DaytName>Day 6</DaytName>
+            <Body>
+              Meditation w/Agustin + Breakfast
+              <br />
+              8 - 4 Day tour to Corcovado National Park <br />
+              5 - 6 Yin Yoga with Marina
+              <br />
+              7.30 Dinner
+              <br />
+            </Body>
+          </DayDesktop>
+          <DayDesktop>
+            <DaytName>Day 3</DaytName>
+            <Body>
+              8 -8.30 Morning meditation w/Agustin
+              <br />
+              8.30-9.30 am HIIT w/Jeanine
+              <br />
+              9.45 Breakfast
+              <br />
+              11am - 1 pm Self hypnosis workshop part one w/Agustin
+              <br />
+              1.00- 2.00 Lunch <br />
+              2.00 pm - 6 pm Self hypnosis workshop part two w/Agustin
+              <br />
+              Free time <br />
+              7.30 pm Dinner
+              <br />
+            </Body>
+          </DayDesktop>
+          <DayDesktop>
+            <DaytName>Day 5</DaytName>
+            <Body>
+              8- 9 Meditation with Agustin
+              <br />
+              9.00 - 10.30 Hips Mobility workshop w/Marina
+              <br />
+              Breakfast <br />
+              Free time
+              <br />
+              6 -7 Pilates w/Jeannie
+              <br />
+              7.30 pm Dinner <br />
+            </Body>
+          </DayDesktop>
+          <DayMobile>
+            <DaytName>Day 6</DaytName>
+            <Body>
+              Meditation w/Agustin + Breakfast
+              <br />
+              8 - 4 Day tour to Corcovado National Park <br />
+              5 - 6 Yin Yoga with Marina
+              <br />
+              7.30 Dinner
+              <br />
+            </Body>
+          </DayMobile>
+          <div>
+            <DaytName>Day 7</DaytName>
+            <Body>
+              8 am Meditation w/Agustin
+              <br />
+              8.30-9.30 Power Yoga w/Marina <br />
+              9.30 -10.30 Breakfast
+              <br />
+              11 - 1 pm Nutrition workshop with Jeanine
+              <br />
+              Free time <br />
+              6.30 pm - 8.30 Final Yoga class + closing ceremony <br />
+              7.30 dinner
+              <br />
+            </Body>
+          </div>
+        </ScheduleTable>
+        <DaytName>Day 8 April 30th</DaytName>
+        <Body>Breakfast + departure to airport</Body>
+      </ScheduleSection>
+
+      <PaymentSection>
+        <H1>Accommodation options and pricing</H1>
+        <Body>
+          Villa-style rooms – kitted out with air-conditioning, screened windows
+          and powerful fans to keep cool air flowing – are thoughtfully
+          decorated and feature locally sourced furnishings, specially
+          commissioned contemporary art and en-suite bathrooms. The body and
+          hair care products provided in guests’ bathrooms are plant-based,
+          biodegradable and made in Costa Rica. Beds and linens are of the
+          highest quality throughout.
+        </Body>
+        <Subtitle>
+          {" "}
+          • Triple occupancy room ( XL3 twin bed with private bathroom){" "}
+        </Subtitle>
+        $2695 Early bird special price if paid by December 1st and paid in full
+        <br />
+        $2995 regular price ( secure your spot with deposit, and get a payment
+        plan)
+        <br />
+        <Subtitle>
+          {" "}
+          • Double occupancy room ( two XL twin beds or one king size bed){" "}
+        </Subtitle>
+        $3195 Early bird special price if paid by December 1st and paid in full{" "}
+        <br />
+        $3495 regular price ( secure your spot with deposit, and get a payment
+        plan)
+        <Subtitle>
+          {" "}
+          • Single rooms ( queen size beds. Shared bathroom with the room next
+          door){" "}
+        </Subtitle>
+        $3095 Early bird special price if paid by December 1st and paid in full
+        <br />
+        $3395 regular price ( secure your spot with deposit, and get a payment
+        plan)
+        <H1>Payment</H1>
+        <Body>
+          • Pay in full and get an amazing discount (special offer is available
+          by December 1st and non refundable) *unless extraordinary
+          circumstances come up and we can discuss it case by case
+        </Body>
+        <Body>
+          • Save your spot by submitting a deposit - only $799 (nonrefundable)
+          and the rest in two payments : 1. 50 % by January 1st and 2. By March
+          1st. (once payments are made they become non refundable) *unless
+          extraordinary circumstances come up and we can discuss it case by case
+        </Body>
+        <H1>What's not included and optional</H1>
+        <Body>• Adventures and excursions in your free time</Body>
+        <Body>• Spa services</Body>
+        <Body>• Airplane tickets</Body>
+        <Body>• Travel insurance (if you wish to have one)</Body>
+      </PaymentSection>
+
+      <ScheduleSection>
+        <H1>Contact Info</H1>
+        <Body>
+          Email:{" "}
+          <a href="mailto:marina@marinafitness.pro">marina@marinafitness.pro</a>
+        </Body>
+        <Body>
+          Phone numbers: M: <a href="tel:302-747-3415">1-302-747-3415</a>
+        </Body>
+        <Body>
+          Instagram:{" "}
+          <a
+            href="https://www.instagram.com/marina.bogatkina/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @marina.bogatkina
+          </a>
+        </Body>
+      </ScheduleSection>
       {/* <Description>
         <SideImage>
           <img src={women1} alt="" />
@@ -940,7 +1589,7 @@ const SubtitleCap = styled.h3`
   }
 `;
 const Body = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   max-width: 1000px;
 
   ${({ darkColor }) =>
@@ -1045,6 +1694,9 @@ const HostGrid = styled.div`
     }
     h1 {
       font-size: 6.5vw !important;
+    }
+    & > div > p {
+      padding: 10px 0 30px 0;
     }
     div#first {
       order: 1;
@@ -1424,6 +2076,36 @@ const IncludedSection = styled.div`
 
   @media (max-width: 1000px) {
     padding: 30px 0 0;
+    gap: 5px;
+  }
+`;
+const WorkshopSection = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+
+  @media (max-width: 1000px) {
+    // padding: 30px 0 0;
+  }
+`;
+const PaymentSection = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  span {
+    display: inline;
+    font-weight: 600;
+  }
+  @media (max-width: 1000px) {
+    align-items: flex-start;
   }
 `;
 const NotIncludedSection = styled.div`
@@ -1476,13 +2158,17 @@ const ScheduleSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #cfc4c0;
-  padding: 50px 30px 0px;
+  background-color: #dce5d0;
+  padding: 50px 30px 40px;
   ${H1} {
     margin-bottom: 25px;
   }
+  p {
+    font-size: 16px;
+  }
   ${DaytName} {
     margin-bottom: 0;
+    color: #394406;
   }
   & > ${DaytName}, ${H1}, & > ${Body} {
     text-align: center;
@@ -1515,6 +2201,21 @@ const List = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  li {
+    margin-bottom: 25px;
+  }
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+`;
+const ListWorkshop = styled.div`
+  padding: 0px 30px;
+  max-width: 1200px;
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 50px;
   li {
     margin-bottom: 25px;
