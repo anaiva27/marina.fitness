@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import heroImg from "./assets/heroCRimg.jpg";
+import heroImg from "./assets/heroImgCR3.jpg";
 import exploreImg from "./assets/explore-img.png";
 import wallpaper1 from "./assets/wideImgHero.jpg";
 import workshop1 from "./assets/workshopImg3.jpg";
