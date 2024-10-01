@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.182cc388.chunk.css",
-    "main.js": "/static/js/main.5deaabd6.chunk.js",
-    "main.js.map": "/static/js/main.5deaabd6.chunk.js.map",
+    "main.js": "/static/js/main.4bd02d17.chunk.js",
+    "main.js.map": "/static/js/main.4bd02d17.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ab67bca4.js",
     "runtime-main.js.map": "/static/js/runtime-main.ab67bca4.js.map",
     "static/css/2.9fc4fcca.chunk.css": "/static/css/2.9fc4fcca.chunk.css",
@@ -51,6 +51,7 @@
     "static/media/hero-bg.af4001fd.jpg": "/static/media/hero-bg.af4001fd.jpg",
     "static/media/hero-img.3bf80e8d.png": "/static/media/hero-img.3bf80e8d.png",
     "static/media/heroCRimg.0330be7f.jpg": "/static/media/heroCRimg.0330be7f.jpg",
+    "static/media/heroImgCR3.27230c77.jpg": "/static/media/heroImgCR3.27230c77.jpg",
     "static/media/heroImgMizata.8ae6e5bd.jpg": "/static/media/heroImgMizata.8ae6e5bd.jpg",
     "static/media/heroMizataImg.18eec9e4.png": "/static/media/heroMizataImg.18eec9e4.png",
     "static/media/hostImgAg1.53cc4029.jpg": "/static/media/hostImgAg1.53cc4029.jpg",
@@ -102,6 +103,6 @@
     "static/css/2.9fc4fcca.chunk.css",
     "static/js/2.4904c221.chunk.js",
     "static/css/main.182cc388.chunk.css",
-    "static/js/main.5deaabd6.chunk.js"
+    "static/js/main.4bd02d17.chunk.js"
   ]
 }
