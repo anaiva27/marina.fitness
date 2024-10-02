@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./Service.css";
 import heroImg from "./SamadhiRetreat/assets/hero-img.png";
-import heroImg2 from "./WellnessRetreat/assets/heroCRimg.jpg";
+import heroImg2 from "./WellnessRetreat/assets/heroImgCR3.jpg";
 import heroImg3 from "./MizataRetreat/assets/heroMizataImg.png";
 
 import img4 from "./img/package-img4.jpg";

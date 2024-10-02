@@ -4,6 +4,7 @@
 }
 .home {
   position: relative;
+  width: 100%;
 }
 .line {
   height: 2px;

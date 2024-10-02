@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import heroImg from "./assets/heroImgCR3.jpg";
+import heroImgMob from "./assets/heroImgCR3-Mob.jpg";
 import exploreImg from "./assets/explore-img.png";
 import wallpaper1 from "./assets/wideImgHero.jpg";
 import workshop1 from "./assets/workshopImg3.jpg";
@@ -27,16 +28,23 @@ import "swiper/modules/pagination/pagination.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 import "./retreat.css";
 import { Modal } from "../portal";
+import { useMediaQuery } from "../helpers/useMediaQuery";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
+// gsap.registerPlugin(useGSAP);
 
 export const WellnessRetreat = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const isMobile = useMediaQuery();
   const openModal = (val, num) => {
     setIsOpen(val);
   };
+
   return (
     <>
       <HeroSection>
-        <img src={heroImg} alt="" />
+        <img src={isMobile ? heroImgMob : heroImg} alt="" />
       </HeroSection>
       <IntroSection>
         {/* <Mandala src={mandalaImg} alt="" /> */}
