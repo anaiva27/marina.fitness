@@ -3,6 +3,7 @@ import heroImg from "./assets/heroImgCR3.jpg";
 import heroImgMob from "./assets/heroImgCR3-Mob.jpg";
 import exploreImg from "./assets/explore-img.png";
 import wallpaper1 from "./assets/wideImgHero.jpg";
+import wallpaper1Mob from "./assets/wideImgCR.jpg";
 import workshop1 from "./assets/workshopImg3.jpg";
 import imgGrid1 from "./assets/gridImg1.jpg";
 import imgGrid2 from "./assets/gridImg2.jpg";
@@ -218,7 +219,7 @@ export const WellnessRetreat = () => {
         </Body>
       </Modal>
 
-      <WideImg src={wallpaper1} alt="" />
+      <WideImg src={isMobile ? wallpaper1Mob : wallpaper1} alt="" />
       {/* <H1>
         Experience exhilarating adventures, from guided tours to Corcovado
         National park, cacao farm, mangrove kayak tours or take a surf lesson.
