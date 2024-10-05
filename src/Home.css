@@ -30,7 +30,8 @@ ul.navbar {
   max-width: 600px;
 }
 .home__content {
-  padding: 65px 0px 125px;
+  height: 85vh;
+  /* padding: 65px 0px 125px; */
   /* width: 60%;
   max-width: 500px;
   display: flex;
@@ -91,13 +92,18 @@ h4.home__text {
 }
 .header {
   transition: 0.4s all ease;
-  background: linear-gradient(
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(
     to right,
     #030303b4,
     #00000019 60%,
     #08080816 40%,
     #ffffff00
-  );
+  ); */
 }
 .pale {
   color: #fff !important;
@@ -181,6 +187,10 @@ li.sideNavbar a {
   }
 }
 @media only screen and (max-width: 425px) {
+  .home__content {
+    height: 100vh;
+  }
+
   h2.home__text.pz__10 {
     font-size: 32px;
   }
