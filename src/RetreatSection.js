@@ -37,6 +37,19 @@ function RetreatSection({ setOptRef }) {
 
       <div className="container ">
         <div className="row-service">
+          <div
+            className="col__2"
+            onClick={() => window.open("/mizata-retreat")}
+          >
+            <img
+              src={heroImg3}
+              alt="Marina fitness trainer doing exercises"
+              className="retreat"
+            />
+          </div>
+        </div>
+
+        <div className="row-service">
           <div className="col__2 " onClick={() => window.open("/retreat")}>
             <img
               src={heroImg}
@@ -53,18 +66,6 @@ function RetreatSection({ setOptRef }) {
           >
             <img
               src={heroImg2}
-              alt="Marina fitness trainer doing exercises"
-              className="retreat"
-            />
-          </div>
-        </div>
-        <div className="row-service">
-          <div
-            className="col__2"
-            onClick={() => window.open("/mizata-retreat")}
-          >
-            <img
-              src={heroImg3}
               alt="Marina fitness trainer doing exercises"
               className="retreat"
             />
