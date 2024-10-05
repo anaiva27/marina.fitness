@@ -42,10 +42,7 @@ export const MizataRetreat = () => {
           </Body>
           <ButtonMizata
             onClick={() =>
-              window.open(
-                "https://book.stripe.com/aEUcQn28u3KdbXa6oP",
-                "_blank",
-              )
+              window.open("https://buy.stripe.com/3cs17F00m0y11iwbJc", "_blank")
             }
           >
             The time is now
