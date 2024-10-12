@@ -5,11 +5,19 @@ import yogaImg from "./assets/yogaImg.jpg";
 import artImg from "./assets/artImg.jpg";
 import marinaImg from "./assets/AboutMarina.jpg";
 import giannaImg from "./assets/AboutGianna.jpg";
+import mizataLogo from "./assets/mizatalogo.png";
+import natureImg1 from "./assets/imgNature1.png";
+import natureImg2 from "./assets/imgNature2.jpg";
+import roomImg1 from "./assets/rooms1.png";
+import roomImg2 from "./assets/rooms2.png";
+import contactImg1 from "./assets/contact1.png";
+import contactImg2 from "./assets/contact2.png";
+import scheduleImg from "./assets/scheduleImg.png";
 import "./styles.css";
 
 export const MizataRetreat = () => {
   return (
-    <>
+    <div style={{ backgroundColor: "#e3dcd4" }}>
       <HeroSection>
         <HeroImage>
           <img src={heroImg} alt="" />
@@ -162,7 +170,184 @@ export const MizataRetreat = () => {
           </YogaListContent>
         </YogaContent>
       </SectionYoga>
-    </>
+      <LocationSection>
+        <LogoImg src={mizataLogo} alt="" />
+        <Subtitle>Playa Mizata, Teotepeque, El Salvador</Subtitle>
+        <Body>
+          Nestled within the breathtaking landscape of El Salvador, this
+          esteemed resort offers the perfect blend of luxury amenities and
+          natural serenity. With a proven track record of hosting numerous
+          successful retreats, we assure our guests a safe and unforgettable
+          experience. Embrace the comfort of a 5-star resort while immersing
+          yourself in the authenticity of a jungle camp, where culture,
+          adventure, and recalibration converge to create a truly transformative
+          journey.
+        </Body>
+        <ButtonMizata
+          onClick={() =>
+            window.open("https://buy.stripe.com/3cs17F00m0y11iwbJc", "_blank")
+          }
+        >
+          Book Now
+        </ButtonMizata>
+      </LocationSection>
+      <WideImg src={natureImg1} alt="" />
+      <H1
+        style={{
+          textAlign: "center",
+          margin: "50px auto 30px",
+          padding: "0 15px",
+        }}
+      >
+        What's included
+      </H1>
+      <IncludedSection>
+        <img src={natureImg2} alt="" />
+        <IncludedList>
+          <br />
+          <Body> • 6 days / 6 nights </Body>
+          <Body> • Airport shuttle </Body>
+          <Body> • Accommodation </Body>
+          <Body> • 3 meals a day o Fresh, locally-sourced meals </Body>
+          <Body> • Daily yoga/mobility class </Body>
+          <Body> • Daily meditation </Body>
+          <Body> • Daily artmaking </Body>
+          <Body> • Tamanique Waterfall excursion </Body>
+          <Body> • Route of the Flowers excursion </Body>
+          <Body>
+            {" "}
+            • Resort amenities o sauna / ice plunge o multiple pools o beach
+            access / surf breaks o jungle gym{" "}
+          </Body>
+          <br />
+          <Subtitle>Not included:</Subtitle>
+          <Body> • Airline fare</Body>
+          <Body> • Alcoholic beverages</Body>
+          <Body> • Extra food</Body>
+          <Body> • Additional Excursions</Body>
+          <Body> • Airline fare</Body>
+          <Body> • Airline fare</Body>
+          <br />
+          <Subtitle>Optional:</Subtitle>
+          <Body> • Surf lesson</Body>
+          <Body> • Horseback riding Spa services</Body>
+        </IncludedList>
+      </IncludedSection>
+      <RoomsSection>
+        <H1>Accomodation Options</H1>
+        <Subtitle>The Bungalow</Subtitle>
+        <WideImg src={roomImg1} alt="" />
+        <Subtitle>S2,399</Subtitle>
+        <YogaContent>
+          <YogaListContent>
+            <Body> • Up to 2 guests</Body>
+            <Body>• Wifi</Body>
+            <Body>• Air Conditioning </Body>
+            <Body>• King size bed </Body>
+            <Body>• 1 Bathroom </Body>
+            <Body>• Towels </Body>
+            <Body>• Reading lights </Body>
+            <Body>• Charging ports </Body>
+            <Body>• Bamboo surf rack </Body>
+            <Body>• Safe </Body>
+          </YogaListContent>
+          <YogaTextContent>
+            <Subtitle>Pay in Full</Subtitle>
+            <Body>$2399 + 5% transaction fee = $2519</Body>
+            <Body>Paying in Full saves $155</Body>
+            <br />
+            <Subtitle>Pay in 3 Payments:</Subtitle>
+            <Body>$849 +5 % transaction fee = $892</Body>
+            <br />
+            <Body>$800 is not refundable</Body>
+            <Body>$1600 refundable before August 16th</Body>
+            <Body>$800 is refundable before October 16th</Body>
+          </YogaTextContent>
+        </YogaContent>
+      </RoomsSection>
+      <RoomsSection>
+        <Subtitle>The Retreat Dorm</Subtitle>
+        <WideImg src={roomImg2} alt="" />
+        <Subtitle>S2,099</Subtitle>
+        <YogaContent>
+          <YogaListContent>
+            <Body> • Up to 3 guests</Body>
+            <Body>• Wifi</Body>
+            <Body>• Air Conditioning </Body>
+            <Body>• Twin bed </Body>
+            <Body>• 1 Bathroom </Body>
+            <Body>• Towels </Body>
+            <Body>• Charging ports </Body>
+            <Body>• Bamboo surf rack </Body>
+            <Body>• Safe </Body>
+          </YogaListContent>
+          <YogaTextContent>
+            <Subtitle>Pay in Full</Subtitle>
+            <Body>$2099 + 5% transaction fee = $2119</Body>
+            <Body>Paying in Full saves $173</Body>
+            <br />
+            <Subtitle>Pay in 3 Payments:</Subtitle>
+            <Body>$729 +5 % transaction fee = $766</Body>
+            <br />
+            <Body>$700 is not refundable</Body>
+            <Body>$1400 refundable before August 16th</Body>
+            <Body>$700 refundable before October 16th</Body>
+          </YogaTextContent>
+        </YogaContent>
+        <ButtonMizata
+          onClick={() =>
+            window.open("https://buy.stripe.com/3cs17F00m0y11iwbJc", "_blank")
+          }
+        >
+          Reserve Your Spot
+        </ButtonMizata>
+      </RoomsSection>
+      <ScheduleSection>
+        <H1>Tentative Schedule</H1>
+        <IncludedSection>
+          <img src={scheduleImg} alt="" />
+          <ScheduleList>
+            <Subtitle>
+              *Finalized schedule will be sent out prior to the retreat
+            </Subtitle>
+            <Subtitle>Morning</Subtitle>
+            <Body> • Energizing morning yoga </Body>
+            <Subtitle>Breakfast</Subtitle>
+            <Body> • Locally-sourced, sustainable food </Body>
+            <Subtitle>Early Afternoon</Subtitle>
+            <Body> • Nature mandala artmaking </Body>
+            <Subtitle>Lunch</Subtitle>
+            <Subtitle>Afternoon</Subtitle>
+            <Body> • Free time for relaxation</Body>
+            <Body> • Optional activities </Body>
+            <Subtitle>Late Afternoon</Subtitle>
+            <Body> • Sunset meditation and Yin yoga </Body>
+            <Subtitle>Dinner</Subtitle>
+            <Body> • Evening gathering </Body>
+          </ScheduleList>
+        </IncludedSection>
+      </ScheduleSection>
+      <H1 style={{ margin: "10px auto", textAlign: "center" }}>Contact</H1>
+      <ContactSection>
+        <img src={contactImg1} alt="" />
+        <ScheduleList>
+          <Subtitle>Email:</Subtitle>
+          <Body>marina@marinafitness.pro</Body>
+          <Body>Mizata.retreat@gmail.com</Body>
+          <br />
+          <br />
+          <Subtitle>Phone:</Subtitle>
+          <Body>+1 302-747-3415</Body>
+          <Body>+1 786-521-0488</Body>
+          <br />
+          <br />
+          <Subtitle>Instagram:</Subtitle>
+          <Body>@marina.bogatkina</Body>
+          <Body>@giannaa.riccardii</Body>
+        </ScheduleList>
+      </ContactSection>
+      <WideImg src={contactImg2} alt="" />
+    </div>
   );
 };
 
@@ -241,9 +426,18 @@ const HeroContent = styled.div`
   }
   @media (max-width: 1000px) {
     width: 100%;
+    padding: 25px;
     button {
       margin: 35px auto 0;
     }
+  }
+`;
+const WideImg = styled.img`
+  width: 100% !important;
+  object-fit: cover;
+  object-position: center;
+  @media (max-width: 1000px) {
+    width: 100% !important;
   }
 `;
 const HeroImage = styled.div`
@@ -283,6 +477,11 @@ const Story = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+const LogoImg = styled.img`
+  width: 50%;
+  @media (max-width: 1000px) {
+  }
+`;
 const DesktopImg = styled.img`
   @media (max-width: 1000px) {
     display: none;
@@ -315,6 +514,10 @@ const MarinaSection = styled.div`
       object-fit: cover;
       width: 100%;
     }
+    p,
+    h2 {
+      padding: 0 10px;
+    }
   }
 `;
 const SectionYoga = styled.div`
@@ -329,6 +532,9 @@ const SectionYoga = styled.div`
     object-fit: cover;
     width: 100%;
   }
+  h1 {
+    text-align: center;
+  }
   @media (max-width: 1000px) {
     padding: 30px 0 20px;
   }
@@ -336,8 +542,10 @@ const SectionYoga = styled.div`
 const YogaContent = styled.div`
   width: 100%;
   display: flex;
+  margin: auto;
   @media (max-width: 1000px) {
     flex-direction: column;
+    gap: 20px;
   }
 `;
 const YogaTextContent = styled.div`
@@ -347,6 +555,7 @@ const YogaTextContent = styled.div`
   flex-direction: column;
   @media (max-width: 1000px) {
     width: 100%;
+    padding: 0 25px;
   }
 `;
 const YogaListContent = styled.div`
@@ -357,5 +566,149 @@ const YogaListContent = styled.div`
   gap: 15px;
   @media (max-width: 1000px) {
     width: 100%;
+    padding: 0 25px;
+  }
+`;
+const IncludedList = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  margin-left: 20px;
+  @media (max-width: 1000px) {
+    padding: 0 20px;
+  }
+`;
+const ScheduleList = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  margin-left: 20px;
+  h2 {
+    margin-top: 25px;
+  }
+  @media (max-width: 1000px) {
+    padding: 0 20px;
+  }
+`;
+const LocationSection = styled.div`
+  width: 70%;
+  margin: 0px auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #e3dcd4;
+  button {
+    margin-top: 25px;
+  }
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 20px;
+  }
+`;
+const IncludedSection = styled.div`
+  width: 100%;
+  max-width: 1700px;
+  margin: 0px auto 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  background-color: #e3dcd4;
+  img {
+    width: 65%;
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+`;
+const ContactSection = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  img {
+    width: 60%;
+    max-width: 800px;
+  }
+  div {
+    width: 30%;
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+    & > div {
+      gap: 10px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 30px;
+      text-align: center;
+      margin-left: 0 !important;
+    }
+  }
+`;
+const ScheduleSection = styled.div`
+  width: 100%;
+  max-width: 1700px;
+  margin: 0px auto 40px;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  img {
+    width: 50%;
+  }
+  & > div {
+    align-items: center;
+  }
+  @media (max-width: 1000px) {
+    & > div {
+      flex-direction: column-reverse;
+    }
+    img {
+      width: 100%;
+    }
+  }
+`;
+const RoomsSection = styled.div`
+  width: 100%;
+  margin: 0px auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #e3dcd4;
+  img {
+    width: 65%;
+  }
+  h1,
+  & > h2 {
+    text-align: center;
+  }
+  & > h2 {
+    font-size: 45px;
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+    button {
+      margin-top: 25px;
+    }
   }
 `;
