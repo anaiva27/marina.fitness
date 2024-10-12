@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.2ccb8f1b.chunk.css",
-    "main.js": "/static/js/main.133e4a78.chunk.js",
-    "main.js.map": "/static/js/main.133e4a78.chunk.js.map",
+    "main.js": "/static/js/main.0b9a1928.chunk.js",
+    "main.js.map": "/static/js/main.0b9a1928.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ab67bca4.js",
     "runtime-main.js.map": "/static/js/runtime-main.ab67bca4.js.map",
     "static/css/2.9fc4fcca.chunk.css": "/static/css/2.9fc4fcca.chunk.css",
@@ -39,6 +39,8 @@
     "static/media/blog-01.67ebb920.jpg": "/static/media/blog-01.67ebb920.jpg",
     "static/media/blog-02.6ecd55ed.jpg": "/static/media/blog-02.6ecd55ed.jpg",
     "static/media/blog-03.1bced0df.jpg": "/static/media/blog-03.1bced0df.jpg",
+    "static/media/contact1.8569b5f4.png": "/static/media/contact1.8569b5f4.png",
+    "static/media/contact2.0869db52.png": "/static/media/contact2.0869db52.png",
     "static/media/explore-img.28d83c24.png": "/static/media/explore-img.28d83c24.png",
     "static/media/fruit-shop.86855e06.jpg": "/static/media/fruit-shop.86855e06.jpg",
     "static/media/gridImg1.cf19a93b.jpg": "/static/media/gridImg1.cf19a93b.jpg",
@@ -67,6 +69,8 @@
     "static/media/img554.0663bb2b.JPG": "/static/media/img554.0663bb2b.JPG",
     "static/media/img5677.b5147d7f.JPG": "/static/media/img5677.b5147d7f.JPG",
     "static/media/img999.c6f94cc9.JPG": "/static/media/img999.c6f94cc9.JPG",
+    "static/media/imgNature1.f1c3fd0d.png": "/static/media/imgNature1.f1c3fd0d.png",
+    "static/media/imgNature2.b8a96828.jpg": "/static/media/imgNature2.b8a96828.jpg",
     "static/media/logo-new-White-crop-Marina.57daa6a6.png": "/static/media/logo-new-White-crop-Marina.57daa6a6.png",
     "static/media/logo-new-White-small.8a57c351.png": "/static/media/logo-new-White-small.8a57c351.png",
     "static/media/mandala21.4f06a859.png": "/static/media/mandala21.4f06a859.png",
@@ -81,6 +85,9 @@
     "static/media/portfolio-2.7581ecc6.jpg": "/static/media/portfolio-2.7581ecc6.jpg",
     "static/media/portfolio-3.e1d203d2.jpg": "/static/media/portfolio-3.e1d203d2.jpg",
     "static/media/rooms.571a1c57.png": "/static/media/rooms.571a1c57.png",
+    "static/media/rooms1.ce4c5343.png": "/static/media/rooms1.ce4c5343.png",
+    "static/media/rooms2.507a3fec.png": "/static/media/rooms2.507a3fec.png",
+    "static/media/scheduleImg.37ec6802.png": "/static/media/scheduleImg.37ec6802.png",
     "static/media/slider1.7893f071.jpg": "/static/media/slider1.7893f071.jpg",
     "static/media/slider2.3639d4af.jpg": "/static/media/slider2.3639d4af.jpg",
     "static/media/slider3.a2519f39.jpg": "/static/media/slider3.a2519f39.jpg",
@@ -104,6 +111,6 @@
     "static/css/2.9fc4fcca.chunk.css",
     "static/js/2.cb2adaa4.chunk.js",
     "static/css/main.2ccb8f1b.chunk.css",
-    "static/js/main.133e4a78.chunk.js"
+    "static/js/main.0b9a1928.chunk.js"
   ]
 }
