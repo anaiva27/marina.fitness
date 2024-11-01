@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/mizata-retreat" component={MizataRetreat} />
-        <Route path="/wellness-retreat" component={WellnessRetreat} />
+        {/* <Route path="/wellness-retreat" component={WellnessRetreat} /> */}
         <Route path="/retreat" component={SamadhiRetreat} />
         <Route path="/" component={Routes} />
         <Route path="*" component={<Redirect />} />

@@ -59,7 +59,7 @@ function RetreatSection({ setOptRef }) {
           </div>
         </div>
 
-        <div className="row-service">
+        {/* <div className="row-service">
           <div
             className="col__2 "
             onClick={() => window.open("/wellness-retreat")}
@@ -70,7 +70,7 @@ function RetreatSection({ setOptRef }) {
               className="retreat"
             />
           </div>
-        </div>
+        </div> */}
       </div>
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         {parse(content || "")}
