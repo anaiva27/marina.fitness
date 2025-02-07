@@ -91,7 +91,6 @@ p {
 .container {
   width: 100%;
   margin: 0px auto;
-  min-height: 75vh;
 }
 .container.service {
   width: 100%;
