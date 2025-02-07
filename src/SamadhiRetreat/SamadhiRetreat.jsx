@@ -58,7 +58,7 @@ export const SamadhiRetreat = () => {
 					<Body>
 						In today's hectic world, many of us experience disconnection,
 						navigating on autopilot through the burdens of stress, work, family
-						responsibilities, and health challenges.{" "}
+						responsibilities, and health challenges. <br />
 						<strong>
 							Welcome to women’s retreat at the magical land of Peru
 						</strong>
@@ -935,6 +935,7 @@ const Content = styled.div`
 	gap: 35px;
 	h3 {
 		text-transform: uppercase;
+		color: #635341;
 	}
 	@media (min-width: 1100px) {
 		button {
