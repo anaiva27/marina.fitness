@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import heroImg from "./assets/hero-img.png";
 import exploreImg from "./assets/explore-img.png";
 import logoImg from "./assets/Samahdi-logo1.png";
@@ -19,7 +19,9 @@ import sliderImg9 from "./assets/img554.JPG";
 import sliderImg10 from "./assets/img999.JPG";
 import sliderImg11 from "./assets/img1234.jpg";
 import sliderImg12 from "./assets/img5677.JPG";
-import marinaAmberImg from "./assets/marina-abmer.jpg";
+import exploreModal1 from "./assets/Explore-1-mini.png";
+import exploreModal2 from "./assets/Explore-2-mini.png";
+import marinaAmberImg from "./assets/IMG_3723EDIT-mini.jpg";
 import roomsImg from "./assets/rooms.png";
 import yuliaImg from "./assets/yulia.JPG";
 import img11 from "./assets/img11.png";
@@ -30,8 +32,13 @@ import "swiper/swiper.min.css";
 import "swiper/modules/pagination/pagination.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 import "./retreat.css";
+import { Modal } from "../portal";
 
 export const SamadhiRetreat = () => {
+	const [isOpen, setIsOpen] = useState(false);
+	const openModal = (val) => {
+		setIsOpen(val);
+	};
 	return (
 		<>
 			<HeroSection>
@@ -176,123 +183,7 @@ export const SamadhiRetreat = () => {
 					</ButtonPrimary>
 				</SideContent>
 			</Description>
-			<MeetSection>
-				<HostNameMobile>Meet Amber</HostNameMobile>
-				<SideImg>
-					<img
-						src={amberImg}
-						alt=""
-					/>
-				</SideImg>
-				<SideImgMobile>
-					<img
-						src={amberImg}
-						alt=""
-					/>
-				</SideImgMobile>
-				<Legend>
-					<HostName>Meet Amber</HostName>
-					<Body>
-						Amber has been a movement educator and student for the past 10 years
-						teaching yoga, meditation, strength, and mobility. She is Internal
-						Strength Specialist within Functional Range Systems, she has her
-						300hr Yoga teaching train and she is Animal Flow coach.
-						<br />
-						<br />
-						Amber has spent extensive time in holding space for women as a
-						Sacred Facilitator, and is also a Somatic Parts Work coach. Aside
-						from passions involving the body’s movement system, she has been a
-						certified working Herbalist for 5 years and has a burning passion
-						for everything plants, nature, wellness and adventure.
-					</Body>
-				</Legend>
-			</MeetSection>
-			<MeetSection>
-				<HostNameMobile>Meet Marina</HostNameMobile>
-				<SideImgMobile>
-					<img
-						src={marinaImg}
-						alt=""
-					/>
-				</SideImgMobile>
-				<Legend marina>
-					<HostName>Meet Marina</HostName>
-					<Body>
-						Marina is a passionate wellness and movement educator, who has been
-						teaching for over decade. She is 500 hours YTT certified, as well as
-						a mobility coach within FRC and Animal Flow, certified personal
-						trainer, meditation teacher and nutrition coach through Precision
-						Nutrition.
-						<br />
-						<br />
-						Beyond her professional endeavors, Marina's heart lies in exploring
-						the world, particularly drawn to Mexico, Central, and South America.
-						Here, she discovers profound connections with the enigmatic
-						cultures, traditions, and spiritual teachings that enrich her
-						journey.
-					</Body>
-				</Legend>
-				<SideImg>
-					<img
-						src={marinaImg}
-						alt=""
-					/>
-				</SideImg>
-			</MeetSection>
-			<HistorySection>
-				<SideContent history>
-					<Body>
-						Marina and Amber's bond spans over a decade, evolving from friends
-						and colleagues to what feels like soul sisters connected across
-						countless lifetimes. United by a shared vision of life, wellness,
-						and values, they have cultivated a community of empowered,
-						open-minded individuals. Their combined commitment to making a
-						meaningful impact on people's lives has been remarkable.
-						<br />
-						<br />
-						Now, they invite others to join them for an unforgettable experience
-						— Women’s retreat that promises to nurture physical, emotional, and
-						spiritual well-being amidst the mystical landscape of Peru
-					</Body>
-				</SideContent>
-				<SideHistoryImage>
-					<img
-						src={marinaAmberImg}
-						alt=""
-					/>
-				</SideHistoryImage>
-			</HistorySection>
-			<YuliaSection>
-				<SideHistoryImage>
-					<img
-						src={yuliaImg}
-						alt=""
-					/>
-				</SideHistoryImage>
-				<SideContent yulia>
-					<HostName>Guest Teacher Yulia</HostName>
-					<Body>
-						Yulia is an art and mindfulness educator with over{" "}
-						<strong>15 years of global experience as an art curator</strong>.
-						Eight years ago, she discovered Human Design and began incorporating
-						mindfulness practices to gain deeper insights into her own path and
-						better serve others. <br /> <br /> Four years ago, Yulia moved to
-						Mexico, where she immersed herself in ancient traditions and
-						techniques related to the four elements and spiritual temazcal,
-						actively engaging with the local community. She is a Sun-Dancer in
-						Lakota traditions, a Human Design and Genetic Keys reader, a
-						dedicated Vipassana meditator, a Reiki Master, and an art historian.
-						Yulia's mission is to{" "}
-						<strong>
-							empower women by blending ancient and contemporary mindfulness
-							tools
-						</strong>{" "}
-						to achieve transformative results.
-					</Body>
-				</SideContent>
-				<HostNameMobile>Guest Teacher Yulia</HostNameMobile>
-			</YuliaSection>
-
+			<br />
 			<IncludedSection>
 				<H1>WHAT'S INCLUDED:</H1>
 				<List>
@@ -476,24 +367,6 @@ export const SamadhiRetreat = () => {
 					</SwiperSlide>
 				</Swiper>
 			</IncludedSection>
-			{/* <NotIncludedSection>
-        <H1>
-          WHAT'S <span>NOT</span> INCLUDED:
-        </H1>
-        <NotIncludedList>
-          <ul role="list">
-            <li>
-              <Body>Airline tickets</Body>
-            </li>
-            <li>
-              <Body>Spa services</Body>
-            </li>
-            <li>
-              <Body>Travel insurance</Body>
-            </li>
-          </ul>
-        </NotIncludedList>
-      </NotIncludedSection> */}
 			<ScheduleSection>
 				<H1>TENTATIVE SCHEDULE</H1>
 				<DaytName>Tuesday Arrival</DaytName>
@@ -616,7 +489,180 @@ export const SamadhiRetreat = () => {
 						</Body>
 					</div>
 				</ScheduleTable>
+				<br />
+				<DaytName>Add-ons:</DaytName>
+				<br />
+				<Body>
+					Dive deeper into the magic of the Sacred Valley!
+					<Body>
+						<br />
+					</Body>{" "}
+					Join us for an unforgettable 4-day extension, exploring Pisac, Cusco,
+					and the awe-inspiring citadel of the Inca Empire, Machu Picchu. Your
+					bucket list travel destinations are here!
+				</Body>
+				<br />
+				<br />
+				<ButtonPrimary
+					style={{ marginBottom: 25 }}
+					onClick={() => openModal(true)}
+				>
+					Extend Your Journey
+				</ButtonPrimary>
+				<br />
+				<br />
+				<br />
+				<Modal
+					isOpen={isOpen}
+					onClose={() => setIsOpen(false)}
+					variant="large"
+				>
+					<ModalImg
+						src={exploreModal1}
+						alt=""
+					/>
+					<ModalImg
+						src={exploreModal2}
+						alt=""
+					/>
+				</Modal>
 			</ScheduleSection>
+			<MeetSection>
+				<HostNameMobile>Meet Amber</HostNameMobile>
+				<SideImg>
+					<img
+						src={amberImg}
+						alt=""
+					/>
+				</SideImg>
+				<SideImgMobile>
+					<img
+						src={amberImg}
+						alt=""
+					/>
+				</SideImgMobile>
+				<Legend>
+					<HostName>Meet Amber</HostName>
+					<Body>
+						Amber has been a movement educator and student for the past 10 years
+						teaching yoga, meditation, strength, and mobility. She is Internal
+						Strength Specialist within Functional Range Systems, she has her
+						300hr Yoga teaching train and she is Animal Flow coach.
+						<br />
+						<br />
+						Amber has spent extensive time in holding space for women as a
+						Sacred Facilitator, and is also a Somatic Parts Work coach. Aside
+						from passions involving the body’s movement system, she has been a
+						certified working Herbalist for 5 years and has a burning passion
+						for everything plants, nature, wellness and adventure.
+					</Body>
+				</Legend>
+			</MeetSection>
+			<MeetSection>
+				<HostNameMobile>Meet Marina</HostNameMobile>
+				<SideImgMobile>
+					<img
+						src={marinaImg}
+						alt=""
+					/>
+				</SideImgMobile>
+				<Legend marina>
+					<HostName>Meet Marina</HostName>
+					<Body>
+						Marina is a passionate wellness and movement educator, who has been
+						teaching for over decade. She is 500 hours YTT certified, as well as
+						a mobility coach within FRC and Animal Flow, certified personal
+						trainer, meditation teacher and nutrition coach through Precision
+						Nutrition.
+						<br />
+						<br />
+						Beyond her professional endeavors, Marina's heart lies in exploring
+						the world, particularly drawn to Mexico, Central, and South America.
+						Here, she discovers profound connections with the enigmatic
+						cultures, traditions, and spiritual teachings that enrich her
+						journey.
+					</Body>
+				</Legend>
+				<SideImg>
+					<img
+						src={marinaImg}
+						alt=""
+					/>
+				</SideImg>
+			</MeetSection>
+			<HistorySection>
+				<SideContent history>
+					<Body>
+						Marina and Amber's bond spans over a decade, evolving from friends
+						and colleagues to what feels like soul sisters connected across
+						countless lifetimes. United by a shared vision of life, wellness,
+						and values, they have cultivated a community of empowered,
+						open-minded individuals. Their combined commitment to making a
+						meaningful impact on people's lives has been remarkable.
+						<br />
+						<br />
+						Now, they invite others to join them for an unforgettable experience
+						— Women’s retreat that promises to nurture physical, emotional, and
+						spiritual well-being amidst the mystical landscape of Peru
+					</Body>
+				</SideContent>
+				<SideHistoryImage>
+					<img
+						src={marinaAmberImg}
+						alt=""
+					/>
+				</SideHistoryImage>
+			</HistorySection>
+			{/* <YuliaSection>
+				<SideHistoryImage>
+					<img
+						src={yuliaImg}
+						alt=""
+					/>
+				</SideHistoryImage>
+				<SideContent yulia>
+					<HostName>Guest Teacher Yulia</HostName>
+					<Body>
+						Yulia is an art and mindfulness educator with over{" "}
+						<strong>15 years of global experience as an art curator</strong>.
+						Eight years ago, she discovered Human Design and began incorporating
+						mindfulness practices to gain deeper insights into her own path and
+						better serve others. <br /> <br /> Four years ago, Yulia moved to
+						Mexico, where she immersed herself in ancient traditions and
+						techniques related to the four elements and spiritual temazcal,
+						actively engaging with the local community. She is a Sun-Dancer in
+						Lakota traditions, a Human Design and Genetic Keys reader, a
+						dedicated Vipassana meditator, a Reiki Master, and an art historian.
+						Yulia's mission is to{" "}
+						<strong>
+							empower women by blending ancient and contemporary mindfulness
+							tools
+						</strong>{" "}
+						to achieve transformative results.
+					</Body>
+				</SideContent>
+				<HostNameMobile>Guest Teacher Yulia</HostNameMobile>
+			</YuliaSection> */}
+
+			{/* <NotIncludedSection>
+        <H1>
+          WHAT'S <span>NOT</span> INCLUDED:
+        </H1>
+        <NotIncludedList>
+          <ul role="list">
+            <li>
+              <Body>Airline tickets</Body>
+            </li>
+            <li>
+              <Body>Spa services</Body>
+            </li>
+            <li>
+              <Body>Travel insurance</Body>
+            </li>
+          </ul>
+        </NotIncludedList>
+      </NotIncludedSection> */}
+
 			<DescriptionWrapper>
 				<Description
 					style={{
@@ -1218,6 +1264,11 @@ const NotIncludedSection = styled.div`
 			text-align: center;
 		}
 	}
+`;
+const ModalImg = styled.img`
+	width: 100%;
+	object-fit: contain;
+	display: block;
 `;
 const DaytName = styled.div`
 	font-size: 30px;
