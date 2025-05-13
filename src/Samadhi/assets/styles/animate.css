@@ -73,7 +73,7 @@
 }
 
 @media (max-width: 1000px) {
-    .headline {
+    .headlineSR {
         width: 80%;
         object-fit: contain;
         position: absolute;
@@ -84,7 +84,7 @@
         opacity: 0;
         transform: translateY(-10px);
     }
-    .logo {
+    .logoSR {
         width: 100px;
         object-fit: contain;
         position: absolute;
@@ -93,7 +93,7 @@
         opacity: 0;
         transform: translateY(-10px);
     }
-    .menu {
+    .menuSR {
         width: 60%;
         object-fit: contain;
         position: absolute;
