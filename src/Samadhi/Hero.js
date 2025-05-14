@@ -47,6 +47,7 @@ export const Hero = () => {
 				duration: 1,
 				ease: "power3.inOut",
 				stagger: 0.2,
+				delay: -1.25,
 			});
 		// .to(".hero-imgs > img", {
 		// 	clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
