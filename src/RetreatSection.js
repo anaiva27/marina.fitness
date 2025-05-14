@@ -12,54 +12,65 @@ import { Modal } from "./portal";
 import parse from "html-react-parser";
 
 function RetreatSection({ setOptRef }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [content, setContent] = useState("");
-  // const openModal = (val, num) => {
-  //   setIsOpen(val);
-  //   setContent(contentGroup[num]);
-  // };
-  const retreatsRef = useRef();
-  if (retreatsRef) {
-    setOptRef(retreatsRef);
-  }
+	const [isOpen, setIsOpen] = useState(false);
+	const [content, setContent] = useState("");
+	// const openModal = (val, num) => {
+	//   setIsOpen(val);
+	//   setContent(contentGroup[num]);
+	// };
+	const retreatsRef = useRef();
+	if (retreatsRef) {
+		setOptRef(retreatsRef);
+	}
 
-  return (
-    <div className="service component__space" id="Retreats" ref={retreatsRef}>
-      <div className="heading">
-        <br />
-        <h1 className="motto__heading center">
-          Check out my upcoming{" "}
-          <div className="bright" style={{ fontSize: 45 }}>
-            retreats
-          </div>
-        </h1>
-      </div>
+	return (
+		<div
+			className="service component__space"
+			id="Retreats"
+			ref={retreatsRef}
+		>
+			<div className="heading">
+				<br />
+				<h1 className="motto__heading center">
+					Check out my past{" "}
+					<div
+						className="bright"
+						style={{ fontSize: 45 }}
+					>
+						retreats
+					</div>
+				</h1>
+				<h2 className="motto__heading center">And stay tuned for more!</h2>
+			</div>
 
-      <div className="container ">
-        <div className="row-service">
-          <div
-            className="col__2"
-            onClick={() => window.open("/mizata-retreat")}
-          >
-            <img
-              src={heroImg3}
-              alt="Marina fitness trainer doing exercises"
-              className="retreat"
-            />
-          </div>
-        </div>
+			<div className="container ">
+				<div className="row-service">
+					<div
+						className="col__2"
+						onClick={() => window.open("/mizata-retreat")}
+					>
+						<img
+							src={heroImg3}
+							alt="Marina fitness trainer doing exercises"
+							className="retreat"
+						/>
+					</div>
+				</div>
 
-        <div className="row-service">
-          <div className="col__2 " onClick={() => window.open("/retreat")}>
-            <img
-              src={heroImg}
-              alt="Marina fitness trainer doing exercises"
-              className="retreat"
-            />
-          </div>
-        </div>
+				<div className="row-service">
+					<div
+						className="col__2 "
+						onClick={() => window.open("/retreat")}
+					>
+						<img
+							src={heroImg}
+							alt="Marina fitness trainer doing exercises"
+							className="retreat"
+						/>
+					</div>
+				</div>
 
-        {/* <div className="row-service">
+				{/* <div className="row-service">
           <div
             className="col__2 "
             onClick={() => window.open("/wellness-retreat")}
@@ -71,12 +82,15 @@ function RetreatSection({ setOptRef }) {
             />
           </div>
         </div> */}
-      </div>
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        {parse(content || "")}
-      </Modal>
-    </div>
-  );
+			</div>
+			<Modal
+				isOpen={isOpen}
+				onClose={() => setIsOpen(false)}
+			>
+				{parse(content || "")}
+			</Modal>
+		</div>
+	);
 }
 
 export default RetreatSection;
