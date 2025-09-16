@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e99c0d3.chunk.css",
-    "main.js": "/static/js/main.4f73446a.chunk.js",
-    "main.js.map": "/static/js/main.4f73446a.chunk.js.map",
+    "main.css": "/static/css/main.400028c6.chunk.css",
+    "main.js": "/static/js/main.c16b2c77.chunk.js",
+    "main.js.map": "/static/js/main.c16b2c77.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fb12a1c0.js",
     "runtime-main.js.map": "/static/js/runtime-main.fb12a1c0.js.map",
     "static/css/2.9fc4fcca.chunk.css": "/static/css/2.9fc4fcca.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.28e21397.chunk.js.map": "/static/js/3.28e21397.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.9fc4fcca.chunk.css.map": "/static/css/2.9fc4fcca.chunk.css.map",
-    "static/css/main.7e99c0d3.chunk.css.map": "/static/css/main.7e99c0d3.chunk.css.map",
+    "static/css/main.400028c6.chunk.css.map": "/static/css/main.400028c6.chunk.css.map",
     "static/js/2.daaa670d.chunk.js.LICENSE.txt": "/static/js/2.daaa670d.chunk.js.LICENSE.txt",
     "static/media/1.36b96fc1.jpg": "/static/media/1.36b96fc1.jpg",
     "static/media/2.07533469.jpg": "/static/media/2.07533469.jpg",
@@ -59,7 +59,6 @@
     "static/media/heroImgCR3-Mob.4f11f1ea.jpg": "/static/media/heroImgCR3-Mob.4f11f1ea.jpg",
     "static/media/heroImgCR3.27230c77.jpg": "/static/media/heroImgCR3.27230c77.jpg",
     "static/media/heroImgMizata.8ae6e5bd.jpg": "/static/media/heroImgMizata.8ae6e5bd.jpg",
-    "static/media/heroMizataImg.18eec9e4.png": "/static/media/heroMizataImg.18eec9e4.png",
     "static/media/hostImgAg1.53cc4029.jpg": "/static/media/hostImgAg1.53cc4029.jpg",
     "static/media/hostImgAg2.e6503d08.jpg": "/static/media/hostImgAg2.e6503d08.jpg",
     "static/media/hostImgJ1.5ce55137.jpg": "/static/media/hostImgJ1.5ce55137.jpg",
@@ -94,6 +93,9 @@
     "static/media/portfolio-1.6dd6354d.jpg": "/static/media/portfolio-1.6dd6354d.jpg",
     "static/media/portfolio-2.7581ecc6.jpg": "/static/media/portfolio-2.7581ecc6.jpg",
     "static/media/portfolio-3.e1d203d2.jpg": "/static/media/portfolio-3.e1d203d2.jpg",
+    "static/media/retreat-img1.448deeb4.jpg": "/static/media/retreat-img1.448deeb4.jpg",
+    "static/media/retreat-img1.7c850a9a.png": "/static/media/retreat-img1.7c850a9a.png",
+    "static/media/retreat-img2.7188bcf5.png": "/static/media/retreat-img2.7188bcf5.png",
     "static/media/rooms.571a1c57.png": "/static/media/rooms.571a1c57.png",
     "static/media/rooms1.ce4c5343.png": "/static/media/rooms1.ce4c5343.png",
     "static/media/rooms2.507a3fec.png": "/static/media/rooms2.507a3fec.png",
@@ -120,7 +122,7 @@
     "static/js/runtime-main.fb12a1c0.js",
     "static/css/2.9fc4fcca.chunk.css",
     "static/js/2.daaa670d.chunk.js",
-    "static/css/main.7e99c0d3.chunk.css",
-    "static/js/main.4f73446a.chunk.js"
+    "static/css/main.400028c6.chunk.css",
+    "static/js/main.c16b2c77.chunk.js"
   ]
 }
