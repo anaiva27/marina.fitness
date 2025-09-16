@@ -1,13 +1,8 @@
 import React, { useRef, useState } from "react";
 import "./Service.css";
-import heroImg from "./SamadhiRetreat/assets/hero-img.png";
-import heroImg2 from "./WellnessRetreat/assets/heroImgCR3.jpg";
-import heroImg3 from "./MizataRetreat/assets/heroMizataImg.png";
-
-import img4 from "./img/package-img4.jpg";
-import img3 from "./img/package-img3.jpg";
-import img1 from "./img/package-img1.jpg";
-import img2 from "./img/package-img2.jpg";
+import retreatImg1 from "./SamadhiRetreat/assets/retreat-img1.jpg";
+import retreatImg2 from "./SamadhiRetreat/assets/retreat-img2.png";
+import retreatImg3 from "./SamadhiRetreat/assets/retreat-img1.png";
 import { Modal } from "./portal";
 import parse from "html-react-parser";
 
@@ -50,20 +45,28 @@ function RetreatSection({ setOptRef }) {
 						onClick={() => window.open("/mizata-retreat")}
 					>
 						<img
-							src={heroImg3}
+							src={retreatImg3}
 							alt="Marina fitness trainer doing exercises"
 							className="retreat"
 						/>
 					</div>
-				</div>
 
-				<div className="row-service">
 					<div
 						className="col__2 "
 						onClick={() => window.open("/retreat")}
 					>
 						<img
-							src={heroImg}
+							src={retreatImg1}
+							alt="Marina fitness trainer doing exercises"
+							className="retreat"
+						/>
+					</div>
+					<div
+						className="col__2 "
+						onClick={() => window.open("https://www.samadhi-sistarhood.com")}
+					>
+						<img
+							src={retreatImg2}
 							alt="Marina fitness trainer doing exercises"
 							className="retreat"
 						/>
