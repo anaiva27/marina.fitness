@@ -27,12 +27,12 @@ function RetreatSection({ setOptRef }) {
 			<div className="heading">
 				<br />
 				<h1 className="motto__heading center">
-					Check out my past{" "}
+					Check out my{" "}
 					<div
 						className="bright"
 						style={{ fontSize: 45 }}
 					>
-						retreats
+						wellness retreats
 					</div>
 				</h1>
 				<h2 className="motto__heading center">And stay tuned for more!</h2>
