@@ -15,20 +15,19 @@ export const Routes = () => {
 	const [retreatRef, setRetreatRef] = useState();
 	const scrollToSection = (ref) => {
 		if (!ref) return;
-		window.scrollTo({ top: ref.current.offsetTop });
+		window.scrollTo({ top: ref.current.offsetTop - 265 });
 	};
 	return (
 		<>
 			<Home
 				scrollToSection={scrollToSection}
-				optRef={optRef}
+				optionsRef={optRef}
 				retreatsRef={retreatRef}
 			/>
 			<Service setOptRef={setOptRef} />
+			<Testimonials />
 			<About />
 			<RetreatSection setOptRef={setRetreatRef} />
-			{/* <About /> */}
-			<Testimonials />
 			<Contact />
 			<Certificate />
 			<Footer />

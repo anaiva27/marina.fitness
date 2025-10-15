@@ -1,83 +1,84 @@
 .about {
-  background: #fff;
+	background: #fff;
 }
 img.about__img {
-  border-radius: 10px;
-  width: 100%;
-  max-width: 590px;
-  margin-left: auto;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 590px;
+	margin-left: auto;
 }
 h1.motto__heading {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-family: "PoppinsExtraBold" !important;
-  text-align: start;
-  font-size: 45px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-family: "PoppinsExtraBold" !important;
+	text-align: start;
+	font-size: 45px;
 }
 h1.about__heading {
-  margin-bottom: 10px;
-  color: #2fa463;
-  font-weight: 600;
-  text-align: start;
-  font-size: 40px;
+	margin-bottom: 10px;
+	color: #2fa463;
+	font-weight: 600;
+	text-align: start;
+	font-size: 40px;
 }
 button.about.btn.pointer {
-  text-transform: capitalize;
-  width: fit-content;
-  padding: 5px 15px;
-  height: 55px;
-  font-size: 18px;
-  font-weight: 600;
-  text-shadow: 1px 1px #00000088;
-  transition: 0.4s ease;
+	text-transform: capitalize;
+	width: fit-content;
+	padding: 5px 15px;
+	height: 55px;
+	font-size: 18px;
+	font-weight: 600;
+	text-shadow: 1px 1px #00000088;
+	transition: 0.4s ease;
 }
 .about__button {
-  padding: 20px 0px;
+	padding: 20px 0px;
 }
 a.bottom__to__top {
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  bottom: 3%;
-  right: 2%;
-  background-color: #2fa463;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  transition: 0.4s all ease;
-  z-index: 1000;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 3%;
+	right: 2%;
+	background-color: #2fa463;
+	border-radius: 50%;
+	cursor: pointer;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	transition: 0.4s all ease;
+	z-index: 1000;
 }
 a.bottom__to__top.active {
-  display: flex;
+	display: flex;
 }
 div.row.about {
-  align-items: flex-start !important;
-  justify-content: flex-start !important;
+	align-items: flex-start !important;
+	justify-content: flex-start !important;
 }
 /* RESPONSIVE */
 @media only screen and (max-width: 1024px) {
-  .p__color {
-    font-size: 18px !important;
-  }
+	.p__color {
+		font-size: 18px !important;
+	}
 }
 @media only screen and (max-width: 425px) {
-  button.about.btn.pointer {
-    text-transform: capitalize;
-    width: 100%;
-    height: 50px;
-    font-size: 18px;
-    transition: 0.4s ease;
-  }
-  div.about__button {
-    flex-direction: column;
-  }
-  h1.motto__heading {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-family: "PoppinsExtraBold" !important;
-    text-align: start;
-    font-size: 35px;
-  }
+	button.about.btn.pointer {
+		text-transform: capitalize;
+		width: 100%;
+		height: 50px;
+		font-size: 18px;
+		transition: 0.4s ease;
+	}
+	div.about__button {
+		flex-direction: column;
+	}
+	h1.motto__heading {
+		margin-bottom: 10px;
+		font-weight: 500;
+		font-family: "PoppinsExtraBold" !important;
+		text-align: start;
+		font-size: 35px;
+		line-height: 130%;
+	}
 }
