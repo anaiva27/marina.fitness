@@ -86,7 +86,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
           className="bg__absolute"
         /> */}
 						<div className="header d__flex align__items__center pxy__30">
-							<div className="logo">
+							<div className="logo__home">
 								<img
 									src={logo}
 									alt=""

@@ -152,7 +152,7 @@ li.sideNavbar a {
 /* RESPONSIVE */
 @media (max-width: 890px) {
 	.header {
-		justify-content: space-between;
+		justify-content: center;
 	}
 	.navigation {
 		display: none;
@@ -180,6 +180,7 @@ li.sideNavbar a {
 	}
 	h1.home__text {
 		font-size: 38px;
+		text-align: center;
 	}
 	h1.home__text.pale {
 		font-size: 27px !important;
@@ -223,9 +224,10 @@ li.sideNavbar a {
 	color: #fff;
 	font-weight: 400;
 }
-.logo img {
+.logo__home img {
 	max-width: 220px;
 }
-.logo {
+.logo__home {
 	cursor: pointer;
+	width: unset;
 }
