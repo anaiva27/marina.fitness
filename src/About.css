@@ -16,7 +16,7 @@ h1.motto__heading {
 }
 h1.about__heading {
 	margin-bottom: 10px;
-	color: #2fa463;
+	color: #368777;
 	font-weight: 600;
 	text-align: start;
 	font-size: 40px;
@@ -40,7 +40,7 @@ a.bottom__to__top {
 	position: fixed;
 	bottom: 3%;
 	right: 2%;
-	background-color: #2fa463;
+	background-color: #368777;
 	border-radius: 50%;
 	cursor: pointer;
 	display: none;

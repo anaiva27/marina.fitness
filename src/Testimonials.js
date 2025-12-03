@@ -376,7 +376,7 @@ const Wrapper = styled.div`
 	justify-content: flex-start;
 	background-color: #ffffffbe;
 	margin: auto;
-	border-radius: 25px;
+	border-radius: 0px;
 	gap: 30px;
 	padding: 40px;
 	margin-top: 100px;
