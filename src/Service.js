@@ -133,15 +133,8 @@ function Service({ setOptRef }) {
 		>
 			<div className="heading">
 				<br />
-				<h1 className="motto__heading center">
-					All set to start the{" "}
-					<div
-						className="bright"
-						style={{ fontSize: 45 }}
-					>
-						good
-					</div>{" "}
-					fight?
+				<h1 className="motto__heading center intro-cta">
+					All set to start the <div className="bright">good</div> fight?
 				</h1>
 				<p
 					className="heading p__color"

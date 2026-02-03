@@ -9,6 +9,7 @@ import Home from "./Home";
 import Testimonials from "./Testimonials";
 import Service from "./Service";
 import RetreatSection from "./RetreatSection";
+import Compare from "./Compare";
 
 export const Routes = () => {
 	const [optRef, setOptRef] = useState();
@@ -26,6 +27,7 @@ export const Routes = () => {
 			/>
 			<Service setOptRef={setOptRef} />
 			<Testimonials />
+			<Compare />
 			<About />
 			<RetreatSection setOptRef={setRetreatRef} />
 			<Contact />

@@ -94,7 +94,7 @@ p {
 }
 .container.service {
 	width: 100%;
-	margin: 45px auto 0;
+	margin: 0px auto 0;
 }
 .container.about {
 	max-width: 1400px;
@@ -281,6 +281,9 @@ button.about.btn.pointer:hover {
 	}
 	.row {
 		flex-direction: column;
+	}
+	div.bright {
+		font-size: 30px;
 	}
 }
 @media only screen and (max-width: 1120px) {

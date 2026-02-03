@@ -11,120 +11,150 @@ import img6 from "./img/CERT6.png";
 // import img7 from "./img/CERT7.png";
 
 export const Certificate = () => {
-  return (
-    <Wrapper id="Experience">
-      <Container>
-        <MainHeading className="motto__heading center">
-          Experience You Can Trust
-        </MainHeading>
-        <SubHeading>
-          Marina completed over 500 hours yoga teacher training Empowered yoga,
-          Dimitra yoga, Flow school with Bonnie Weeks. Including these
-          certificates and training workshops
-        </SubHeading>
+	return (
+		<Wrapper id="Experience">
+			<Container>
+				<MainHeading className="motto__heading center">
+					Experience You Can Trust
+				</MainHeading>
+				<SubHeading>
+					Marina completed over 500 hours yoga teacher training Empowered yoga,
+					Dimitra yoga, Flow school with Bonnie Weeks. Including these
+					certificates and training workshops
+				</SubHeading>
 
-        <Row>
-          <div>
-            <img src={img4} alt="nasm certificate" />
-          </div>
-          <div>
-            <img src={img5} alt="nasm certificate" />
-          </div>
+				<Row>
+					<div>
+						<img
+							src={img4}
+							alt="nasm certificate"
+						/>
+					</div>
+					<div>
+						<img
+							src={img5}
+							alt="nasm certificate"
+						/>
+					</div>
 
-          <div>
-            <img src={img6} alt="nasm certificate" />
-          </div>
-          <div>
-            <img src={img7} alt="nasm certificate" />
-          </div>
-        </Row>
-        <Row>
-          <div>
-            <img src={img1} alt="nasm certificate" />
-          </div>
-          <div>
-            <img src={img2} alt="nasm certificate" />
-          </div>
-          <div>
-            <img src={img3} alt="nasm certificate" className="center" />
-          </div>
-        </Row>
-        <Row className="mobile">
-          <div>
-            <img src={img3} alt="nasm certificate" />
-          </div>
-        </Row>
-      </Container>
-    </Wrapper>
-  );
+					<div>
+						<img
+							src={img6}
+							alt="nasm certificate"
+						/>
+					</div>
+					<div>
+						<img
+							src={img7}
+							alt="nasm certificate"
+						/>
+					</div>
+				</Row>
+				<Row>
+					<div>
+						<img
+							src={img1}
+							alt="nasm certificate"
+						/>
+					</div>
+					<div>
+						<img
+							src={img2}
+							alt="nasm certificate"
+						/>
+					</div>
+					<div>
+						<img
+							src={img3}
+							alt="nasm certificate"
+							className="center"
+						/>
+					</div>
+				</Row>
+				<Row className="mobile">
+					<div>
+						<img
+							src={img3}
+							alt="nasm certificate"
+						/>
+					</div>
+				</Row>
+			</Container>
+		</Wrapper>
+	);
 };
 
 const Wrapper = styled.div`
-  width: 100%;
-  background-color: #191919;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 100%;
+	background-color: #191919;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 `;
 const Container = styled.div`
-  width: 100%;
-  max-width: 1200px;
-  margin: 0px auto;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 25px;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 25px;
 `;
 const MainHeading = styled.h1`
-  font-size: 60px;
-  color: #bebebe;
-  text-align: center;
+	font-size: 60px;
+	color: #bebebe;
+	text-align: center;
+	@media (max-width: 768px) {
+		padding: 0 !important;
+		margin-top: -50px;
+	}
 `;
 const SubHeading = styled.p`
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  line-height: 130%;
-  @media (max-width: 768px) {
-    font-size: 18px !important;
-  }
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 130%;
+	@media (max-width: 768px) {
+		font-size: 18px !important;
+		text-align: left;
+	}
 `;
 const Row = styled.div`
-  width: 100%;
-  margin: 0px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 75px;
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 75px;
 
-  & > div > img {
-    display: block;
-    width: 100%;
-    object-fit: contain;
-    max-width: 150px;
-  }
-  &.mobile {
-    display: none;
-    @media (max-width: 768px) {
-      display: block;
-      img {
-        max-width: 140px;
-        margin: auto;
-        margin-top: -60px;
-      }
-    }
-  }
-  & > div > img.center {
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
-  @media (max-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+	& > div > img {
+		display: block;
+		width: 100%;
+		object-fit: contain;
+		max-width: 150px;
+	}
+	&.mobile {
+		display: none;
+		@media (max-width: 768px) {
+			display: block;
+			img {
+				max-width: 140px;
+				margin: auto;
+				margin-top: -60px;
+			}
+		}
+	}
+	& > div > img.center {
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	@media (max-width: 768px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 `;

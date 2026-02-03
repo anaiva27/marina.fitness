@@ -220,7 +220,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 							<div className="home__content">
 								{/* 	<div className="home__meta"> */}
 								<h1 className="home__text pz__10">
-									<span className="bright">Get Fit</span>
+									<span className="bright_hero">Get Fit</span>
 									with a coach who cares
 								</h1>
 								<h2 className="home__text pz__10 mb__25">

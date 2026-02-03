@@ -34,11 +34,10 @@ function Testimonials() {
 			<div className="heading">
 				<br />
 				<h1 className="motto__heading center">
-					What Marina's clients say <br />
-					about their experience
+					What Marina's clients say about their experience
 				</h1>
 				<div className="legend__container">
-					<p className=" p__color">
+					<p className="heading p__color">
 						If you ever need support, guidance, or encouragement along your
 						journey, Marina is here for you every step of the way, to help
 						overcome your challenges, achieve your fitness goals and celebrate

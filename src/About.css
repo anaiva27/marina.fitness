@@ -77,8 +77,8 @@ div.row.about {
 		margin-bottom: 10px;
 		font-weight: 500;
 		font-family: "PoppinsExtraBold" !important;
-		text-align: start;
-		font-size: 35px;
+		text-align: left !important;
+		font-size: 27px;
 		line-height: 130%;
 	}
 }

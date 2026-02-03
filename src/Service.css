@@ -118,3 +118,15 @@ img.retreat {
 		left: -20%;
 	}
 }
+
+@media (max-width: 425px) {
+	p.heading.p__color {
+		width: 100%;
+		padding: 10px 20px 10px;
+		margin: auto;
+		text-align: left;
+	}
+	.intro-cta {
+		width: 80%;
+	}
+}
