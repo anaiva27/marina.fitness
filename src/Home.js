@@ -7,12 +7,14 @@ import logoSmall from "./img/logo-new-White-small.png";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 import { dropDelay, popDelay } from "./animate";
 import { useClickOutside } from "./portal/useClickOutside";
+import { useMediaQuery } from "./helpers/useMediaQuery";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import styled from "styled-components";
 
 function Home({ optionsRef, retreatsRef, scrollToSection }) {
 	const [collapse, setCollapse] = useState(false);
+	const isMobile = useMediaQuery();
 	const ref = useRef();
 	// Toogle Menu
 	const [show, setShow] = useState(false);
@@ -23,7 +25,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 		const header = document.querySelector(".header");
 		header.classList.toggle("active", window.scrollY > 0);
 		setCollapse((prev) =>
-			window.scrollY === 0 ? (prev = false) : (prev = true)
+			window.scrollY === 0 ? (prev = false) : (prev = true),
 		);
 	});
 
@@ -85,7 +87,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
           alt="Marina fitness trainer doing exercises"
           className="bg__absolute"
         /> */}
-						<div className="header d__flex align__items__center pxy__30">
+						<div className="header d__flex align__items__center pxy__20">
 							<div className="logo__home">
 								<img
 									src={logo}
@@ -219,14 +221,10 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 						<div className="container home">
 							<div className="home__content">
 								{/* 	<div className="home__meta"> */}
-								<h1 className="home__text pz__10">
-									<span className="bright_hero">Get Fit</span>
-									with a coach who cares
+								<h1 className="home__text pz__10 bright_hero">
+									{/* <span className="bright_hero">Get Fit</span> */}
+									get a coach <br /> who cares
 								</h1>
-								<h2 className="home__text pz__10 mb__25">
-									Work with me to improve your mobility, <br />
-									optimize nutrition and build strength
-								</h2>
 
 								{/* <motion.h3
 										variants={dropDelay}
@@ -238,12 +236,34 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 										Work with me to improve your mobility, <br />
 										optimize nutrition and build strength
 									</motion.h3> */}
-								<button
-									className="button__primary"
-									onClick={() => scrollToSection(optionsRef)}
-								>
-									EXPLORE PLANS
-								</button>
+								{isMobile ? (
+									<>
+										<button
+											className="button__primary"
+											onClick={() => scrollToSection(optionsRef)}
+										>
+											Explore Plans
+										</button>
+										<h2 className="home__text pz__10 mb__25">
+											Work with me to improve your mobility, <br />
+											optimize nutrition and build strength
+										</h2>
+									</>
+								) : (
+									<>
+										<h2 className="home__text pz__10 mb__25">
+											Work with me to improve your mobility, <br />
+											optimize nutrition and build strength
+										</h2>
+										<button
+											className="button__primary"
+											onClick={() => scrollToSection(optionsRef)}
+										>
+											Explore Plans
+										</button>
+									</>
+								)}
+
 								{/* <motion.button
 									variants={dropDelay}
 									initial="initial"
@@ -300,6 +320,7 @@ const Slider = styled.div`
 const Content = styled.div`
 	display: flex;
 	width: 100%;
+	max-width: 1400px;
 	margin: 0 auto;
 	justify-content: center;
 	opacity: 0;

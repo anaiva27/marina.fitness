@@ -134,7 +134,7 @@ function Service({ setOptRef }) {
 			<div className="heading">
 				<br />
 				<h1 className="motto__heading center intro-cta">
-					All set to start the <div className="bright">good</div> fight?
+					Kick-Start Your Journey for Free
 				</h1>
 				<p
 					className="heading p__color"

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import About from "./About";
+import styled from "styled-components";
 import "./App.css";
 import Blog from "./Blog";
 import { Certificate } from "./Certificate";

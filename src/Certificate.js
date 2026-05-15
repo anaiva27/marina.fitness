@@ -14,9 +14,7 @@ export const Certificate = () => {
 	return (
 		<Wrapper id="Experience">
 			<Container>
-				<MainHeading className="motto__heading center">
-					Experience You Can Trust
-				</MainHeading>
+				<MainHeading className="motto__heading center">Credentials</MainHeading>
 				<SubHeading>
 					Marina completed over 500 hours yoga teacher training Empowered yoga,
 					Dimitra yoga, Flow school with Bonnie Weeks. Including these

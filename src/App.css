@@ -18,7 +18,8 @@ button {
 }
 @font-face {
 	font-family: "PoppinsExtraBold";
-	src: local("PoppinsExtraBold"),
+	src:
+		local("PoppinsExtraBold"),
 		url("fonts/Poppins-ExtraBold.eot") format("eot"),
 		url("fonts/Poppins-ExtraBold.ttf") format("ttf"),
 		url("fonts/Poppins-ExtraBold.woff") format("woff");
@@ -88,6 +89,9 @@ p {
 .pxy__30 {
 	padding: 30px;
 }
+.pxy__20 {
+	padding: 20px;
+}
 .container {
 	width: 100%;
 	margin: 0px auto;
@@ -118,7 +122,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	height: 100%;
-	padding: 25px;
+	padding: 25px 25px 0;
 	flex-wrap: wrap;
 }
 .pz__10 {
@@ -253,6 +257,7 @@ button.about.btn.pointer:hover {
 	color: #fff;
 	font-size: 19px;
 	font-weight: 600;
+	letter-spacing: 0.5px;
 	/* text-shadow: 0px 0px 1px #000000db; */
 	max-width: 350px;
 	width: 290px !important;
@@ -315,7 +320,8 @@ button.about.btn.pointer:hover {
 
 @font-face {
 	font-family: "ProtestRegular";
-	src: local("ProtestRegular"),
+	src:
+		local("ProtestRegular"),
 		url("fonts/ProtestRiot-Regular.eot") format("eot"),
 		url("fonts/ProtestRiot-Regular.ttf") format("ttf"),
 		url("fonts/ProtestRiot-Regular.woff") format("woff");
