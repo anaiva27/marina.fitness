@@ -30,7 +30,7 @@ export const Routes = () => {
 			<Testimonials />
 			<Compare />
 			<About />
-			<RetreatSection setOptRef={setRetreatRef} />
+			{/* <RetreatSection setOptRef={setRetreatRef} /> */}
 			<Contact />
 			<Certificate />
 			<Footer />

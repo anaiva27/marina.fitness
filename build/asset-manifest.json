@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e711293f.chunk.css",
-    "main.js": "/static/js/main.b749a13f.chunk.js",
-    "main.js.map": "/static/js/main.b749a13f.chunk.js.map",
+    "main.css": "/static/css/main.a25c7d56.chunk.css",
+    "main.js": "/static/js/main.d299f94d.chunk.js",
+    "main.js.map": "/static/js/main.d299f94d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5aa7d089.js",
     "runtime-main.js.map": "/static/js/runtime-main.5aa7d089.js.map",
     "static/css/2.9fc4fcca.chunk.css": "/static/css/2.9fc4fcca.chunk.css",
-    "static/js/2.58a3d9dc.chunk.js": "/static/js/2.58a3d9dc.chunk.js",
-    "static/js/2.58a3d9dc.chunk.js.map": "/static/js/2.58a3d9dc.chunk.js.map",
+    "static/js/2.fa63a912.chunk.js": "/static/js/2.fa63a912.chunk.js",
+    "static/js/2.fa63a912.chunk.js.map": "/static/js/2.fa63a912.chunk.js.map",
     "static/js/3.2f52b84b.chunk.js": "/static/js/3.2f52b84b.chunk.js",
     "static/js/3.2f52b84b.chunk.js.map": "/static/js/3.2f52b84b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.9fc4fcca.chunk.css.map": "/static/css/2.9fc4fcca.chunk.css.map",
-    "static/css/main.e711293f.chunk.css.map": "/static/css/main.e711293f.chunk.css.map",
-    "static/js/2.58a3d9dc.chunk.js.LICENSE.txt": "/static/js/2.58a3d9dc.chunk.js.LICENSE.txt",
+    "static/css/main.a25c7d56.chunk.css.map": "/static/css/main.a25c7d56.chunk.css.map",
+    "static/js/2.fa63a912.chunk.js.LICENSE.txt": "/static/js/2.fa63a912.chunk.js.LICENSE.txt",
     "static/media/1.36b96fc1.jpg": "/static/media/1.36b96fc1.jpg",
     "static/media/2.07533469.jpg": "/static/media/2.07533469.jpg",
     "static/media/3.42a22028.jpg": "/static/media/3.42a22028.jpg",
@@ -32,6 +32,7 @@
     "static/media/CERT6.8ee50406.png": "/static/media/CERT6.8ee50406.png",
     "static/media/Explore-1-mini.e843f972.png": "/static/media/Explore-1-mini.e843f972.png",
     "static/media/Explore-2-mini.ea808135.png": "/static/media/Explore-2-mini.ea808135.png",
+    "static/media/Home.css": "/static/media/Hero-updated-dsk.785c52b8.jpg",
     "static/media/IMG_3723EDIT-mini.e00a11bf.jpg": "/static/media/IMG_3723EDIT-mini.e00a11bf.jpg",
     "static/media/MarinaLogo2.f21720a7.png": "/static/media/MarinaLogo2.f21720a7.png",
     "static/media/App.css": "/static/media/ProtestRiot-Regular.8de441de.ttf",
@@ -85,7 +86,6 @@
     "static/media/marina-portrait.d96f24a1.jpg": "/static/media/marina-portrait.d96f24a1.jpg",
     "static/media/marinaImg1.691f4517.png": "/static/media/marinaImg1.691f4517.png",
     "static/media/menu.2f5ea949.png": "/static/media/menu.2f5ea949.png",
-    "static/media/Home.css": "/static/media/new-hero-img2.81592b63.jpg",
     "static/media/package-img1.5cd10b56.jpg": "/static/media/package-img1.5cd10b56.jpg",
     "static/media/package-img2.e07ef152.jpg": "/static/media/package-img2.e07ef152.jpg",
     "static/media/package-img3.420f2891.jpg": "/static/media/package-img3.420f2891.jpg",
@@ -121,8 +121,8 @@
   "entrypoints": [
     "static/js/runtime-main.5aa7d089.js",
     "static/css/2.9fc4fcca.chunk.css",
-    "static/js/2.58a3d9dc.chunk.js",
-    "static/css/main.e711293f.chunk.css",
-    "static/js/main.b749a13f.chunk.js"
+    "static/js/2.fa63a912.chunk.js",
+    "static/css/main.a25c7d56.chunk.css",
+    "static/js/main.d299f94d.chunk.js"
   ]
 }

@@ -14,6 +14,10 @@
 	position: relative;
 }
 
+#Home {
+	max-width: 1400px;
+}
+
 li.nav__items {
 	font-size: 19px;
 	font-weight: 400;
@@ -25,6 +29,9 @@ li.nav__items {
   padding-bottom: 0px !important; */
 }
 .collapsed-toggle {
+}
+.hide-list-marker {
+	overflow: hidden;
 }
 ul.navbar {
 	display: flex;
@@ -162,7 +169,8 @@ li.sideNavbar a {
 		justify-content: center;
 	}
 	.bright_hero {
-		color: #368777 !important;
+		color: #000 !important;
+		font-size: 42px !important;
 	}
 	.navigation {
 		display: none;

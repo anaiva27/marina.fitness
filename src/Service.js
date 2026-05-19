@@ -59,19 +59,21 @@ const contentGroup = [
   `,
 	`
   <h1 className="bright heading__services">
-  Online One on One Training</h1>      
+  Private One-on-One Coaching</h1>      
        
-        - Private online zoom personal training
         <br />
-        - Individualized training plan
-        <br />
-        - Customized nutrition guide
-        <br />
-        - New habits cultivation
-        <br />
-        - Access to the app
-        <br />
-        - Accountability from your coach
+    <p className="service-list-item p__color">This is my most personalized coaching experience for individuals serious about transforming their body, movement, habits, and mindset.
+
+    </p>
+    <br />
+    <p className="service-list-item p__color">    Through private sessions and individualized programming, we focus on building sustainable strength, mobility, energy, and confidence — while creating habits that support long-term results.
+    </p>
+    <br />
+    <p className="service-list-item p__color">To ensure consistency, commitment, and measurable progress, coaching requires:
+    <br />-Minimum 2 sessions per week
+    <br />-Minimum 3-month commitment
+    </p>
+
         <br />
         <br />
         <br />
@@ -88,16 +90,18 @@ const contentGroup = [
   `,
 	`
   <h1 className="bright heading__services" >
-  Personalized 360 Coaching</h1>      
-        - Individualized training plan
-        <br />
-        - Customized nutrition guide
-        <br />
-        - New habits cultivation
-        <br />
-        - Access to the app
-        <br />
-        - Accountability from your coach
+  The 7-Day Hip Mobility Reset</h1>  
+    <br />
+    <p className="service-list-item p__color">A Guided Program to Help You Move Freely Again.</p>
+      <br /><br />
+
+      <p className="service-list-item p__color">This 7-day mobility experience is designed to help you release tight hips, improve movement quality, and reconnect with your body through intentional, progressive mobility training.
+      </p>
+       <br /> <br />
+
+      <p className="service-list-item p__color">
+      Every class builds on the previous one, gradually preparing your joints, muscles, and connective tissues for deeper mobility, better control, and long-term results.
+      </p>
         <br />
         <br />
         <br />
@@ -107,7 +111,7 @@ const contentGroup = [
                   rel="noopener noreferrer"
                 >
                   <button className="about btn pointer">
-                    Coaching Application
+                    PURCHASE
                   </button>
                 </a>
         <br />
@@ -131,19 +135,53 @@ function Service({ setOptRef }) {
 			className="service component__space"
 			id="Services"
 		>
-			<div className="heading">
+			<div className="services_content">
 				<br />
-				<h1 className="motto__heading center intro-cta">
+				<h1 className="motto__heading  intro-cta">
 					Kick-Start Your Journey for Free
 				</h1>
 				<p
-					className="heading p__color"
+					className=" p__color"
 					ref={optionsRef}
 				>
 					{/* Imagine stepping into a version of your life where chronic pain
           doesn't dictate your days. */}
-					Now is your time to feel empowered and educated about movement,
-					nutrition and your body.
+					{/* Now is your time to feel empowered and educated about movement,
+					nutrition and your body. */}
+					Explore my free classes on my{" "}
+					<a
+						href="https://www.youtube.com/@marinabogatkina7444"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="link-YT"
+					>
+						YouTube Channel
+					</a>{" "}
+					with new mobility, strength, yoga, and wellness content added weekly.
+				</p>
+				<p
+					className=" p__color"
+					ref={optionsRef}
+				>
+					These sessions are designed to help you:
+				</p>
+				<ul className=" p__color service-list-item">
+					<li>
+						<strong>Improve</strong> mobility and flexibility
+					</li>
+					<li>
+						<strong>Build</strong> strength and body awareness
+					</li>
+					<li>
+						<strong>Reduce</strong> stiffness and tension
+					</li>
+					<li>
+						<strong>Create consistency</strong> in your movement practice
+					</li>
+				</ul>
+				<p className=" p__color">
+					Experience my coaching style and let's start working together more
+					closely. Enjoy free yoga, mobility and Myofascial Release classes.
 				</p>
 			</div>
 
@@ -177,13 +215,31 @@ function Service({ setOptRef }) {
 								</svg>
 							</div>
 							<div className="service__meta">
-								<h1 className="service__text">Personalized 360 Coaching</h1>
-								<p className="p service__text p__color">
-									- Individualized training plan <br />
-									- Customized nutrition guide <br />
-									- New habits cultivation <br />
-									- Access to the app <br />- Accountability from your coach
-								</p>
+								<h1 className="service__text">The 7-Day Hip Mobility Reset</h1>
+								<br />
+								<h3 className="service__text white underline">Ideal for:</h3>
+								<ul className="service-list-item p__color white ">
+									<li>Tight hips and lower back stiffness</li>
+									<li>Beginners and active individuals alike</li>
+									<li>
+										Busy individuals who don’t have time for long classes but
+										still desire good results
+									</li>
+								</ul>
+								<br />
+								<h3 className="service__text white underline">
+									What's Included:
+								</h3>
+								<ul className="service-list-item p__color white">
+									<li>7 guided mobility classes</li>
+									<li>Day 1-6 sessions: 25 minutes each</li>
+									<li>Day 7: full 60-minute integration flow</li>
+									<li>
+										Progressive structure for safe, effective mobility gains
+									</li>
+									<li>Lifetime access to the program</li>
+								</ul>
+								<button className="about btn pointer">GET THE PROGRAM</button>
 							</div>
 						</div>
 					</div>
@@ -220,19 +276,39 @@ function Service({ setOptRef }) {
 								</svg>
 							</div>
 							<div className="service__meta">
-								<h1 className="service__text">Online One on One Training</h1>
-								<p className="p service__text p__color">
-									- Private online zoom personal training
-									<br />
-									- Individualized training plan <br /> - Customized nutrition
-									guide <br />
-									- New habits cultivation <br />
-									- Access to the app <br />- Accountability from your coach
-								</p>
+								<h1 className="service__text">Private One-on-One Coaching</h1>
+								<br />
+								<h3 className="service__text white ">
+									High-Level Coaching for Lasting Transformation.
+								</h3>
+								<h3 className="service__text white underline">
+									Ideal for those looking for:
+								</h3>
+								<ul className="service-list-item p__color white ">
+									<li>Personalized attention</li>
+									<li>Structure and accountability</li>
+									<li>Long-term lifestyle transformation</li>
+								</ul>
+								<br />
+								<h3 className="service__text white underline">
+									What's Included:
+								</h3>
+								<ul className="service-list-item p__color white">
+									<li>
+										Fully individualized mobility + strength training program
+									</li>
+									<li>Private coaching sessions (Zoom or in person)</li>
+									<li>Customized nutrition guidance</li>
+									<li>Habit-building and lifestyle support</li>
+									<li>Access to coaching app</li>
+									<li>Direct accountability and ongoing support</li>
+									<li>Access to live weekend mobility classes</li>
+								</ul>
+								<button className="about btn pointer">GET THE PROGRAM</button>
 							</div>
 						</div>
 					</div>
-					<div
+					{/* <div
 						className="col__2 service"
 						onClick={() => openModal(true, 0)}
 					>
@@ -277,7 +353,7 @@ function Service({ setOptRef }) {
 								</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 				{/* <div className="row">
           <div className="col__2 service">

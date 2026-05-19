@@ -77,16 +77,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 					className="home"
 					id="Home"
 				>
-					{/* <div className="loader">
-            <div className="line">
-            </div>
-          </div> */}
 					<div className="home__bg">
-						{/* <img
-          src={heroBg}
-          alt="Marina fitness trainer doing exercises"
-          className="bg__absolute"
-        /> */}
 						<div className="header d__flex align__items__center pxy__20">
 							<div className="logo__home">
 								<img
@@ -95,21 +86,31 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 								/>
 							</div>
 							<div className="navigation">
-								<ul className="navbar d__flex">
+								<ul className="navbar d__flex hide-list-marker">
 									<a href="#Retreats">
-										<li className="nav__items mx__15">Retreats</li>
+										<li className="nav__items mx__15 hide-list-marker">
+											Retreats
+										</li>
 									</a>
 									<a href="#Services">
-										<li className="nav__items mx__15">Services</li>
+										<li className="nav__items mx__15 hide-list-marker">
+											Services
+										</li>
 									</a>
 									<a href="#Experience">
-										<li className="nav__items mx__15">Experience</li>
+										<li className="nav__items mx__15 hide-list-marker">
+											Experience
+										</li>
 									</a>
 									<a href="#Testimonials">
-										<li className="nav__items mx__15">Testimonials</li>
+										<li className="nav__items mx__15 hide-list-marker">
+											Testimonials
+										</li>
 									</a>
 									<a href="#Contact">
-										<li className="nav__items mx__15">Contact</li>
+										<li className="nav__items mx__15 hide-list-marker">
+											Contact
+										</li>
 									</a>
 								</ul>
 							</div>
@@ -242,7 +243,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 											className="button__primary"
 											onClick={() => scrollToSection(optionsRef)}
 										>
-											Explore Plans
+											EXPLORE PLANS
 										</button>
 										<h2 className="home__text pz__10 mb__25">
 											Work with me to improve your mobility, <br />
@@ -259,7 +260,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 											className="button__primary"
 											onClick={() => scrollToSection(optionsRef)}
 										>
-											Explore Plans
+											EXPLORE PLANS
 										</button>
 									</>
 								)}
@@ -320,7 +321,7 @@ const Slider = styled.div`
 const Content = styled.div`
 	display: flex;
 	width: 100%;
-	max-width: 1400px;
+	background-color: #000;
 	margin: 0 auto;
 	justify-content: center;
 	opacity: 0;
