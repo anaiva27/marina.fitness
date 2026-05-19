@@ -62,7 +62,7 @@ div.row.about {
 		font-size: 18px !important;
 	}
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
 	button.about.btn.pointer {
 		text-transform: capitalize;
 		width: 100%;
@@ -78,7 +78,7 @@ div.row.about {
 		font-weight: 500;
 		font-family: "PoppinsExtraBold" !important;
 		text-align: left !important;
-		font-size: 32px;
+		font-size: 30px;
 		line-height: 130%;
 	}
 }

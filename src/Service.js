@@ -137,9 +137,7 @@ function Service({ setOptRef }) {
 		>
 			<div className="services_content">
 				<br />
-				<h1 className="motto__heading center intro-cta">
-					Kick-Start Your Journey for Free
-				</h1>
+				<h1 className="services-intro">Kick-Start Your Journey for Free</h1>
 				<p
 					className=" p__color"
 					ref={optionsRef}
