@@ -62,14 +62,14 @@ const contentGroup = [
   Private One-on-One Coaching</h1>      
        
         <br />
-    <p className="service-list-item p__color">This is my most personalized coaching experience for individuals serious about transforming their body, movement, habits, and mindset.
+    <p className=" p__color">This is my <strong>most personalized coaching experience</strong> for individuals serious about transforming their body, movement, habits, and mindset.
 
     </p>
     <br />
-    <p className="service-list-item p__color">    Through private sessions and individualized programming, we focus on building sustainable strength, mobility, energy, and confidence — while creating habits that support long-term results.
+    <p className=" p__color">Through private sessions and individualized programming, we focus on building sustainable <strong>strength, mobility, energy, and confidence</strong> — while creating habits that support <strong>long-term results</strong>.
     </p>
     <br />
-    <p className="service-list-item p__color">To ensure consistency, commitment, and measurable progress, coaching requires:
+    <p className=" p__color">To ensure consistency, commitment, and measurable progress, coaching requires:
     <br />-Minimum 2 sessions per week
     <br />-Minimum 3-month commitment
     </p>
@@ -92,15 +92,15 @@ const contentGroup = [
   <h1 className="bright heading__services" >
   The 7-Day Hip Mobility Reset</h1>  
     <br />
-    <p className="service-list-item p__color">A Guided Program to Help You Move Freely Again.</p>
+    <p className=" p__color">A Guided Program to Help You Move Freely Again.</p>
       <br /><br />
 
-      <p className="service-list-item p__color">This 7-day mobility experience is designed to help you release tight hips, improve movement quality, and reconnect with your body through intentional, progressive mobility training.
+      <p className=" p__color">This 7-day mobility experience is designed to help you release tight hips, improve movement quality, and reconnect with your body through <strong>intentional, progressive mobility training</strong>.
       </p>
        <br /> <br />
 
-      <p className="service-list-item p__color">
-      Every class builds on the previous one, gradually preparing your joints, muscles, and connective tissues for deeper mobility, better control, and long-term results.
+      <p className=" p__color">
+      Every class builds on the previous one, gradually preparing your <strong>joints, muscles, and connective tissues</strong> for deeper mobility, better control, and long-term results.
       </p>
         <br />
         <br />
@@ -137,7 +137,7 @@ function Service({ setOptRef }) {
 		>
 			<div className="services_content">
 				<br />
-				<h1 className="motto__heading  intro-cta">
+				<h1 className="motto__heading center intro-cta">
 					Kick-Start Your Journey for Free
 				</h1>
 				<p
