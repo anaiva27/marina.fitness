@@ -1,8 +1,5 @@
 import React from "react";
 import "./Testimonials.css";
-import Project1 from "./img/portfolio-1.jpg";
-import Project2 from "./img/portfolio-2.jpg";
-import Project3 from "./img/portfolio-3.jpg";
 import img5 from "./img/5.jpg";
 import img7 from "./img/7.jpg";
 import img6 from "./img/6.jpg";
@@ -195,7 +192,8 @@ function Testimonials() {
 								her easy going ways! I have been practicing yoga under Marina’s
 								guidance{" "}
 								<strong>
-									for many years and my strength and stamina is at its best!{" "}
+									for many years and my strength and stamina is at its
+									best!{" "}
 								</strong>
 							</Text>
 						</Wrapper>

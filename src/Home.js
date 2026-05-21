@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Home.css";
 import "./RevealPage.css";
 import logo from "./img/MarinaLogo2.png";
-import heroBg from "./img/hero-bg.jpg";
-import logoSmall from "./img/logo-new-White-small.png";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 import { dropDelay, popDelay } from "./animate";
 import { useClickOutside } from "./portal/useClickOutside";

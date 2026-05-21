@@ -83,7 +83,7 @@ const contentGroup = [
                   rel="noopener noreferrer"
                 >
                   <button className="about btn pointer">
-                    Coaching Application
+                    COACHING APPLICATION
                   </button>
                 </a>
         <br />
@@ -146,7 +146,7 @@ function Service({ setOptRef }) {
           doesn't dictate your days. */}
 					{/* Now is your time to feel empowered and educated about movement,
 					nutrition and your body. */}
-					Explore my free classes on my{" "}
+					Explore free classes on Marina's{" "}
 					<a
 						href="https://www.youtube.com/@marinabogatkina7444"
 						target="_blank"
@@ -178,8 +178,9 @@ function Service({ setOptRef }) {
 					</li>
 				</ul>
 				<p className=" p__color">
-					Experience my coaching style and let's start working together more
-					closely. Enjoy free yoga, mobility and Myofascial Release classes.
+					Experience Marina's coaching style and let's start working together
+					more closely. Enjoy free yoga, mobility and Myofascial Release
+					classes.
 				</p>
 			</div>
 
