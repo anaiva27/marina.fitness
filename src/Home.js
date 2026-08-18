@@ -19,13 +19,13 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 	//useClickOutside(ref, show ? show : () => null);
 
 	// fixed Header
-	window.addEventListener("scroll", function () {
-		const header = document.querySelector(".header");
-		header.classList.toggle("active", window.scrollY > 0);
-		setCollapse((prev) =>
-			window.scrollY === 0 ? (prev = false) : (prev = true),
-		);
-	});
+	// window.addEventListener("scroll", function () {
+	// 	const header = document.querySelector(".header");
+	// 	header.classList.toggle("active", window.scrollY > 0);
+	// 	setCollapse((prev) =>
+	// 		window.scrollY === 0 ? (prev = false) : (prev = true),
+	// 	);
+	// });
 
 	useEffect(() => {
 		window.scrollTo({ top: 0 });
