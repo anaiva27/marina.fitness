@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.3b9e94fc.chunk.css",
-    "main.js": "/static/js/main.4644cba8.chunk.js",
-    "main.js.map": "/static/js/main.4644cba8.chunk.js.map",
+    "main.js": "/static/js/main.142f5cc1.chunk.js",
+    "main.js.map": "/static/js/main.142f5cc1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5aa7d089.js",
     "runtime-main.js.map": "/static/js/runtime-main.5aa7d089.js.map",
     "static/css/2.9fc4fcca.chunk.css": "/static/css/2.9fc4fcca.chunk.css",
@@ -21,6 +21,7 @@
     "static/media/5.2b8bb5eb.jpg": "/static/media/5.2b8bb5eb.jpg",
     "static/media/6.444559c8.jpg": "/static/media/6.444559c8.jpg",
     "static/media/7.02c3e554.jpg": "/static/media/7.02c3e554.jpg",
+    "static/media/About-min.00a387c6.jpg": "/static/media/About-min.00a387c6.jpg",
     "static/media/AboutGianna.cddb2d47.jpg": "/static/media/AboutGianna.cddb2d47.jpg",
     "static/media/AboutMarina.0c0987da.jpg": "/static/media/AboutMarina.0c0987da.jpg",
     "static/media/CERT1-1.f770af7a.png": "/static/media/CERT1-1.f770af7a.png",
@@ -46,7 +47,6 @@
     "static/media/contact1.8569b5f4.png": "/static/media/contact1.8569b5f4.png",
     "static/media/contact2.0869db52.png": "/static/media/contact2.0869db52.png",
     "static/media/explore-img.28d83c24.png": "/static/media/explore-img.28d83c24.png",
-    "static/media/fruit-shop.86855e06.jpg": "/static/media/fruit-shop.86855e06.jpg",
     "static/media/gridImg1.cf19a93b.jpg": "/static/media/gridImg1.cf19a93b.jpg",
     "static/media/gridImg2.789bdb5b.jpg": "/static/media/gridImg2.789bdb5b.jpg",
     "static/media/gridImg3.a25450b8.jpg": "/static/media/gridImg3.a25450b8.jpg",
@@ -54,7 +54,6 @@
     "static/media/gridImg5.b2c02ea2.jpg": "/static/media/gridImg5.b2c02ea2.jpg",
     "static/media/gridImg6.3cf05b7b.jpg": "/static/media/gridImg6.3cf05b7b.jpg",
     "static/media/headline.afaa9bbd.png": "/static/media/headline.afaa9bbd.png",
-    "static/media/hero-bg.af4001fd.jpg": "/static/media/hero-bg.af4001fd.jpg",
     "static/media/hero-img.3bf80e8d.png": "/static/media/hero-img.3bf80e8d.png",
     "static/media/heroImgCR3-Mob.4f11f1ea.jpg": "/static/media/heroImgCR3-Mob.4f11f1ea.jpg",
     "static/media/heroImgCR3.27230c77.jpg": "/static/media/heroImgCR3.27230c77.jpg",
@@ -80,7 +79,6 @@
     "static/media/imgNature1.f1c3fd0d.png": "/static/media/imgNature1.f1c3fd0d.png",
     "static/media/imgNature2.b8a96828.jpg": "/static/media/imgNature2.b8a96828.jpg",
     "static/media/logo-new-White-crop-Marina.57daa6a6.png": "/static/media/logo-new-White-crop-Marina.57daa6a6.png",
-    "static/media/logo-new-White-small.8a57c351.png": "/static/media/logo-new-White-small.8a57c351.png",
     "static/media/logo.2c3ffe88.png": "/static/media/logo.2c3ffe88.png",
     "static/media/mandala21.4f06a859.png": "/static/media/mandala21.4f06a859.png",
     "static/media/marina-portrait.d96f24a1.jpg": "/static/media/marina-portrait.d96f24a1.jpg",
@@ -90,9 +88,6 @@
     "static/media/package-img2.e07ef152.jpg": "/static/media/package-img2.e07ef152.jpg",
     "static/media/package-img3.420f2891.jpg": "/static/media/package-img3.420f2891.jpg",
     "static/media/package-img4.b0c4c69e.jpg": "/static/media/package-img4.b0c4c69e.jpg",
-    "static/media/portfolio-1.6dd6354d.jpg": "/static/media/portfolio-1.6dd6354d.jpg",
-    "static/media/portfolio-2.7581ecc6.jpg": "/static/media/portfolio-2.7581ecc6.jpg",
-    "static/media/portfolio-3.e1d203d2.jpg": "/static/media/portfolio-3.e1d203d2.jpg",
     "static/media/retreat-img1.448deeb4.jpg": "/static/media/retreat-img1.448deeb4.jpg",
     "static/media/retreat-img1.7c850a9a.png": "/static/media/retreat-img1.7c850a9a.png",
     "static/media/retreat-img2.7188bcf5.png": "/static/media/retreat-img2.7188bcf5.png",
@@ -123,6 +118,6 @@
     "static/css/2.9fc4fcca.chunk.css",
     "static/js/2.fa63a912.chunk.js",
     "static/css/main.3b9e94fc.chunk.css",
-    "static/js/main.4644cba8.chunk.js"
+    "static/js/main.142f5cc1.chunk.js"
   ]
 }

@@ -12,7 +12,21 @@ function Footer() {
 				className="copyright"
 				style={{ color: "#fff", fontSize: "14px", opacity: "0.75" }}
 			>
-				Copyright © 2026 Marina Fitness. All Rights Reserved.
+				© 2026 Marina Fitness. All Rights Reserved.
+			</span>
+			<span
+				className="copyright"
+				style={{ color: "#fff", fontSize: "14px", opacity: "0.75" }}
+			>
+				Developed by -{" "}
+				<a
+					href="https://a27-web-lab.vercel.app"
+					target="_blank"
+					className="footer-dev-link"
+					rel="noopener noreferrer"
+				>
+					A27 Web Lab
+				</a>
 			</span>
 		</div>
 	);
