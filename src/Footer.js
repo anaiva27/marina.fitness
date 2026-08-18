@@ -12,7 +12,7 @@ function Footer() {
 				className="copyright"
 				style={{ color: "#fff", fontSize: "14px", opacity: "0.75" }}
 			>
-				© 2026 Marina Fitness. All Rights Reserved.
+				© {new Date().getFullYear()} Marina Fitness. All Rights Reserved.
 			</span>
 			<span
 				className="copyright"
