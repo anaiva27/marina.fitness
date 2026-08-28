@@ -25,6 +25,15 @@ button {
 		url("fonts/Poppins-ExtraBold.woff") format("woff");
 	font-weight: 700;
 }
+@font-face {
+	font-family: "Condensed";
+	src:
+		local("SpecialGothicCondensedOne-Regular"),
+		url("fonts/SpecialGothicCondensedOne-Regular.eot") format("eot"),
+		url("fonts/SpecialGothicCondensedOne-Regular.ttf") format("ttf"),
+		url("fonts/SpecialGothicCondensedOne-Regular.woff") format("woff");
+	font-weight: 700;
+}
 a {
 	text-decoration: none;
 	color: #000;
@@ -97,6 +106,8 @@ p {
 .container.service {
 	width: 100%;
 	margin: 0px auto 0;
+	max-width: 1450px;
+	padding-bottom: 30px;
 }
 .container.about {
 	max-width: 1400px;
@@ -106,16 +117,8 @@ p {
 }
 .container.home {
 	width: 100%;
-	margin: 0px auto;
-	min-height: 75vh;
-	/* background: linear-gradient(
-			to right,
-			#030303b4,
-			#00000019 60%,
-			#08080816 40%,
-			#ffffff00
-		),
-		linear-gradient(to top, #030303b4, #00000019 60%, #08080816 40%, #ffffff00); */
+	margin: auto;
+	min-height: 85vh;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -239,13 +242,28 @@ button.btn {
 	font-family: Poppins, sans-serif;
 	margin-bottom: 15px;
 }
+.p__white {
+	color: white !important;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: Poppins, sans-serif;
+	margin-bottom: 15px;
+}
+
+.p__accent {
+	color: #92e1d2;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: Poppins, sans-serif;
+	margin-bottom: 15px;
+}
 button.about.btn.pointer:hover {
 	background: #000;
 	color: #fff !important;
 }
 
 .button__primary {
-	padding: 11px 35px;
+	padding: 11px 30px 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -253,14 +271,14 @@ button.about.btn.pointer:hover {
 	border: none;
 	background-color: #368777;
 	color: #fff;
-	font-size: 19px;
-	font-weight: 600;
-	letter-spacing: 0.5px;
-	/* text-shadow: 0px 0px 1px #000000db; */
-	max-width: 350px;
-	width: 290px !important;
+	font-size: 23px;
+	font-weight: 500;
+	letter-spacing: 0.7px;
+	max-width: 320px;
+	width: 100%;
 	margin-top: 30px;
 	cursor: pointer;
+	font-family: "Condensed" !important;
 }
 
 .footer {

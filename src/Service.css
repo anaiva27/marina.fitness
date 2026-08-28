@@ -4,7 +4,8 @@
 	max-width: 1400px;
 	display: flex;
 	flex-direction: column;
-	padding: 15px;
+	padding: 15px 25px;
+	background-color: black;
 }
 
 h1.heading {
@@ -25,25 +26,29 @@ p.heading.p__color {
 
 .services-intro {
 	padding: 0;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 10px;
+	color: white;
 	font-weight: 500;
-	font-family: "PoppinsExtraBold" !important;
-	font-size: 45px;
+	font-family: "Condensed" !important;
+	font-size: 55px;
 }
 
 a.link-YT {
 	display: inline-block;
-	background-color: #dfdede;
 	border-radius: 3px;
 	padding: 0px 7px;
 	cursor: pointer;
+	text-decoration: underline;
 	width: fit-content;
+	color: #92e1d2;
 }
 
 .service-list-item {
 	padding-left: 10px;
 	line-height: 200%;
+	font-size: 18px;
+	margin-bottom: 20px;
 }
 
 .heading__services {
@@ -57,7 +62,7 @@ a.link-YT {
 .service__box {
 	border-radius: 10px;
 	width: 100%;
-	background-color: #212020ae;
+	background-color: #0a0a0ac3;
 	padding: 55px;
 	transition: 0.4s ease;
 	height: 100%;
@@ -103,9 +108,9 @@ h3.service__text {
 	line-height: 170%;
 }
 div.service {
-	border-radius: 10px;
 	min-height: 370px;
 	cursor: pointer;
+	background-color: black;
 }
 div.service img.cover {
 	position: absolute;
@@ -162,11 +167,17 @@ img.retreat {
 		text-align: left;
 	}
 	.services-intro {
-		text-align: center;
-		margin-bottom: 10px;
+		text-align: left;
+		margin: 0px 0 30px;
 		font-weight: 500;
-		font-family: "PoppinsExtraBold" !important;
-		font-size: 30px;
+		font-size: 35px;
 		line-height: 130%;
+		max-width: 300px;
+	}
+	a.link-YT {
+		padding: 0px 0px;
+	}
+	.mobile-width {
+		max-width: 300px;
 	}
 }

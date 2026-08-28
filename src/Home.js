@@ -85,21 +85,21 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 							</div>
 							<div className="navigation">
 								<ul className="navbar d__flex hide-list-marker">
-									<a href="#Retreats">
+									{/* <a href="#Retreats">
 										<li className="nav__items mx__15 hide-list-marker">
 											Retreats
 										</li>
-									</a>
+									</a> */}
 									<a href="#Services">
 										<li className="nav__items mx__15 hide-list-marker">
 											Services
 										</li>
 									</a>
-									<a href="#Experience">
+									{/* <a href="#Experience">
 										<li className="nav__items mx__15 hide-list-marker">
 											Experience
 										</li>
-									</a>
+									</a> */}
 									<a href="#Testimonials">
 										<li className="nav__items mx__15 hide-list-marker">
 											Testimonials
@@ -113,46 +113,48 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 								</ul>
 							</div>
 							{/* Toogle Menu */}
-							{/* <div className="toggle__menu">
-                {show ? (
-                  <svg
-                    onClick={() => setShow(!show)}
-                    width="20px"
-                    height="20px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z"
-                      fill="#ffffff"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    onClick={() => setShow(!show)}
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="white"
-                    class="bi bi-justify white pointer"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
-                    />
-                  </svg>
-                )}
-              </div> */}
+							{isMobile && (
+								<div className="toggle__menu">
+									{show ? (
+										<svg
+											onClick={() => setShow(!show)}
+											width="20px"
+											height="20px"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z"
+												fill="#ffffff"
+											/>
+										</svg>
+									) : (
+										<svg
+											onClick={() => setShow(!show)}
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="20"
+											fill="white"
+											class="bi bi-justify white pointer"
+											viewBox="0 0 16 16"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+											/>
+										</svg>
+									)}
+								</div>
+							)}
 							{show ? (
 								<div className="sideNavbar">
 									<ul className="sidebar d__flex">
-										<li className="sideNavbar black">
+										<li className="sideNavbar black mx__15 hide-list-marker">
 											<a
-												className="black underline"
+												className="black "
 												href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
 												target="_blank"
 												and
@@ -163,7 +165,42 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 										</li>
 										<br />
 										<br />
-										<li className="sideNavbar black">
+										{/* <a href="#Retreats">
+										<li className="nav__items mx__15 hide-list-marker">
+											Retreats
+										</li>
+									</a> */}
+										<li className="nav__items mx__45 hide-list-marker">
+											<a
+												href="#Services"
+												className="p__white"
+											>
+												Services
+											</a>
+										</li>
+										{/* <a href="#Experience">
+										<li className="nav__items mx__15 hide-list-marker">
+											Experience
+										</li>
+									</a> */}
+										<li className="nav__items mx__45 hide-list-marker">
+											<a
+												href="#Testimonials"
+												className="p__white"
+											>
+												Testimonials
+											</a>
+										</li>
+										<li className="nav__items mx__45 hide-list-marker">
+											<a
+												href="#Contact"
+												className="p__white "
+											>
+												Contact
+											</a>
+										</li>
+
+										{/* <li className="sideNavbar black">
 											<p className="black">
 												Supplements from trusted sources, that I personally use:
 											</p>
@@ -211,7 +248,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 												<br />
 												Use my link to get 15% off
 											</p>
-										</li>
+										</li> */}
 									</ul>
 								</div>
 							) : null}
@@ -220,46 +257,51 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 						<div className="container home">
 							<div className="home__content">
 								{/* 	<div className="home__meta"> */}
+								<h2 className="home__text pz__10 mb__25 eyebrow">
+									Want to <span className="accent_hero">feel your best</span>{" "}
+									again?
+								</h2>
 								<h1 className="home__text pz__10 bright_hero">
 									{/* <span className="bright_hero">Get Fit</span> */}
-									get a coach <br /> who cares
+									Move Better <br />
+									Get Stronger <br />
+									<span className="bright_hero">with Marina</span>
 								</h1>
 
-								{/* <motion.h3
-										variants={dropDelay}
-										initial="initial"
-										animate="animate"
-										exit="exit"
-										className="home__text pz__10"
-									>
-										Work with me to improve your mobility, <br />
-										optimize nutrition and build strength
-									</motion.h3> */}
 								{isMobile ? (
 									<>
 										<button
 											className="button__primary"
 											onClick={() => scrollToSection(optionsRef)}
 										>
-											EXPLORE PLANS
+											Book your Free Consultation
 										</button>
 										<h2 className="home__text pz__10 mb__25">
-											Work with me to improve your mobility, <br />
-											optimize nutrition and build strength
+											Easy to follow, personalised{" "}
+											<span className="accent_hero">
+												training program and nutrition guide
+											</span>{" "}
+											tailored to your goals, needs, and lifestyle.
 										</h2>
 									</>
 								) : (
 									<>
-										<h2 className="home__text pz__10 mb__25">
-											Work with me to improve your mobility, <br />
-											optimize nutrition and build strength
+										<h2 className="home__text pz__10 mb__25 hero-body">
+											Get comprehensive, easy to follow, personalised training
+											program and nutrition guide{" "}
+											<span className="accent_hero">
+												tailored to your goals, needs, and lifestyle.
+											</span>
 										</h2>
 										<button
 											className="button__primary"
 											onClick={() => scrollToSection(optionsRef)}
 										>
-											EXPLORE PLANS
+											Book your Free Consultation
 										</button>
+										<h2 className="home__text pz__10 mb__25">
+											* Trusted by clients worldwide
+										</h2>
 									</>
 								)}
 

@@ -82,7 +82,7 @@ const contentGroup = [
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="about btn pointer">
+                  <button className="button__primary btn pointer">
                     COACHING APPLICATION
                   </button>
                 </a>
@@ -98,11 +98,19 @@ const contentGroup = [
       <p className=" p__color">This 7-day mobility experience is designed to help you release tight hips, improve movement quality, and reconnect with your body through <strong>intentional, progressive mobility training</strong>.
       </p>
        <br /> <br />
-
-      <p className=" p__color">
-      Every class builds on the previous one, gradually preparing your <strong>joints, muscles, and connective tissues</strong> for deeper mobility, better control, and long-term results.
-      </p>
-        <br />
+<h3 className="service__text bright">
+									What's Included:
+								</h3>
+								<ul className="service-list-item">
+									<li>7 guided mobility classes</li>
+									<li>Day 1-6 sessions: 25 minutes each</li>
+									<li>Day 7: full 60-minute integration flow</li>
+									<li>
+										Progressive structure for safe, effective mobility gains
+									</li>
+									<li>Lifetime access to the program</li>
+								</ul>
+    
         <br />
         <br />
         <a
@@ -110,7 +118,7 @@ const contentGroup = [
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="about btn pointer">
+                  <button className="button__primary btn pointer">
                     PURCHASE
                   </button>
                 </a>
@@ -132,14 +140,14 @@ function Service({ setOptRef }) {
 
 	return (
 		<div
-			className="service component__space"
+			className="service"
 			id="Services"
 		>
 			<div className="services_content">
 				<br />
 				<h1 className="services-intro">Kick-Start Your Journey for Free</h1>
 				<p
-					className=" p__color"
+					className=" p__white"
 					ref={optionsRef}
 				>
 					{/* Imagine stepping into a version of your life where chronic pain
@@ -157,31 +165,36 @@ function Service({ setOptRef }) {
 					</a>{" "}
 					with new mobility, strength, yoga, and wellness content added weekly.
 				</p>
-				<p
-					className=" p__color"
-					ref={optionsRef}
-				>
-					These sessions are designed to help you:
-				</p>
-				<ul className=" p__color service-list-item">
-					<li>
-						<strong>Improve</strong> mobility and flexibility
-					</li>
-					<li>
-						<strong>Build</strong> strength and body awareness
-					</li>
-					<li>
-						<strong>Reduce</strong> stiffness and tension
-					</li>
-					<li>
-						<strong>Create consistency</strong> in your movement practice
-					</li>
-				</ul>
-				<p className=" p__color">
+				<div className="list-centered">
+					<p
+						className="mobile-width p__accent"
+						ref={optionsRef}
+					>
+						These sessions are designed to help you:
+					</p>
+					<ul className=" white service-list-item">
+						<li>
+							<span className="accent_hero">Improve</span> mobility and
+							flexibility
+						</li>
+						<li>
+							<span className="accent_hero">Build</span> strength and body
+							awareness
+						</li>
+						<li>
+							<span className="accent_hero">Reduce</span> stiffness and tension
+						</li>
+						<li>
+							<span className="accent_hero">Create consistency</span> in your
+							movement practice
+						</li>
+					</ul>
+				</div>
+				{/* <p className=" white">
 					Experience Marina's coaching style and let's start working together
 					more closely. Enjoy free yoga, mobility and Myofascial Release
 					classes.
-				</p>
+				</p> */}
 			</div>
 
 			<div className="container service">
@@ -216,17 +229,17 @@ function Service({ setOptRef }) {
 							<div className="service__meta">
 								<h1 className="service__text">The 7-Day Hip Mobility Reset</h1>
 								<br />
-								<h3 className="service__text white underline">Ideal for:</h3>
+								<h3 className="service__text p__accent">Ideal for:</h3>
 								<ul className="service-list-item p__color white ">
-									<li>Tight hips and lower back stiffness</li>
-									<li>Beginners and active individuals alike</li>
+									<li>Tight hips and lower back stiffness.</li>
+									<li>Beginners and active individuals alike.</li>
 									<li>
 										Busy individuals who don’t have time for long classes but
-										still desire good results
+										still desire good results.
 									</li>
 								</ul>
 								<br />
-								<h3 className="service__text white underline">
+								{/* <h3 className="service__text white underline">
 									What's Included:
 								</h3>
 								<ul className="service-list-item p__color white">
@@ -237,8 +250,10 @@ function Service({ setOptRef }) {
 										Progressive structure for safe, effective mobility gains
 									</li>
 									<li>Lifetime access to the program</li>
-								</ul>
-								<button className="about btn pointer">GET THE PROGRAM</button>
+								</ul> */}
+								<button className="button__primary btn pointer">
+									GET THE PROGRAM
+								</button>
 							</div>
 						</div>
 					</div>
@@ -280,16 +295,16 @@ function Service({ setOptRef }) {
 								<h3 className="service__text white ">
 									High-Level Coaching for Lasting Transformation.
 								</h3>
-								<h3 className="service__text white underline">
+								<h3 className="service__text  p__accent">
 									Ideal for those looking for:
 								</h3>
 								<ul className="service-list-item p__color white ">
-									<li>Personalized attention</li>
-									<li>Structure and accountability</li>
-									<li>Long-term lifestyle transformation</li>
+									<li>Personalized attention.</li>
+									<li>Structure and accountability.</li>
+									<li>Long-term lifestyle transformation.</li>
 								</ul>
 								<br />
-								<h3 className="service__text white underline">
+								{/* <h3 className="service__text white underline">
 									What's Included:
 								</h3>
 								<ul className="service-list-item p__color white">
@@ -302,8 +317,10 @@ function Service({ setOptRef }) {
 									<li>Access to coaching app</li>
 									<li>Direct accountability and ongoing support</li>
 									<li>Access to live weekend mobility classes</li>
-								</ul>
-								<button className="about btn pointer">GET THE PROGRAM</button>
+								</ul> */}
+								<button className="button__primary btn pointer">
+									GET THE PROGRAM
+								</button>
 							</div>
 						</div>
 					</div>

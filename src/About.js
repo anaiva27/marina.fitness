@@ -51,7 +51,7 @@ function About() {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									<button className="about btn pointer">
+									<button className="button__primary btn pointer">
 										COACHING APPLICATION
 									</button>
 								</a>
@@ -67,7 +67,9 @@ function About() {
                   allowfullscreen
                 ></iframe> */}
 							</div>
-							<button className="about btn pointer">WELLNESS RETREATS</button>
+							<button className="button__primary btn pointer">
+								WELLNESS RETREATS
+							</button>
 						</div>
 					</div>
 				</div>

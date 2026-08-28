@@ -152,7 +152,7 @@ function Contact() {
 												type="submit"
 												name="subscribe"
 												id="mc-embedded-subscribe"
-												className="button"
+												className="button button__primary"
 												value="SUBSCRIBE"
 												disabled={!formEmail || !formName || !formMessage}
 											/>
@@ -173,7 +173,7 @@ function Contact() {
 								and
 								rel="noopener noreferrer"
 							>
-								<button className="about btn pointer">
+								<button className="button__primary btn pointer">
 									COACHING APPLICATION
 								</button>
 							</a>
