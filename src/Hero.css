@@ -277,6 +277,11 @@ span.inline-green-arrow {
 	}
 }
 
+@media (min-width: 641px) and (max-width: 1000px) {
+	.program__cta {
+		margin-top: 50px;
+	}
+}
 /* MOBILE */
 @media (max-width: 640px) {
 	.page {
