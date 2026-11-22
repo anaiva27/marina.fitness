@@ -136,7 +136,10 @@ export default function Hero() {
 					</a>
 				</article>
 
-				<div className="program__content">
+				<div
+					className="program__content"
+					id="programs"
+				>
 					<div>
 						<h2 className="program__title">
 							Mobility is longevity. <br /> Unlock your hips.

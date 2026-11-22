@@ -88,7 +88,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 							<div className="navigation">
 								<ul className="navbar d__flex hide-list-marker">
 									<a
-										href="#Services"
+										href="#programs"
 										className="nav-top-padding"
 									>
 										<li className="nav__items mx__15 hide-list-marker">
@@ -96,7 +96,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 										</li>
 									</a>
 									<a
-										href="#Testimonials"
+										href="#reviews"
 										className="nav-top-padding"
 									>
 										<li className="nav__items mx__15 hide-list-marker">
@@ -104,7 +104,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 										</li>
 									</a>
 									<a
-										href="#Contact"
+										href="#contact"
 										className="nav-top-padding"
 									>
 										<li className="nav__items mx__15 hide-list-marker">
@@ -112,7 +112,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 										</li>
 									</a>
 									<a
-										href="#Contact"
+										href="#contact"
 										className="nav-top-padding"
 									>
 										<li className="nav__items mx__15 hide-list-marker ghost-button">

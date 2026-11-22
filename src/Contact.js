@@ -8,7 +8,7 @@ function Contact() {
 	return (
 		<div
 			className="contact component__space"
-			id="Contact"
+			id="contact"
 		>
 			<div className="row">
 				<div className="col__2">

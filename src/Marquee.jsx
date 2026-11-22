@@ -194,7 +194,10 @@ function MarqueeRow({ items, reverse = false }) {
 export default function Marquee() {
 	return (
 		<>
-			<div className="compare__container">
+			<div
+				className="compare__container"
+				id="reviews"
+			>
 				<h1 className="compare__heading">
 					Marina is Here to Help You <br />
 					Overcome Your Challenges.
