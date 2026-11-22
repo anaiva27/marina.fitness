@@ -134,4 +134,7 @@
 		padding: 26px 22px 22px;
 		border-radius: 22px;
 	}
+	.card__text {
+		font-size: 0.9rem !important;
+	}
 }

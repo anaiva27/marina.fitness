@@ -4,53 +4,74 @@ import "./Marquee.css";
 // Placeholder content: replace with your real testimonials.
 const row1 = [
 	{
-		title: "Short headline quote",
-		text: "A longer testimonial goes here. Two or three sentences about what changed after working together.",
-		name: "Name Surname",
-		role: "Customer Success Manager",
+		title: "Total body care",
+		text: "Marina is a knowledgeable and intuitive fitness professional. Her workouts are about total body care through breath, mobility, balance and strength. Marina brings her positive energy to every workout. Her zoom classes saved me during Covid lockdown. She is amazing!",
+		name: "Liz Nally",
+		role: "Ocean View, DE",
+	},
+	{
+		title: "Always feel good after our sessions",
+		text: "Marina is inspirational, extremely well versed in different ways to effectively and safely work your body. Never boring work out! Always feel good after our sessions. Highly recommended!",
+		name: "Lugene Nighly",
+		role: "Bethany Beach, DE",
+	},
+	{
+		title: "Enthusiasm, energy, and humor",
+		text: "I met Marina online and was immediately impressed by her enthusiasm, energy level, and sense of humor. If you looking for a good coach for (e.x. mobility, strength, nutrition, transformation and mindset) don’t hesitate work with Marina. If you want to finally get on track with your health and fitness, or feel younger, look better, or extend your life, I would recommend you talk to Marina today, and start working with her this week!",
+		name: "Brian Carter",
+		role: "Charleston, SC",
+	},
+	{
+		title: "Game Changer for Your Fitness Journey!",
+		text: "I've had the privilege of working with Marina and I couldn't be happier with the results. Marinas knowledge, dedication, and passion for fitness are evident in every session. She has a deep understanding of human anatomy which allows her to tailor each workout to my specific needs and goals. Her positive energy and enthusiasm are contagious, making each workout session enjoyable and rewarding while also having fun in the process.",
+		name: "Melissa Valenzuela",
+		role: "Miami, FL",
 		rating: 5,
 	},
 	{
-		text: "Since switching, our customer satisfaction score has risen and our response time dropped from hours to minutes.",
-		name: "Name Surname",
-		role: "Head of Customer Service, Company",
+		title: "Strength and stamina at its best",
+		text: "Marina is inspiring and very accomplished teacher because she is always searching for self improvements! You will have fun with her easy going ways! I have been practicing yoga under Marina’s guidance for many years and my strength and stamina is at its best!",
+		name: "Ginny Roberts",
+		role: "Ocean View, DE",
 	},
 	{
-		text: "It's almost like all the sites I visit use it. I instantly associate it with great customer service.",
-		name: "Name Surname",
-		role: "@handle",
-	},
-	{
-		text: "The ability to see the entire team's workflow and collaborate behind the scenes creates a better experience.",
-		name: "Name Surname",
-		role: "Enterprise (>1000 emp.)",
-		rating: 5,
+		title: "Always very professional and detail oriented",
+		text: "My husband and I worked with Marina as a personal trainer for 2 years in person and now almost a year through zoom. She was always very professional and detail oriented. Never did we do an exercise with the wrong posture or position, and I think it’s really important especially for us elderly people. She is a gem!",
+		name: "Karen and Rod",
+		role: "Fenwick Island, DE",
 	},
 ];
 
 const row2 = [
 	{
-		title: "Growing as you scale",
-		text: "We have a great relationship with the team. They listen, they deliver, and they help us get the best out of the product.",
-		name: "Name Surname",
-		role: "Sr. Director of Support Operations",
-		rating: 5,
+		title: "Real, lasting results",
+		text: "Marina is a phenomenal trainer with comprehensive knowledge of resistance training and nutrition to fit her client’s individual needs! In 11 months of working together, not only I dropped pounds, gained muscles, developed confidence, but actually grew to love exercise. She is encouraging, patient and dedicated to help her clients achieve real lasting results! Highly, highly recommended!",
+		name: "Kim Wade",
+		role: "Bethany Beach, DE",
 	},
 	{
-		text: "What used to be a disjointed customer experience is now unified, consistent, and personalized.",
-		name: "Name Surname",
-		role: "VP, Global Customer Support",
+		title: "Challenging and creative",
+		text: "Marina always displays welcoming energy! The classes are both challenging and creative.",
+		name: "Caitlin Owes",
+		role: "Ocean View, DE",
 	},
 	{
-		text: "Without it, we would not be able to support our customers in real time with the efficiency that we do now.",
-		name: "Name Surname",
-		role: "Auto, 51-200 emp.",
-		rating: 5,
+		title: "Extremely knowledgeable about the body",
+		text: "I love training with Marina! She is extremely knowledgeable about the body and ensures both a safe and effective training session. I learned how to honor the body and push it at the same time! Marina is amazing!",
+		name: "Allison P",
+		role: "Ocean View, DE",
 	},
 	{
-		text: "It can be a challenge to scale customer support. This helped us deliver fast response times and stay competitive.",
-		name: "Company Name",
-		role: "@company",
+		title: "More flexibility, less weight, more strength",
+		text: "I had the privilege of having Marina as my personal trainer for over two years! Her ability to custom fit my training with any and all ailments were simply awesome. With her help I increased flexibility in my body, lost weight and gained strength. She was a huge part of my rehab after my shoulder surgery. She always has a smile and positive demeanor about her. Her knowledge about anatomy, training techniques is unsurpassed.",
+		name: "Bob Finley",
+		role: "Ocean View, DE",
+	},
+	{
+		title: "Over 5 years of training",
+		text: "I have done functional training and mobility/stretching small groups and one on one with Marina for over 5 years, first in person sessions and now remotely through the zoom. Simply put, she is the best! She will challenge you but will always program and adapt exercise to one’s needs and abilities like my operated knees for example. I'm continuing training with Marina remotely and finding it as effective as if we were together at the gym.",
+		name: "Larry Platt",
+		role: "Washington, DC",
 	},
 ];
 
@@ -206,8 +227,8 @@ export default function Marquee() {
 					className="subheading_text"
 					style={{ textAlign: "center", margin: "auto" }}
 				>
-					See why many others trust Marina with their joints and overall
-					mobility.
+					Hear from people who trust Marina with their joint mobility and
+					strength training, and feel the difference for yourself.
 				</p>
 			</div>
 			<section className="marquee">
