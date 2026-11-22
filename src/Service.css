@@ -149,7 +149,7 @@ img.retreat {
 	border-radius: 10px;
 }
 /* RESPONSIVE */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1000px) {
 	.service__box {
 		padding: 32px;
 		min-height: 400px;
@@ -157,9 +157,7 @@ img.retreat {
 	div.service img.contain {
 		left: -20%;
 	}
-}
 
-@media (max-width: 768px) {
 	p.heading.p__color {
 		width: 100%;
 		padding: 10px 20px 10px;

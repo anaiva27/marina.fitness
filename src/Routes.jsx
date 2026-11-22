@@ -11,6 +11,7 @@ import Testimonials from "./Testimonials";
 import Service from "./Service";
 import RetreatSection from "./RetreatSection";
 import Compare from "./Compare";
+import Marquee from "./Marquee";
 
 export const Routes = () => {
 	const [optRef, setOptRef] = useState();
@@ -26,10 +27,11 @@ export const Routes = () => {
 				optionsRef={optRef}
 				retreatsRef={retreatRef}
 			/>
-			<Service setOptRef={setOptRef} />
-			<Testimonials />
+			{/* <Service setOptRef={setOptRef} /> */}
+			<Marquee />
+			{/* <Testimonials /> */}
 			<Compare />
-			<About />
+			{/* <About /> */}
 			{/* <RetreatSection setOptRef={setRetreatRef} /> */}
 			<Contact />
 			<Certificate />

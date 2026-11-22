@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Home.css";
 import "./RevealPage.css";
 import logo from "./img/MarinaLogo2.png";
+import logoDark from "./img/MarinaLogo-dark.png";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 import { dropDelay, popDelay } from "./animate";
 import { useClickOutside } from "./portal/useClickOutside";
@@ -9,6 +10,7 @@ import { useMediaQuery } from "./helpers/useMediaQuery";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import styled from "styled-components";
+import Hero from "./Hero";
 
 function Home({ optionsRef, retreatsRef, scrollToSection }) {
 	const [collapse, setCollapse] = useState(false);
@@ -79,35 +81,42 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 						<div className="header d__flex align__items__center pxy__20">
 							<div className="logo__home">
 								<img
-									src={logo}
+									src={logoDark}
 									alt=""
 								/>
 							</div>
 							<div className="navigation">
 								<ul className="navbar d__flex hide-list-marker">
-									{/* <a href="#Retreats">
+									<a
+										href="#Services"
+										className="nav-top-padding"
+									>
 										<li className="nav__items mx__15 hide-list-marker">
-											Retreats
-										</li>
-									</a> */}
-									<a href="#Services">
-										<li className="nav__items mx__15 hide-list-marker">
-											Services
+											Programs
 										</li>
 									</a>
-									{/* <a href="#Experience">
+									<a
+										href="#Testimonials"
+										className="nav-top-padding"
+									>
 										<li className="nav__items mx__15 hide-list-marker">
-											Experience
-										</li>
-									</a> */}
-									<a href="#Testimonials">
-										<li className="nav__items mx__15 hide-list-marker">
-											Testimonials
+											Reviews
 										</li>
 									</a>
-									<a href="#Contact">
+									<a
+										href="#Contact"
+										className="nav-top-padding"
+									>
 										<li className="nav__items mx__15 hide-list-marker">
 											Contact
+										</li>
+									</a>
+									<a
+										href="#Contact"
+										className="nav-top-padding"
+									>
+										<li className="nav__items mx__15 hide-list-marker ghost-button">
+											Free Consultation <span className="arrow-link">→</span>
 										</li>
 									</a>
 								</ul>
@@ -128,7 +137,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 												fill-rule="evenodd"
 												clip-rule="evenodd"
 												d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z"
-												fill="#ffffff"
+												fill="#fff"
 											/>
 										</svg>
 									) : (
@@ -137,7 +146,7 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 											xmlns="http://www.w3.org/2000/svg"
 											width="20"
 											height="20"
-											fill="white"
+											fill="black"
 											class="bi bi-justify white pointer"
 											viewBox="0 0 16 16"
 										>
@@ -149,120 +158,56 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 									)}
 								</div>
 							)}
-							{show ? (
-								<div className="sideNavbar">
-									<ul className="sidebar d__flex">
-										<li className="sideNavbar black mx__15 hide-list-marker">
-											<a
-												className="black "
-												href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
-												target="_blank"
-												and
-												rel="noopener noreferrer"
-											>
-												Coaching Application
-											</a>
-										</li>
-										<br />
-										<br />
-										{/* <a href="#Retreats">
-										<li className="nav__items mx__15 hide-list-marker">
-											Retreats
-										</li>
-									</a> */}
-										<li className="nav__items mx__45 hide-list-marker">
-											<a
-												href="#Services"
-												className="p__white"
-											>
-												Services
-											</a>
-										</li>
-										{/* <a href="#Experience">
-										<li className="nav__items mx__15 hide-list-marker">
-											Experience
-										</li>
-									</a> */}
-										<li className="nav__items mx__45 hide-list-marker">
-											<a
-												href="#Testimonials"
-												className="p__white"
-											>
-												Testimonials
-											</a>
-										</li>
-										<li className="nav__items mx__45 hide-list-marker">
-											<a
-												href="#Contact"
-												className="p__white "
-											>
-												Contact
-											</a>
-										</li>
 
-										{/* <li className="sideNavbar black">
-											<p className="black">
-												Supplements from trusted sources, that I personally use:
-											</p>
-										</li>
-										<li className="sideNavbar">
-											<a
-												href="https://www.ryzesuperfoods.com"
-												className="bright underline"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												Ryzesuperfoods.com
-											</a>
-											<p className="black">
-												<br />
-												USE CODE MARINABOGATKINA for 15% discount
-											</p>
-										</li>
-										<br />
-										<li className="sideNavbar">
-											<a
-												href="https://promixnutrition.com"
-												className=" underline bright"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												Promixnutrition.com
-											</a>
-											<p className="black">
-												<br />
-												USE CODE MARINABOGATKINA for 20% discount
-											</p>
-										</li>
-										<br />
-										<li className="sideNavbar">
-											<a
-												href="https://www.thorne.com/u/AM1155640?affid=AM1155640&utm_campaign=Affiliate%20Programs&utm_medium=Ambassador&utm_source=Custom%20Link&utm_content=Marina%20Bogatkina%20-%20Dispensary"
-												className="bright underline"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												Thorne.com
-											</a>
-											<p className="black">
-												<br />
-												Use my link to get 15% off
-											</p>
-										</li> */}
-									</ul>
-								</div>
-							) : null}
+							<div className={`sideNavbar ${show ? "open" : ""}`}>
+								<ul className="sidebar d__flex">
+									<li className="sideNavbar black mx__15 hide-list-marker">
+										<a
+											className="black "
+											href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											Coaching Application
+										</a>
+									</li>
+									<br />
+									<br />
+									<li className="nav__items mx__45 hide-list-marker">
+										<a
+											href="#Services"
+											className="p__white"
+										>
+											Services
+										</a>
+									</li>
+									<li className="nav__items mx__45 hide-list-marker">
+										<a
+											href="#Testimonials"
+											className="p__white"
+										>
+											Testimonials
+										</a>
+									</li>
+									<li className="nav__items mx__45 hide-list-marker">
+										<a
+											href="#Contact"
+											className="p__white "
+										>
+											Contact
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 						{/* HOME CONTENT */}
-						<div className="container home">
+						{/* <div className="container home">
 							<div className="home__content">
-								{/* 	<div className="home__meta"> */}
 								<h2 className="home__text pz__10 mb__25 eyebrow">
 									Want to <span className="accent_hero">feel your best</span>{" "}
 									again?
 								</h2>
 								<h1 className="home__text pz__10 bright_hero">
-									{/* <span className="bright_hero">Get Fit</span> */}
 									Move Better <br />
 									Get Stronger <br />
 									<span className="bright_hero">with Marina</span>
@@ -304,20 +249,10 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 										</h2>
 									</>
 								)}
-
-								{/* <motion.button
-									variants={dropDelay}
-									initial="initial"
-									animate="animate"
-									exit="exit"
-									className="button__primary"
-									onClick={() => scrollToSection(retreatsRef)}
-								>
-									CHECK OUT MY RETREATS
-								</motion.button> */}
-								{/* </div> */}
 							</div>
-						</div>
+						</div> */}
+
+						<Hero />
 					</div>
 				</div>
 			</Content>
@@ -361,14 +296,14 @@ const Slider = styled.div`
 const Content = styled.div`
 	display: flex;
 	width: 100%;
-	background-color: #000;
+	/* background-color: #000; */
 	margin: 0 auto;
 	justify-content: center;
 	opacity: 0;
 	z-index: 2;
 	position: relative;
 	/* margin-right: 100px; */
-	@media (max-width: 950px) {
+	@media (max-width: 1000px) {
 		flex-direction: column;
 		margin: auto;
 	}

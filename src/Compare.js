@@ -8,7 +8,16 @@ function Compare() {
 			id="About"
 		>
 			<div className="container about">
-				<h1 className="compare__heading">The Marina Fitness Difference</h1>
+				<div className="compare__container">
+					<h1 className="compare__heading">The Marina Fitness Difference</h1>
+					<p
+						className="subheading_text"
+						style={{ textAlign: "center", margin: "auto" }}
+					>
+						Move better, feel better, and know <strong>why</strong> it's
+						working.
+					</p>
+				</div>
 				<div className="compare__grid_header">
 					<h2>Training with Marina</h2>
 					<span className="white_span">
@@ -16,7 +25,7 @@ function Compare() {
 						{/* {" "}
 						&nbsp; &nbsp; &nbsp; vs. &nbsp; &nbsp;{" "} */}
 					</span>{" "}
-					<h2>Training on Your Own</h2>
+					<h2>Training on your own</h2>
 				</div>
 				<div className="compare_grid">
 					<div className="compare_grid_col padding-l-5">
