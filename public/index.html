@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -73,7 +73,7 @@
 					window.history.replaceState(
 						null,
 						null,
-						l.pathname.slice(0, -1) + decoded + l.hash
+						l.pathname.slice(0, -1) + decoded + l.hash,
 					);
 				}
 			})(window.location);
@@ -85,7 +85,10 @@
 				background: #191919;
 				color: #fff;
 				clear: left;
-				font: 14px Helvetica, Arial, sans-serif;
+				font:
+					14px Helvetica,
+					Arial,
+					sans-serif;
 			}
 			form.validate {
 				margin: 0 !important;
@@ -95,10 +98,13 @@
 				color: #fff !important;
 				padding: 5px 15px;
 				height: 55px !important;
-				font-size: 18px !important;
-				font-weight: 800 !important;
-				text-shadow: 1px 1px #00000088;
+				font-size: 20px !important;
+				font-weight: 600 !important;
+				text-shadow: 0px 0px #00000088;
 				margin-top: 20px !important;
+			}
+			#mc_embed_signup .button {
+				width: 320px !important;
 			}
 			/* input#mce-MMERGE6 {
         height: 100px !important;
@@ -106,12 +112,33 @@
 			input {
 			}
 			#mc_embed_signup .mc-field-group input {
-				border: 2px solid grey !important;
+				border-top: 0 !important;
+				border-left: 0 !important;
+				border-right: 0 !important;
+				border-bottom: 1px solid grey !important;
 				color: #fff !important;
 				background: #191919 !important;
 			}
+			#mc_embed_signup .mc-field-group {
+				width: 100% !important;
+			}
+			.mc-field-group {
+				width: 100% !important;
+			}
 			@media (max-width: 425px) {
 				input#mc-embedded-subscribe {
+					width: 100% !important;
+				}
+			}
+			@media (max-width: 1000px) {
+				#mc_embed_signup .button {
+					width: 100% !important;
+				}
+				input#mc-embedded-subscribe {
+					width: 100% !important;
+					border: 1px solid grey !important;
+				}
+				.mc-field-group {
 					width: 100% !important;
 				}
 			}
@@ -162,15 +189,15 @@
 		></script>
 		<script id="mcjs">
 			!(function (c, h, i, m, p) {
-				(m = c.createElement(h)),
+				((m = c.createElement(h)),
 					(p = c.getElementsByTagName(h)[0]),
 					(m.async = 1),
 					(m.src = i),
-					p.parentNode.insertBefore(m, p);
+					p.parentNode.insertBefore(m, p));
 			})(
 				document,
 				"script",
-				"https://chimpstatic.com/mcjs-connected/js/users/81d7f5090e271a5e5249e16c7/69f5ba839452609992b67a9f7.js"
+				"https://chimpstatic.com/mcjs-connected/js/users/81d7f5090e271a5e5249e16c7/69f5ba839452609992b67a9f7.js",
 			);
 		</script>
 		<script

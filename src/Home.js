@@ -18,6 +18,24 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 	const ref = useRef();
 	// Toogle Menu
 	const [show, setShow] = useState(false);
+
+	const NAV_LINKS = [
+		{ id: "services", label: "Services" },
+		{ id: "testimonials", label: "Testimonials" },
+		{ id: "contact", label: "Contact" },
+	];
+
+	const handleNavClick = (e, id) => {
+		e.preventDefault();
+		setShow(false); // close the burger menu
+		const el = document.getElementById(id);
+		if (!el) return;
+		// wait one frame so closing the menu doesn't block the scroll
+		requestAnimationFrame(() => {
+			el.scrollIntoView({ behavior: "smooth", block: "start" });
+			window.history.replaceState(null, "", `#${id}`);
+		});
+	};
 	//useClickOutside(ref, show ? show : () => null);
 
 	// fixed Header
@@ -177,30 +195,20 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 
 									<br />
 									<br />
-									<li className="nav__items mx__45 hide-list-marker">
-										<a
-											href="#Services"
-											className="p__white"
+									{NAV_LINKS.map(({ id, label }) => (
+										<li
+											key={id}
+											className="nav__items mx__45 hide-list-marker"
 										>
-											Services
-										</a>
-									</li>
-									<li className="nav__items mx__45 hide-list-marker">
-										<a
-											href="#Testimonials"
-											className="p__white"
-										>
-											Testimonials
-										</a>
-									</li>
-									<li className="nav__items mx__45 hide-list-marker">
-										<a
-											href="#Contact"
-											className="p__white "
-										>
-											Contact
-										</a>
-									</li>
+											<a
+												href={`#${id}`}
+												className="p__white"
+												onClick={(e) => handleNavClick(e, id)}
+											>
+												{label}
+											</a>
+										</li>
+									))}
 								</ul>
 							</div>
 						</div>

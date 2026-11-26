@@ -272,7 +272,7 @@ button.about.btn.pointer:hover {
 	border: none;
 	background-color: #368777;
 	color: #fff;
-	font-size: 23px;
+	font-size: 1.2rem;
 	font-weight: 500;
 	letter-spacing: 0.7px;
 	max-width: 320px;
@@ -293,6 +293,11 @@ button.about.btn.pointer:hover {
 	text-decoration: underline;
 }
 /* RESPONSIVE */
+@media only screen and (max-width: 1000px) {
+	/* section[id] {
+		scroll-margin-top: 80px;
+	} */
+}
 @media only screen and (max-width: 768px) {
 	.col__2 {
 		max-width: 100%;

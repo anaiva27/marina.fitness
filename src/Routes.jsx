@@ -27,12 +27,16 @@ export const Routes = () => {
 				optionsRef={optRef}
 				retreatsRef={retreatRef}
 			/>
-			<ServicesNew setOptRef={setOptRef} />
-			<Marquee setOptRef={setOptRef} />
+			<section id="services">
+				<ServicesNew setOptRef={setOptRef} />
+			</section>
+			<section id="testimonials">
+				<Marquee setOptRef={setOptRef} />
+			</section>
 			<Compare />
-			{/* <Service setOptRef={setOptRef} /> */}
-			{/* <RetreatSection setOptRef={setRetreatRef} /> */}
-			<Contact setOptRef={setOptRef} />
+			<section id="contact">
+				<Contact setOptRef={setOptRef} />
+			</section>
 			<Certificate />
 			<Footer />
 		</>

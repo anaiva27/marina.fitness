@@ -20,7 +20,7 @@ function Contact() {
 								nutrition and your body!
 								<br />
 								<br />
-								Ask me a question I’m here to help:{" "}
+								Send a question directly to email:{" "}
 							</p>
 							<p className="hire__text black">
 								<a
@@ -32,7 +32,7 @@ function Contact() {
 							</p>
 							<br />
 							<p className="hire__text black">
-								Or fill up this form to receive my personalized offers:{" "}
+								Or fill up this form to receive personalized offers:{" "}
 							</p>
 							<div id="mc_embed_signup">
 								<form
@@ -173,7 +173,7 @@ function Contact() {
 								and
 								rel="noopener noreferrer"
 							>
-								<button className="button__primary btn pointer">
+								<button className="button__primary pointer">
 									COACHING APPLICATION
 								</button>
 							</a>
