@@ -216,17 +216,13 @@ export default function Marquee() {
 	return (
 		<>
 			<div
-				className="compare__container"
+				className="marquee__container"
 				id="reviews"
 			>
 				<h1 className="compare__heading">
-					Marina is Here to Help You <br />
-					Overcome Your Challenges.
+					Marina is Here to Help You Overcome Your Challenges.
 				</h1>
-				<p
-					className="subheading_text"
-					style={{ textAlign: "center", margin: "auto" }}
-				>
+				<p className="subheading_text legend width-sub">
 					Hear from people who trust Marina with their joint mobility and
 					strength training, and feel the difference for yourself.
 				</p>

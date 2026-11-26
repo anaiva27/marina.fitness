@@ -12,14 +12,17 @@ import Service from "./Service";
 import RetreatSection from "./RetreatSection";
 import Compare from "./Compare";
 import Marquee from "./Marquee";
+import ServicesNew from "./ServicesNew";
 
 export const Routes = () => {
 	const [optRef, setOptRef] = useState();
 	const [retreatRef, setRetreatRef] = useState();
+
 	const scrollToSection = (ref) => {
 		if (!ref) return;
 		window.scrollTo({ top: ref.current.offsetTop - 265 });
 	};
+
 	return (
 		<>
 			<Home
@@ -27,13 +30,14 @@ export const Routes = () => {
 				optionsRef={optRef}
 				retreatsRef={retreatRef}
 			/>
-			{/* <Service setOptRef={setOptRef} /> */}
-			<Marquee />
-			{/* <Testimonials /> */}
+			<ServicesNew setOptRef={setOptRef} />
+			<Marquee setOptRef={setOptRef} />
 			<Compare />
+			{/* <Service setOptRef={setOptRef} /> */}
+			{/* <Testimonials /> */}
 			{/* <About /> */}
 			{/* <RetreatSection setOptRef={setRetreatRef} /> */}
-			<Contact />
+			<Contact setOptRef={setOptRef} />
 			<Certificate />
 			<Footer />
 		</>

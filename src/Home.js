@@ -112,8 +112,10 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 										</li>
 									</a>
 									<a
-										href="#contact"
+										href="https://calendly.com/marinafit/30min"
 										className="nav-top-padding"
+										target="_blank"
+										rel="noopener noreferrer"
 									>
 										<li className="nav__items mx__15 hide-list-marker ghost-button">
 											Free Consultation <span className="arrow-link">→</span>
@@ -164,13 +166,15 @@ function Home({ optionsRef, retreatsRef, scrollToSection }) {
 									<li className="sideNavbar black mx__15 hide-list-marker">
 										<a
 											className="black "
-											href="https://docs.google.com/forms/d/1E257IEXU7Nf48yiMpXjr9B8p1VNRMdQ1WFuh4AX1-mw"
+											href="https://calendly.com/marinafit/30min"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											Coaching Application
+											Free Consultation{" "}
+											<span className="arrow-link-white">→</span>
 										</a>
 									</li>
+
 									<br />
 									<br />
 									<li className="nav__items mx__45 hide-list-marker">

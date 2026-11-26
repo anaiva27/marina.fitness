@@ -33,6 +33,15 @@ li.nav__items {
 	overflow: hidden;
 }
 
+.nav-btn-link {
+	text-decoration: none;
+}
+
+.arrow-link-white {
+	color: white !important;
+	display: inline;
+}
+
 .eyebrow {
 	margin-bottom: 15px !important;
 }
@@ -175,7 +184,7 @@ li.sideNavbar a {
 .subheading_text {
 	margin: 0;
 	font-size: 1.1rem;
-	line-height: 1.8;
+	line-height: 1.6;
 }
 
 .ghost-button {
@@ -276,6 +285,7 @@ li.sideNavbar a {
 		margin: 0;
 		font-size: 1rem;
 		line-height: 1.5;
+		text-align: left;
 	}
 }
 @media only screen and (max-width: 425px) {

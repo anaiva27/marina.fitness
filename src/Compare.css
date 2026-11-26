@@ -3,8 +3,21 @@ h1.compare__heading {
 	text-align: center;
 	font-size: clamp(2.2rem, 4vw, 3.2rem);
 	line-height: 1.1;
-	letter-spacing: -3px;
+	letter-spacing: -2.5px;
 	color: #579388;
+	max-width: 700px;
+	margin: 0 auto 20px;
+}
+
+h1.compare__table-heading {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: clamp(2.2rem, 4vw, 3.2rem);
+	line-height: 1.1;
+	letter-spacing: -2.5px;
+	color: #579388;
+	max-width: 700px;
+	margin: 0 auto 20px;
 }
 
 h2.compare__subheading {
@@ -16,9 +29,9 @@ h2.compare__subheading {
 }
 
 .compare__grid_header {
-	background-color: #579388;
+	background-color: #d7e9e28d;
+	color: #579388 !important;
 	height: 70px;
-	color: black;
 	text-align: center;
 	width: 90%;
 	max-width: 1300px;
@@ -29,6 +42,10 @@ h2.compare__subheading {
 	gap: 20px;
 	padding: 0 9%;
 	border-radius: 10px 10px 0 0;
+}
+
+.compare__grid_header h2 {
+	color: #579388 !important;
 }
 
 .compare_grid {
@@ -53,15 +70,16 @@ h2.compare__subheading {
 	align-items: center;
 	justify-content: center;
 	background: #8080800d;
+	font-size: 1.1rem !important;
 }
 
 .grey {
-	background-color: rgb(236, 235, 235);
+	background-color: #d7e9e28d;
 }
 
 .white_span {
 	display: inline;
-	color: white;
+	color: #579388 !important;
 	font-family: "PoppinsExtraBold" !important;
 }
 
@@ -77,7 +95,12 @@ h2.compare__subheading {
 
 	.compare__container {
 		margin: auto;
-		padding: 35px 20px 10px;
+		padding: 35px 5px 10px;
+	}
+
+	.table-sub {
+		max-width: 300px;
+		margin: auto;
 	}
 
 	.compare__grid_header {
@@ -92,7 +115,19 @@ h2.compare__subheading {
 	h1.compare__heading {
 		font-size: clamp(1.8rem, 4vw, 2rem);
 		line-height: 1.1;
+		letter-spacing: -1.5px;
+		text-align: left;
+	}
+
+	h1.compare__table-heading {
+		font-size: 1.7rem;
+		line-height: 1.1;
 		letter-spacing: -2px;
+		text-align: center !important;
+	}
+
+	.compare__grid_header h2 {
+		font-size: 1.3rem;
 	}
 
 	.white_span {
@@ -111,6 +146,7 @@ h2.compare__subheading {
 
 	.compare_grid_col {
 		height: 80px;
+		font-size: 0.9rem !important;
 	}
 
 	.compare_grid {

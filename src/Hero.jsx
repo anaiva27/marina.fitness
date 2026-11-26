@@ -104,17 +104,28 @@ export default function Hero() {
 			<section className="program">
 				<article className="program__card">
 					<svg
-						className="program__icon"
+						// className="program__icon"
 						viewBox="0 0 24 24"
+						width={"2.4rem"}
+						height={"4rem"}
 						fill="none"
 						stroke="#368777"
 						strokeWidth="1.5"
 						strokeLinejoin="round"
 						aria-hidden="true"
 					>
-						<path d="M12 3 2 8l10 5 10-5-10-5Z" />
-						<path d="m2 12 10 5 10-5" />
-						<path d="m2 16 10 5 10-5" />
+						<path
+							d="M12 3 2 8l10 5 10-5-10-5Z"
+							strokeWidth={"1.5"}
+						/>
+						<path
+							d="m2 12 10 5 10-5"
+							strokeWidth={"1.5"}
+						/>
+						<path
+							d="m2 16 10 5 10-5"
+							strokeWidth={"1.5"}
+						/>
 					</svg>
 					<h2 className="program__card-title">
 						The 7-day Hip

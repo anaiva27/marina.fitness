@@ -9,10 +9,12 @@ function Compare() {
 		>
 			<div className="container about">
 				<div className="compare__container">
-					<h1 className="compare__heading">The Marina Fitness Difference</h1>
+					<h1 className="compare__table-heading">
+						The Marina Fitness Difference
+					</h1>
 					<p
-						className="subheading_text"
-						style={{ textAlign: "center", margin: "auto" }}
+						className="subheading_text table-sub"
+						style={{ textAlign: "center" }}
 					>
 						Move better, feel better, and know <strong>why</strong> it's
 						working.
@@ -195,6 +197,7 @@ function Compare() {
 						Plateaus and guesswork
 					</div>
 				</div>
+				<br />
 			</div>
 		</div>
 	);

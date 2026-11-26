@@ -120,12 +120,27 @@
 	font-size: 0.7rem !important;
 }
 
+.width-sub {
+	max-width: 730px;
+	margin: auto;
+}
+
+.marquee__container {
+	margin: auto;
+	padding: 80px 20px 10px;
+}
+
 /* responsive */
 @media (max-width: 640px) {
 	.marquee {
 		--gap: 14px;
 		padding: 32px 0;
 		margin-top: 30px;
+	}
+
+	.marquee__container {
+		margin: auto;
+		padding: 50px 30px 10px;
 	}
 
 	.card {
