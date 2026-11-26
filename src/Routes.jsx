@@ -7,9 +7,6 @@ import { Certificate } from "./Certificate";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Home from "./Home";
-import Testimonials from "./Testimonials";
-import Service from "./Service";
-import RetreatSection from "./RetreatSection";
 import Compare from "./Compare";
 import Marquee from "./Marquee";
 import ServicesNew from "./ServicesNew";
@@ -34,8 +31,6 @@ export const Routes = () => {
 			<Marquee setOptRef={setOptRef} />
 			<Compare />
 			{/* <Service setOptRef={setOptRef} /> */}
-			{/* <Testimonials /> */}
-			{/* <About /> */}
 			{/* <RetreatSection setOptRef={setRetreatRef} /> */}
 			<Contact setOptRef={setOptRef} />
 			<Certificate />

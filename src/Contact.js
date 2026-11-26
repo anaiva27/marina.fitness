@@ -14,7 +14,7 @@ function Contact() {
 				<div className="col__2">
 					<div className="contact__box">
 						<div className="contact__meta">
-							<h1 className="motto__heading left black">Hire Me.</h1>
+							<h1 className="motto__heading left black">Hire Marina.</h1>
 							<p className="hire__text black">
 								Now is your time to feel empowered and educated about movement,
 								nutrition and your body!
