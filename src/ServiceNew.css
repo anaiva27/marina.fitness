@@ -61,6 +61,10 @@
 	font-weight: 500;
 }
 
+.pad-l {
+	padding-left: 50px;
+}
+
 @media (max-width: 1000px) {
 	.service-grid {
 		grid-template-columns: 1fr;
@@ -89,5 +93,9 @@
 		margin: 20px auto 0;
 		border-radius: 30px;
 		padding: 6px 15px 9px 20px;
+	}
+
+	.pad-l {
+		padding: 0 35px 0 0;
 	}
 }

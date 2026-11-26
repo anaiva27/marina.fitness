@@ -19,10 +19,8 @@ function ServicesNew({ setOptRef }) {
 						mobility coaching
 					</h1>{" "}
 					<p className="subheading_text legend">
-						Get comprehensive, easy to follow, personalized training program and{" "}
-						<br />
-						nutrition guide{" "}
-						<strong>tailored to your goals, needs, and lifestyle.</strong>
+						Get comprehensive, easy to follow, personalized training program
+						tailored to your <strong> goals, needs, and lifestyle.</strong>
 					</p>
 					<a
 						href="https://calendly.com/marinafit/30min"
@@ -71,13 +69,10 @@ function ServicesNew({ setOptRef }) {
 								<span className="services-inline">
 									functional fitness program
 								</span>{" "}
-								(strength + mobility) on Trainerize app (included).
-								<br />
-								<br />
-								Updated every 4 weeks.
+								(strength + mobility). Updated every 4 weeks.
 							</p>
 						</div>
-						<div className="service-grid-item">
+						{/* <div className="service-grid-item">
 							<svg
 								xmlns={"http://www.w3.org/2000/svg"}
 								width={"2.2rem"}
@@ -105,7 +100,7 @@ function ServicesNew({ setOptRef }) {
 								<br />
 								Monthly via Zoom.
 							</p>
-						</div>
+						</div> */}
 
 						<div className="service-grid-item">
 							<svg
@@ -130,10 +125,7 @@ function ServicesNew({ setOptRef }) {
 							<p>
 								<span className="services-inline">Movement assessments</span>,
 								<br />
-								because assessment never really stops.
-								<br />
-								<br />
-								Monthly via Zoom.
+								because assessment never really stops. onthly via Zoom.
 							</p>
 						</div>
 						<div className="service-grid-item">
@@ -229,7 +221,7 @@ function ServicesNew({ setOptRef }) {
 
 					<br />
 					<br />
-					<p className="subheading_text legend">
+					<p className="subheading_text pad-l">
 						Do you want to have my personal attention to each of your sessions?{" "}
 						<br />
 						<strong>Add-on:</strong> Let me guide you via Live Zoom strength or
