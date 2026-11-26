@@ -232,7 +232,7 @@ function ServicesNew({ setOptRef }) {
 					<p className="subheading_text legend">
 						Do you want to have my personal attention to each of your sessions?{" "}
 						<br />
-						<strong>Add-ons:</strong> Let me guide you via Live Zoom strength or
+						<strong>Add-on:</strong> Let me guide you via Live Zoom strength or
 						mobility sessions.
 					</p>
 				</div>
